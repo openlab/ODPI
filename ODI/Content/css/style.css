@@ -1,0 +1,5 @@
+﻿.nav-collapse { float:right; }
+.hide { display: none; }
+.collapse { height: 90px; overflow: auto; }
+.hero-unit { padding: 30px !important }
+.modal { display: none; }

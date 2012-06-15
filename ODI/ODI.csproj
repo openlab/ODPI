@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F51D05B5-545C-4D26-ACCA-A8D72B0DD356}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ODI</RootNamespace>
+    <AssemblyName>ODI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\external_libs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonFx">
+      <HintPath>..\packages\JsonFx.2.0.1106.2610\lib\net40\JsonFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\Program Files\Windows Azure SDK\v1.6\ref\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ConfigWriter\DuplicateConfigWriter.cs" />
+    <Compile Include="Actions\ConfigWriter\ICustomConfigWriter.cs" />
+    <Compile Include="Actions\PostDeploy\DatalabPostDeploy.cs" />
+    <Compile Include="Actions\PostDeploy\IPostDeployAction.cs" />
+    <Compile Include="Actions\PostDeploy\OpenIntelPostDeploy.cs" />
+    <Compile Include="Actions\PostDeploy\OpenTurfPostDeploy.cs" />
+    <Compile Include="Actions\Validate\IValidateAction.cs" />
+    <Compile Include="Actions\Validate\PhpSqlAzureValidation.cs" />
+    <Compile Include="Actions\Validate\SqlAzureValidation.cs" />
+    <Compile Include="Actions\Validate\TableStorageValidation.cs" />
+    <Compile Include="Controllers\AppController.cs" />
+    <Compile Include="Controllers\AzureController.cs" />
+    <Compile Include="Controllers\CheckController.cs" />
+    <Compile Include="Controllers\ConfTplController.cs" />
+    <Compile Include="Controllers\DeployController.cs" />
+    <Compile Include="Controllers\HelpController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TesterController.cs" />
+    <Compile Include="Controllers\TplController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Content Include="Content\img\loader.gif" />
+    <Content Include="js\libs\bootstrap-tooltip.js" />
+    <Compile Include="Models\CheckMessage.cs" />
+    <Compile Include="Models\Config\DatalabConfig.cs" />
+    <Compile Include="Models\Config\OdiAppConfig.cs" />
+    <Compile Include="Models\Config\OpenIntelConfig.cs" />
+    <Compile Include="Models\Config\OpenTurfConfig.cs" />
+    <Compile Include="Models\Config\SqlAzureConfig.cs" />
+    <Compile Include="Models\Config\TableStorageConfig.cs" />
+    <Compile Include="Models\DeployStatusModel.cs" />
+    <Compile Include="Models\OdiApp.cs" />
+    <Compile Include="Models\OdiAppRepo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AzureManagement.cs" />
+    <Compile Include="Services\CertificateBuilder.cs" />
+    <Compile Include="Services\CloudBackedStore.cs" />
+    <Compile Include="Services\PackageBuilder.cs" />
+    <Compile Include="Services\StatusMessageConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\bootstrap-responsive.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="Content\img\help\add-certificate-1.png" />
+    <Content Include="Content\img\help\add-certificate-2.png" />
+    <Content Include="Content\img\help\add-certificate-3.png" />
+    <Content Include="Content\img\help\image001.jpg" />
+    <Content Include="Content\img\help\image002.jpg" />
+    <Content Include="Content\img\help\image003.png" />
+    <Content Include="Content\img\help\image004.png" />
+    <Content Include="Content\img\help\image005.png" />
+    <Content Include="Content\img\help\image006.png" />
+    <Content Include="Content\img\help\image007.jpg" />
+    <Content Include="Content\img\help\image008.jpg" />
+    <Content Include="Content\img\help\image009.png" />
+    <Content Include="Content\img\help\image010.png" />
+    <Content Include="Content\img\help\image011.png" />
+    <Content Include="Content\img\help\image012.png" />
+    <Content Include="Content\img\help\image013.png" />
+    <Content Include="Content\img\help\image014.jpg" />
+    <Content Include="Content\img\help\image015.png" />
+    <Content Include="Content\img\help\image016.jpg" />
+    <Content Include="Content\img\help\image017.png" />
+    <Content Include="Content\img\help\image018.png" />
+    <Content Include="Content\img\help\image019.jpg" />
+    <Content Include="Content\img\help\image020.jpg" />
+    <Content Include="Content\img\help\image021.png" />
+    <Content Include="Content\img\help\image022.png" />
+    <Content Include="Content\img\help\image023.png" />
+    <Content Include="Global.asax" />
+    <Content Include="js\libs\backbone-min.js" />
+    <Content Include="js\libs\bootstrap-collapse.js" />
+    <Content Include="js\libs\bootstrap-modal.js" />
+    <Content Include="js\libs\json2.js" />
+    <Content Include="js\libs\underscore-min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\models\azureconfig.js" />
+    <Content Include="js\models\config.js" />
+    <Content Include="js\models\odiapp.js" />
+    <Content Include="js\util.js" />
+    <Content Include="js\views\about.js" />
+    <Content Include="js\views\availapp.js" />
+    <Content Include="js\views\azureconfig.js" />
+    <Content Include="js\views\config.js" />
+    <Content Include="js\views\configitem.js" />
+    <Content Include="js\views\deploy.js" />
+    <Content Include="js\views\deployitem.js" />
+    <Content Include="js\views\error.js" />
+    <Content Include="js\views\faq.js" />
+    <Content Include="js\views\manualitem.js" />
+    <Content Include="js\views\tasklist.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\AvailAppItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Tasklist.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\About.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Faq.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\AzureConfig.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Config.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\SqlAzure.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\BlobStorage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\OpenIntel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\OpenTurf.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Deploy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\DeployItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Error.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\ManualItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\DataLab.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tester\DatalabPostDeploy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\AddCertificate.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetSubscriptionId.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetTableStorageName.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\CreateTableStorage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetTableStorageKey.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\CreateSqlAzureDb.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetDbHostName.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetDbName.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetDbUsername.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\CreateHostedService.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49768</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

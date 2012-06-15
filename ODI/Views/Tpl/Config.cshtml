@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+<div class="row">
+    <div class="span3">
+        <h4>
+            Progress:</h4>
+        <ol>
+            <li><del>Select components to install</del></li>
+            <li><strong>Configure Components</strong></li>
+            <li>Finalize install procedure</li>
+            <li>Install</li>
+        </ol>
+    </div>
+    <div class="span9">
+        <h2 id="config-title">
+            Configuring <%= Name %>:</h2>
+        <div id="config-help-text">
+           <%= ConfigHelpText %>
+        </div>
+        <form class="form-horizontal">
+        <div id="config-container">
+        </div>
+        </form>
+        <div class="actions">
+            <a id="btnBack" class="btn btn-large" href="#">&laquo; Go Back</a>
+            <a id="btnContinue" class="btn btn-primary btn-large" href="#">Continue &raquo;</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+﻿@{
+    Layout = null;
+}
+<div class="hero-unit">
+    <h2>
+        Open Data Platform Installed for Windows Azure</h2>
+    <p>
+        The Open Data Platform Installer (ODPI) will allow even non-technical folks to get
+        a customized collection of Open Data applications up and running on Windows Azure
+        by filling out a few details.
+    </p>
+    <h3>
+        Before You Start <small></small></h3>
+    <h5>
+        Before you start the process of installing any of the products included with Open
+        Data Platform Installer there are a few pre-requisites required before using the
+        tool. <a id="showMore">Show More</a>
+    </h5>
+    <div id="beforeStart">
+        <ol>
+            <li>
+                <p>
+                    <strong>Windows Azure Account</strong><h5>
+                        If you don’t already have a Windows Azure account you can create one at <a href="http://www.windowsazure.com"
+                            target="_blank">www.windowsazure.com</a>. Here you will find all appropriate
+                        information and steps required to create an account.</h5>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>Hosted Service</strong></p>
+                <h5>
+                    Once your account is created you will need to create a Hosted Service under your
+                    Windows Azure subscription to deploy the products to. This Hosted Service must be
+                    empty or we cannot deploy to it using the Open Data Platform Installer.</h5>
+                <h5>
+                    You must also create a separate hosted service for every product you install. Please
+                    see, <a href="#" data-toggle="modal" data-target="#CreateHostedService" rel="tooltip"
+                        data-original-title="Click to see how">How to Create a Hosted Service for more details.</a></p>
+                </h5>
+            </li>
+            <li>
+                <p>
+                    <strong>Storage Account</strong><h5>
+                        The Open Data Platform Installer requires the use of a Storage Account to temporarily
+                        store packages while deploying. These packages will be deleted, but the storage
+                        account will remain in place. We'll let you know when you need these details but
+                        if you want to create one now click <a href="#" data-toggle="modal" data-target="#createTableStorage">
+                            here</a>
+                    for details on how to create one.</p>
+                </p> </h5> </li>
+            <li>
+                <p>
+                    <strong>Management Certificates</strong><h5>
+                        To allow the Open Data Platform Installer access to your Windows Azure account,
+                        you will be required to add temporary certificates to your Windows Azure account.
+                        Don’t worry, we automatically create the certificates, we’ll show you how to add
+                        the certificates to your Azure account when the time is right.</h5>
+                </p>
+            </li>
+        </ol>
+    </div>
+    <!--<p><a class="btn primary large" href="/Home/About">Learn more &raquo;</a></p>-->
+</div>
+<div class="row">
+    <div class="span3">
+        <h4>
+            Progress:</h4>
+        <ol>
+            <li><strong>Select components to install</strong></li>
+            <li>Configure Components</li>
+            <li>Finalize install procedure</li>
+            <li>Install</li>
+        </ol>
+    </div>
+    <div class="span9">
+        <h2>
+            Select components to install:</h2>
+        <div id="wrapper">
+            <div id="app-list">
+            </div>
+        </div>
+        <div class="actions drop_400">
+            <a href="#" class="btn primary large" disabled id="btnContinue">Continue &raquo;</a>
+        </div>
+    </div>
+</div>
+<div class="modal hide fade" id="CreateHostedService" style="display: none;">
+    @Html.Partial("../Help/CreateHostedService")
+</div>
+<div class="modal hide fade" id="createTableStorage">
+    @Html.Partial("../Help/CreateTableStorage")
+</div>

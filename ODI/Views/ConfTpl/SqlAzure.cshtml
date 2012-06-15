@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+<div class="page-header">
+    <h4>
+        SQL Azure Info</h4>
+    <p>
+        If you do not have a SQL Azure database already created, click <a href='#' data-toggle='modal'
+            data-target='#CreateSqlAzureDb' rel='tooltip' data-original-title='Click to see how'>
+            here</a> for instructions to create a SQL Azure database.</p>
+    <p>
+        Once the database is created, enter the values below.</p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="Click to see how">
+            Database Hostname</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="yourserver.database.windows.com" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="Click to see how">
+            Database Name</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="database-name" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="Click to see how">
+            Username</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="username@yourserver" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Password</label>
+    <div class="controls">
+        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="password you created" />
+    </div>
+</div>
+<div class="modal hide fade" id="GetDbHostName">
+    @Html.Partial("../Help/GetDbHostName")
+</div>
+<div class="modal hide fade" id="GetDbName">
+    @Html.Partial("../Help/GetDbName")
+</div>
+<div class="modal hide fade" id="GetDbUsername">
+    @Html.Partial("../Help/GetDbUsername")
+</div>
+<div class="modal hide fade" id="CreateSqlAzureDb">
+    @Html.Partial("../Help/CreateSqlAzureDb")
+</div>

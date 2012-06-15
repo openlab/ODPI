@@ -1,0 +1,135 @@
+﻿@{
+    Layout = null;
+}
+<div class="page-header">
+    <h4>
+        SQL Azure Info</h4>
+    <p>
+        If you do not have a SQL Azure database already created, click <a href='#' data-toggle='modal'
+            data-target='#CreateSqlAzureDb' rel='tooltip' data-original-title='Click to see how'>
+            here</a> for instructions to create a SQL Azure database.</p>
+    <p>
+        Once the database is created, enter the values below.</p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="Click to see how">
+            Database Hostname</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="yourserver.database.windows.com" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="Click to see how">
+            Database Name</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="database-name" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="Click to see how">
+            Username</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="username@yourserver" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Password</label>
+    <div class="controls">
+        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="password you created" />
+    </div>
+</div>
+<div class="modal hide fade" id="GetDbHostName">
+    @Html.Partial("../Help/GetDbHostName")
+</div>
+<div class="modal hide fade" id="GetDbName">
+    @Html.Partial("../Help/GetDbName")
+</div>
+<div class="modal hide fade" id="GetDbUsername">
+    @Html.Partial("../Help/GetDbUsername")
+</div>
+<div class="modal hide fade" id="CreateSqlAzureDb">
+    @Html.Partial("../Help/CreateSqlAzureDb")
+</div>
+
+
+<div class="page-header">
+    <h4>
+        Application Settings</h4>
+    <p>
+        Application settings will allow OpenTurf to be customized when installed on Azure.
+        You will need to provide the following
+    </p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Application Name</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="appname" name="appname" placeholder="name of the application in the title screen" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Bit.ly Login</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="bitlylogin" name="bitlylogin" placeholder="a login username to use for bit.ly URL shortening" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Bit.ly API Key</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="bitlykey" name="bitlykey" placeholder="an API key to use for URL Shortening" />
+    </div>
+</div>
+<div class="page-header">
+    <h4>
+        Twitter Settings</h4>
+    <p>
+        OpenTurf has Twitter integration and will require some details to be functional.
+        Please refer to Twitter Developer documentation at <a href="https://dev.twitter.com">
+            https://dev.twitter.com</a> on how to setup appropriate twitter keys. You will
+        need to provide the following</p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Twitter Username to be used as Admin</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="admintwitteruser" name="admintwitteruser"
+            placeholder="username that will be used for administration" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Consumer Key</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="twitterconsumerkey" name="twitterconsumerkey"
+            placeholder="consumer key provided by Twitter" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Consumer Secret</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="twitterconsumersecret" name="twitterconsumersecret"
+            placeholder="consumer secret provided by Twitter" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        Callback Url</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="twittercallbackurl" name="twittercallbackurl"
+            placeholder="same callback URL setup when creating app on Twitter" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        App Url</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="twitterappurl" name="twitterappurl" />
+    </div>
+</div>

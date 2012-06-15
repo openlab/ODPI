@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+<div class="page-header">
+    <h4>
+        Blob Storage Info</h4>
+    <p>
+        The use of Blob Storage is required for this package. If you already have an existing
+        Storage Account.
+    If you need to create a storage account for blob storage, click <a href="#" data-toggle="modal"
+        data-target="#createTableStorage">here</a> for details on how to create one.</p>
+    <p>
+        Once complete you will need to provide the following:</p>
+</div>
+<div class="control-group">
+    <label  class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="Click to see how">
+            Storage Account Name</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagename" name="storagename" />
+    </div>
+</div>
+<div class="control-group">
+    <label  class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="Click to see how">
+            Primary Access Key</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagekey" name="storagekey" />
+    </div>
+</div>
+<div class="modal hide fade" id="createTableStorage">
+    @Html.Partial("../Help/CreateTableStorage")
+</div>
+<div class="modal hide fade" id="tableStorageName">
+    @Html.Partial("../Help/GetTableStorageName")
+</div>
+<div class="modal hide fade" id="tableStorageKey">
+    @Html.Partial("../Help/GetTableStorageKey")
+</div>

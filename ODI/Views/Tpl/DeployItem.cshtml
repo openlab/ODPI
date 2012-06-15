@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+<div class="alert">
+    <h4 class='alert-heading'><%= Name %></h4>
+    <form class="form-horizontal">
+        <div id="service-selector" class="control-group">
+            <label class="control-label">Deploy to Service: </label>
+            <div class="controls">
+                <select class="span4" id="service-select">
+                    
+                </select>
+            </div>
+        </div>
+        <a href="#" class="btn btn-large btn-primary" id="btndeploy">Deploy</a>
+    </form>
+    <div id="status-div" class="hide">
+        <p><strong>Current Step: </strong><span id="current-step"></span></p>
+        <div class="progress progress-info progress-striped active">
+            <div class="bar" style="width: 100%;"></div>
+        </div>
+        <a data-toggle="collapse" data-target="#console<%= Id %>" >Messages</a>
+        <div id="console<%= Id %>" class="collapse">
+        </div>
+    </div>
+    <div id="success" class="hide">
+        <h6>Application Successfully Deployed!</h6>
+        <p><strong>You can see your application <span id="url"></span> </strong></p>
+    </div>
+</div>

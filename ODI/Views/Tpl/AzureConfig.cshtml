@@ -1,0 +1,131 @@
+﻿@{
+    Layout = null;
+}
+<div class="row">
+    <div class="span3">
+        <h4>
+            Progress:</h4>
+        <ol>
+            <li><del>Select components to install</del></li>
+            <li><strong>Configure Components</strong></li>
+            <li>Finalize install procedure</li>
+            <li>Install</li>
+        </ol>
+    </div>
+    <div class="span9">
+        <h2>
+            Azure Config</h2>
+        <div class="page-header">
+            <h3>
+                Installation Types</h3>
+        </div>
+        <div class="alert-message block-message ">
+            <p>
+                ODPI has two ways to configure and install your components onto the Windows Azure
+                platform.</p>
+            <h4>
+                Automated Installer</h4>
+            <p>
+                The Automated installer will allow you to double check all of your configuration
+                prior to Automatically installing the package to save you the most time.</p>
+            <p>
+                <strong>NOTE:</strong> The Installer can automatically deploy your package(s) for
+                you, but you MUST install a generated certificate into the Azure Management Console.
+                The deploy process will check your Azure account for a certificate, and will not
+                move on to the next step unless there’s a certificate.
+            </p>
+            <h4>
+                Manual Installer</h4>
+            <p>
+                The Manual installer is the alternative means for using ODPI, where we never need
+                to know anything about your Azure instance. The drawback to this method is that
+                you will have to ensure that all of your configuration is correct ahead of time
+                as well as manually upload and deploy the packages using the Azure Managment
+                Console.</p>
+        </div>
+        <div class="page-header">
+            <h3>
+                Azure Info</h3>
+            <p>
+                If you would rather use the manual install, simply click the skip button below.
+                If you would like to use the automated installation please follow the instructions
+                below.</p>
+        </div>
+        <form class="form-horizontal">
+        <p>
+            ODPI can automatically deploy your package(s) for you but you first must follow these steps.</p>
+        <ol>
+            <li>
+                <p>
+                    Start by downloading this <a id="certlink" href="/Auto/Certificate?fileName=">Generated
+                        Certificate</a> and saving it on your local computer.  Remember the location you saved it to.
+                        </p>
+            </li>
+            <li>
+                <p>
+                        Add the downloaded certificate to your Windows Azure Managment Console. Click <a href="#" data-toggle="modal"
+                            data-target="#add-certificate" id="cert-doc-link">here</a> for details on uploading the certificated.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Once you have downloaded and uploaded the certificate, enter your Subscription ID
+                    found on the Management Console.  Click <a href="#" data-toggle="modal" data-target="#subscriptionIdHelp">here</a> for details on getting your subscription ID.
+                </p>
+                <div class="control-group">
+                    <label class="control-label">
+                        Subscription Id</label>
+                    <div class="controls">
+                        <input class="span5" type="text" id="subid" name="subid" placeholder="subscription key for azure" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>
+                    Finally we require the credentials for your Azure Table Storage for the subscription
+                    that we will be deploying to so that we can move the packages properly to Azure
+                    to be deployed.  If you have not created a table storage account click <a href="#" data-toggle="modal" data-target="#createTableStorage">here</a> for details on how to create one.</p>
+                <div class="control-group">
+                    <label class="control-label">
+                        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="Click to see how">Storage Account Name</a></label>
+                    <div class="controls">
+                        <input class="span5" type="text" id="saname" name="saname" placeholder="accountname" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="Click to see how">Primary Access Key</a></label>
+                    <div class="controls">
+                        <input class="span5" type="text" id="sakey" name="sakey" placeholder="long key string" />
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <div class="actions">
+            <a class="btn btn-large" href="#" id="btn-back">&laquo; Go Back</a> <a class="btn btn-primary btn-large"
+                disabled id="continue_button">Continue &raquo;</a>&nbsp;&nbsp; <a type="submit" id="skip"
+                    name="skip" class="btn btn-large btn-danger">Skip &raquo;&raquo;</a>
+        </div>
+        </form>
+    </div>
+</div>
+<div class="modal hide fade" id="add-certificate" style="display:none;">
+    @Html.Partial("../Help/AddCertificate")
+</div>
+
+<div class="modal hide fade" id="subscriptionIdHelp">
+ @Html.Partial("../Help/GetSubscriptionId")
+</div>
+
+<div class="modal hide fade" id="createTableStorage">
+    @Html.Partial("../Help/CreateTableStorage")
+</div>
+
+<div class="modal hide fade" id="tableStorageName">
+    @Html.Partial("../Help/GetTableStorageName")
+</div>
+
+<div class="modal hide fade" id="tableStorageKey">
+    @Html.Partial("../Help/GetTableStorageKey")
+</div>
