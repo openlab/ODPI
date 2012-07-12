@@ -25,7 +25,7 @@ namespace ODI.Controllers
             app.PostAction.PerformAction(new { storagename = storagename, storagekey = storagekey });
             
 
-            ViewBag.Message = app.Name + " Post Deploy Completed";
+            ViewBag.Message = app.Name + " " + ODI.Resources.Controllers.TesterResource.PostDeployCompleted;
             return View();
         }
 

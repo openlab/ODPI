@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using ODI.Service;
+using System.Globalization;
+using System.Threading;
 
 namespace ODI
 {
@@ -41,5 +43,20 @@ namespace ODI
             CertificateBuilder.Initialize();
             PackageBuilder.Initialize();
         }
+
+        protected void Application_AcquireRequestState(object sender, EventArgs e)
+        {
+            if (HttpContext.Current.Request.UserLanguages != null)
+            {
+                var culture = HttpContext.Current.Request.UserLanguages[0];
+                if (!string.IsNullOrEmpty(culture))
+                {
+                    CultureInfo ci = new CultureInfo(culture);
+                    Thread.CurrentThread.CurrentCulture = ci;
+                    Thread.CurrentThread.CurrentUICulture = ci;
+                }
+            }
+        }
+
     }
 }

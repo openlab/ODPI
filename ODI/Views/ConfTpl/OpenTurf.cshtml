@@ -3,43 +3,41 @@
 }
 <div class="page-header">
     <h4>
-        SQL Azure Info</h4>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.SQLAzureInfo</h4>
     <p>
-        If you do not have a SQL Azure database already created, click <a href='#' data-toggle='modal'
-            data-target='#CreateSqlAzureDb' rel='tooltip' data-original-title='Click to see how'>
-            here</a> for instructions to create a SQL Azure database.</p>
+        @Html.Raw(ODI.Resources.Views.ConfTpl.OpenTurfResource.IfYouDoNotHaveAlready)</p>
     <p>
-        Once the database is created, enter the values below.</p>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.OnceDatabaseIsCreated</p>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="Click to see how">
-            Database Hostname</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenTurfResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenTurfResource.DatabaseHostname</a></label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="yourserver.database.windows.com" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="Click to see how">
-            Database Name</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenTurfResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenTurfResource.DatabaseName</a></label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="database-name" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="Click to see how">
-            Username</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenTurfResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenTurfResource.Username</a></label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="username@yourserver" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Password</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.Password</label>
     <div class="controls">
-        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="password you created" />
+        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.PasswordYouCreated" />
     </div>
 </div>
 <div class="modal hide fade" id="GetDbHostName">
@@ -58,77 +56,73 @@
 
 <div class="page-header">
     <h4>
-        Application Settings</h4>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.ApplicationSettings</h4>
     <p>
-        Application settings will allow OpenTurf to be customized when installed on Azure.
-        You will need to provide the following
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.ApplicationSettingsWillAllow
     </p>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Application Name</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.ApplicationName</label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="appname" name="appname" placeholder="name of the application in the title screen" />
+        <input class="input-xlarge" type="text" id="appname" name="appname" placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.NameOfTheApplication" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Bit.ly Login</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.BitlyLogin</label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="bitlylogin" name="bitlylogin" placeholder="a login username to use for bit.ly URL shortening" />
+        <input class="input-xlarge" type="text" id="bitlylogin" name="bitlylogin" placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.ALoginUsernameToUse" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Bit.ly API Key</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.BitlyAPIKey</label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="bitlykey" name="bitlykey" placeholder="an API key to use for URL Shortening" />
+        <input class="input-xlarge" type="text" id="bitlykey" name="bitlykey" placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.AnAPIKeyToUse" />
     </div>
 </div>
 <div class="page-header">
     <h4>
-        Twitter Settings</h4>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.TwitterSettings</h4>
     <p>
-        OpenTurf has Twitter integration and will require some details to be functional.
-        Please refer to Twitter Developer documentation at <a href="https://dev.twitter.com">
-            https://dev.twitter.com</a> on how to setup appropriate twitter keys. You will
-        need to provide the following</p>
+        @Html.Raw(ODI.Resources.Views.ConfTpl.OpenTurfResource.OpenTurfHasTwitterIntegration)</p>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Twitter Username to be used as Admin</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.TwitterUsernameToUse</label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="admintwitteruser" name="admintwitteruser"
-            placeholder="username that will be used for administration" />
+            placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.UsernameThatWillBeUsed" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Consumer Key</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.ConsumerKey</label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="twitterconsumerkey" name="twitterconsumerkey"
-            placeholder="consumer key provided by Twitter" />
+            placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.ConsumerKeyProvidedByTwitter" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Consumer Secret</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.ConsumerSecret</label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="twitterconsumersecret" name="twitterconsumersecret"
-            placeholder="consumer secret provided by Twitter" />
+            placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.ConsumerSecretProvidedByTwitter" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Callback Url</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.CallbackUrl</label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="twittercallbackurl" name="twittercallbackurl"
-            placeholder="same callback URL setup when creating app on Twitter" />
+            placeholder="@ODI.Resources.Views.ConfTpl.OpenTurfResource.SameCallBackURLSetup" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        App Url</label>
+        @ODI.Resources.Views.ConfTpl.OpenTurfResource.AppUrl</label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="twitterappurl" name="twitterappurl" />
     </div>

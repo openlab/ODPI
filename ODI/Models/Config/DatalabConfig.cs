@@ -20,6 +20,7 @@ namespace ODI.Model.Config
                                   <Setting name=""DataConnectionString"" value=""DefaultEndpointsProtocol=https;AccountName={2};AccountKey={3}""/>
                                   <Setting name=""DiagnosticsConnectionString"" value=""DefaultEndpointsProtocol=https;AccountName={2};AccountKey={3}""/>
                                   <Setting name=""serviceUri"" value=""http://{4}.cloudapp.net:8080/v1/""/>
+                                  <Setting name=""IsAnalytics"" value=""0"" />
                                 </ConfigurationSettings>
                               </Role>
                               <Role name=""DataBrowser.WorkerRole"">

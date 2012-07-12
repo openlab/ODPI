@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceDefinition name="ODI.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
-  <WebRole name="ODI" vmsize="Medium">
+<ServiceDefinition name="ODI.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-05.1.7">
+  <WebRole name="ODI" vmsize="ExtraSmall">
     <Sites>
       <Site name="Web">
         <Bindings>
@@ -13,11 +13,11 @@
     </Endpoints>
     <Imports>
       <Import moduleName="Diagnostics" />
-      <Import moduleName="RemoteAccess" />
-      <Import moduleName="RemoteForwarder" />
     </Imports>
     <LocalResources>
       <LocalStorage name="scratchpad" cleanOnRoleRecycle="true" sizeInMB="500" />
     </LocalResources>
+    <Certificates>
+    </Certificates>
   </WebRole>
 </ServiceDefinition>

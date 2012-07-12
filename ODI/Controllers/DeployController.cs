@@ -25,7 +25,7 @@ namespace ODI.Controllers
                 return Json( new DeployStatusModel()
                 {
                     Status = DeployStatusModelStatus.Error,
-                    Stage = "Error",
+                    Stage = ODI.Resources.Controllers.DeployResource.Error,
                     LogMessage = ex.Message
                 });
             }
@@ -33,8 +33,8 @@ namespace ODI.Controllers
             var ret = new DeployStatusModel()
             {
                 Status = DeployStatusModelStatus.Ok,
-                Stage = "Building Application",
-                LogMessage = "Application built successfully"
+                Stage = ODI.Resources.Controllers.DeployResource.BuildingApplication,
+                LogMessage = ODI.Resources.Controllers.DeployResource.ApplicationBuiltSuccessfully
             };
             return Json(ret);
         }
@@ -56,7 +56,7 @@ namespace ODI.Controllers
                 return Json(new DeployStatusModel()
                 {
                     Status = DeployStatusModelStatus.Error,
-                    Stage = "Error",
+                    Stage = ODI.Resources.Controllers.DeployResource.Error,
                     LogMessage = ex.Message,
                     StackTrace = ex.StackTrace
                 });
@@ -65,8 +65,8 @@ namespace ODI.Controllers
             var ret = new DeployStatusModel()
             {
                 Status = DeployStatusModelStatus.Ok,
-                Stage = "Uploading Application",
-                LogMessage = "Beginning to upload the Application",
+                Stage = ODI.Resources.Controllers.DeployResource.UploadingApplication,
+                LogMessage = ODI.Resources.Controllers.DeployResource.BeginningToUploadTheApplication,
                 Data = d
             };
             return Json(ret);
@@ -91,7 +91,7 @@ namespace ODI.Controllers
                 return Json(new DeployStatusModel()
                 {
                     Status = DeployStatusModelStatus.Error,
-                    Stage = "Error",
+                    Stage = ODI.Resources.Controllers.DeployResource.Error,
                     LogMessage = ex.Message,
                     StackTrace = ex.StackTrace
                 });
@@ -99,8 +99,8 @@ namespace ODI.Controllers
             var ret = new DeployStatusModel()
             {
                 Status = DeployStatusModelStatus.Ok,
-                Stage = "Deploying Application",
-                LogMessage = "Beginning to upload the Application",
+                Stage = ODI.Resources.Controllers.DeployResource.DeployingApplication,
+                LogMessage = ODI.Resources.Controllers.DeployResource.BeginningToUploadTheApplication,
                 Data = dt
             };
             return Json(ret);
@@ -124,7 +124,7 @@ namespace ODI.Controllers
                     return Json(new DeployStatusModel()
                     {
                         Status = DeployStatusModelStatus.Error,
-                        Stage = "Error",
+                        Stage = ODI.Resources.Controllers.DeployResource.Error,
                         LogMessage = xml
                     });
                 }
@@ -134,7 +134,7 @@ namespace ODI.Controllers
                 return Json(new DeployStatusModel()
                 {
                     Status = DeployStatusModelStatus.Error,
-                    Stage = "Error",
+                    Stage = ODI.Resources.Controllers.DeployResource.Error,
                     LogMessage = ex.Message,
                     StackTrace = ex.StackTrace,
                     Data = "xml: + " + xml + "\njson: " + azure
@@ -144,7 +144,7 @@ namespace ODI.Controllers
             var ret = new DeployStatusModel()
             {
                 Status = status == "Succeeded" ? DeployStatusModelStatus.Ok : DeployStatusModelStatus.Inprogress,
-                Stage = "Deploying the Application",
+                Stage = ODI.Resources.Controllers.DeployResource.DeployingApplication,
                 LogMessage = StatusMessageConverter.Convert(status)
             };
             return Json(ret);
@@ -166,7 +166,7 @@ namespace ODI.Controllers
                     return Json(new DeployStatusModel()
                     {
                         Status = DeployStatusModelStatus.Error,
-                        Stage = "Error",
+                        Stage = ODI.Resources.Controllers.DeployResource.Error,
                         LogMessage = xml
                     });
                 }
@@ -176,7 +176,7 @@ namespace ODI.Controllers
                 return Json(new DeployStatusModel()
                 {
                     Status = DeployStatusModelStatus.Error,
-                    Stage = "Error",
+                    Stage = ODI.Resources.Controllers.DeployResource.Error,
                     LogMessage = ex.Message,
                     StackTrace = ex.StackTrace
                 });
@@ -185,7 +185,7 @@ namespace ODI.Controllers
             var ret = new DeployStatusModel()
             {
                 Status = status == "ReadyRole" ? DeployStatusModelStatus.Ok : DeployStatusModelStatus.Inprogress,
-                Stage = "Deploying the Application",
+                Stage = ODI.Resources.Controllers.DeployResource.DeployingApplication,
                 LogMessage = StatusMessageConverter.Convert(status)
             };
             return Json(ret);
@@ -212,7 +212,7 @@ namespace ODI.Controllers
                 return Json(new DeployStatusModel()
                 {
                     Status = DeployStatusModelStatus.Error,
-                    Stage = "Error",
+                    Stage = ODI.Resources.Controllers.DeployResource.Error,
                     LogMessage = ex.Message,
                     StackTrace = ex.StackTrace
                 });
@@ -222,8 +222,8 @@ namespace ODI.Controllers
             var ret = new DeployStatusModel()
             {
                 Status = DeployStatusModelStatus.Ok,
-                Stage = "Running the Application post install",
-                LogMessage = "Completed the Application post install",
+                Stage = ODI.Resources.Controllers.DeployResource.RunningTheApplicationPostInstall,
+                LogMessage = ODI.Resources.Controllers.DeployResource.CompletedTheApplicationPostInstall,
                 Data = dt
             };
             return Json(ret);
@@ -245,7 +245,7 @@ namespace ODI.Controllers
                 return Json(new DeployStatusModel()
                 {
                     Status = DeployStatusModelStatus.Error,
-                    Stage = "Error",
+                    Stage = ODI.Resources.Controllers.DeployResource.Error,
                     LogMessage = ex.Message,
                     StackTrace = ex.StackTrace
                 });
@@ -256,8 +256,8 @@ namespace ODI.Controllers
             var ret = new DeployStatusModel()
             {
                 Status = DeployStatusModelStatus.Ok,
-                Stage = "Building Application",
-                LogMessage = "Application built successfully",
+                Stage = ODI.Resources.Controllers.DeployResource.BuildingApplication,
+                LogMessage = ODI.Resources.Controllers.DeployResource.ApplicationBuiltSuccessfully,
                 Data = file
             };
             return Json(ret);

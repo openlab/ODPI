@@ -24,12 +24,15 @@ namespace ODI.Model.Config
         {
             string template = @"<Setting name=""ODAF"" 
                                     value=""Server=tcp:{0};Database={1};User ID={2};Password={3};Trusted_Connection=False;Encrypt=True;"" />
+                                    <Setting name=""DiagnosticsConnectionString"" value=""UseDevelopmentStorage=true"" />
                                     <Setting name=""AppName"" value=""{4}"" />
                                     <Setting name=""BitlyLogin"" value=""{5}"" />
                                     <Setting name=""BitlyAPIKey"" value=""{6}"" />
                                     <Setting name=""tokenExpiryMinutes"" value=""10080"" />
                                     <Setting name=""UseTokenExpiry"" value=""false"" />
                                     <Setting name=""AdminTwitterUser"" value=""{7}"" />
+                                    <Setting name=""TwitterAppId"" value=""D5B672D4-7B1C-46cc-8643-FBE8334F4ADF"" />
+                                    <Setting name=""DevMode"" value=""false"" />
                                 ";
 
             return string.Format(template, DbHost, DbName, DbUserName, DbUserPassword, AppName, BitlyLogin, BitlyKey, AdminTwitterUser);

@@ -3,60 +3,57 @@
 }
 <div class="page-header">
     <h4>
-        Application Settings</h4>
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.ApplicationSettings</h4>
         <p>
-        Application settings will allow OpenIntel to be customized when installed on Azure.
-        You will need to provide the following
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.ApplicationSettingsWillAllowDataLab
     </p>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Bing Service Key</label>
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.BingServiceKey</label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="bingservicekey" name="bingservicekey" placeholder="key provided by Bing API" />
+        <input class="input-xlarge" type="text" id="bingservicekey" name="bingservicekey" placeholder="@ODI.Resources.Views.ConfTpl.OpenIntelResource.KeyProvidedByBingAPI" />
     </div>
 </div>
 
 
 <div class="page-header">
     <h4>
-        SQL Azure Info</h4>
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.SQLAzureInfo</h4>
     <p>
-        If you do not have a SQL Azure database already created, click <a href='#' data-toggle='modal'
-            data-target='#CreateSqlAzureDb' rel='tooltip' data-original-title='Click to see how'>
-            here</a> for instructions to create a SQL Azure database.</p>
+        @Html.Raw(ODI.Resources.Views.ConfTpl.OpenIntelResource.IfYouDoNotHaveASqlAzure)</p>
     <p>
-        Once the database is created, enter the values below.</p>
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.OnceTheDataBaseIsCreated</p>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="Click to see how">
-            Database Hostname</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenIntelResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenIntelResource.DatabaseHostname</a></label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="yourserver.database.windows.com" />
+        <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="@ODI.Resources.Views.ConfTpl.OpenIntelResource.YourServerDatabase" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="Click to see how">
-            Database Name</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenIntelResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenIntelResource.DatabaseName</a></label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="database-name" />
+        <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="@ODI.Resources.Views.ConfTpl.OpenIntelResource.DatabaseNamePlaceholder" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="Click to see how">
-            Username</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenIntelResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenIntelResource.Username</a></label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="username@yourserver" />
+        <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="@ODI.Resources.Views.ConfTpl.OpenIntelResource.UsernameAtYourServer" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Password</label>
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.Password</label>
     <div class="controls">
-        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="password you created" />
+        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="@ODI.Resources.Views.ConfTpl.OpenIntelResource.PasswordYouCreated" />
     </div>
 </div>
 <div class="modal hide fade" id="GetDbHostName">
@@ -75,27 +72,24 @@
 
 <div class="page-header">
     <h4>
-        Blob Storage Info</h4>
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.BlobStorageInfo</h4>
     <p>
-        The use of Blob Storage is required for this package. If you already have an existing
-        Storage Account.
-    If you need to create a storage account for blob storage, click <a href="#" data-toggle="modal"
-        data-target="#createTableStorage">here</a> for details on how to create one.</p>
+        @Html.Raw(ODI.Resources.Views.ConfTpl.OpenIntelResource.TheUseOfBlobStorageIsRequired)</p>
     <p>
-        Once complete you will need to provide the following:</p>
+        @ODI.Resources.Views.ConfTpl.OpenIntelResource.OnceComplete</p>
 </div>
 <div class="control-group">
     <label  class="control-label">
-        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="Click to see how">
-            Storage Account Name</a></label>
+        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenIntelResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenIntelResource.StorageAccountName</a></label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="storagename" name="storagename" />
     </div>
 </div>
 <div class="control-group">
     <label  class="control-label">
-        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="Click to see how">
-            Primary Access Key</a></label>
+        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.OpenIntelResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.OpenIntelResource.PrimaryAccessKey</a></label>
     <div class="controls">
         <input class="input-xlarge" type="text" id="storagekey" name="storagekey" />
     </div>

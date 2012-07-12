@@ -3,43 +3,41 @@
 }
 <div class="page-header">
     <h4>
-        SQL Azure Info</h4>
+        @ODI.Resources.Views.ConfTpl.SqlAzureResource.SQLAzureInfo</h4>
     <p>
-        If you do not have a SQL Azure database already created, click <a href='#' data-toggle='modal'
-            data-target='#CreateSqlAzureDb' rel='tooltip' data-original-title='Click to see how'>
-            here</a> for instructions to create a SQL Azure database.</p>
+        @Html.Raw(ODI.Resources.Views.ConfTpl.SqlAzureResource.IfYouDoNotHaveASqlAzure)</p>
     <p>
-        Once the database is created, enter the values below.</p>
+        @ODI.Resources.Views.ConfTpl.SqlAzureResource.OnceTheDataBaseIsCreated</p>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="Click to see how">
-            Database Hostname</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.SqlAzureResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.SqlAzureResource.DatabaseHostname</a></label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="yourserver.database.windows.com" />
+        <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="@ODI.Resources.Views.ConfTpl.SqlAzureResource.YourServerDatabase" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="Click to see how">
-            Database Name</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.SqlAzureResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.SqlAzureResource.DatabaseName</a></label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="database-name" />
+        <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="@ODI.Resources.Views.ConfTpl.SqlAzureResource.DatabaseNamePlaceholder" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="Click to see how">
-            Username</a></label>
+        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="@ODI.Resources.Views.ConfTpl.SqlAzureResource.ClickToSeeHow">
+            @ODI.Resources.Views.ConfTpl.SqlAzureResource.Username</a></label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="username@yourserver" />
+        <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="@ODI.Resources.Views.ConfTpl.SqlAzureResource.UsernameAtYourServer" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        Password</label>
+        @ODI.Resources.Views.ConfTpl.SqlAzureResource.Password</label>
     <div class="controls">
-        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="password you created" />
+        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="@ODI.Resources.Views.ConfTpl.SqlAzureResource.PasswordYouCreated" />
     </div>
 </div>
 <div class="modal hide fade" id="GetDbHostName">

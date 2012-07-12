@@ -2,52 +2,50 @@
     <button class="close" data-dismiss="modal">
         ×</button>
     <h3>
-        How To Get SQL Azure Database Username</h3>
+        @ODI.Resources.Views.Help.GetDbUsernameResource.HowToGetSqlAzureDatabaseUsername</h3>
 </div>
 <div class="modal-body">
     <ol>
         <li>
             <p>
-                Go to <a href="http://windows.azure.com" target="_blank">http://windows.azure.com</a> and sign in</p>
+                @Html.Raw(ODI.Resources.Views.Help.GetDbUsernameResource.GoToWindowsAzure)</p>
         </li>
         <li>
             <p>
-                Click on <b>Database<br>
-                </b>
+                @Html.Raw(ODI.Resources.Views.Help.GetDbUsernameResource.ClickOnDatabase)<br>
                 <img src="/Content/img/help/image018.png"></p>
         </li>
         <li>
             <p>
-                Click on the <b>Subscriptions </b>folder</p>
+                @Html.Raw(ODI.Resources.Views.Help.GetDbUsernameResource.ClickOnTheSubscriptionsFoler)</p>
         </li>
         <li>
             <p>
-                Click on the <strong>Subscription</strong> your database resides in and expand the
-                selection</b>
+                @Html.Raw(ODI.Resources.Views.Help.GetDbUsernameResource.ClickOnTheSubscriptionYourDatabase)
                 <img src="/Content/img/help/image024.png">
             </p>
         </li>
         <li>
             <p>
-                Select your server<p>
+                @ODI.Resources.Views.Help.GetDbUsernameResource.SelectYourServer<p>
         </li>
         <li>
             <p>
-                Expand the server and select your database<p>
+                @ODI.Resources.Views.Help.GetDbUsernameResource.ExpandTheServerAndSelectYouDatabase<p>
         </li>
         <li>
             <p>
-                In the properties window look for the <strong>Administrator Login</strong>
+                @Html.Raw(ODI.Resources.Views.Help.GetDbUsernameResource.InThePropertiesWindow)
                 <p>
         </li>
         <li>
             <p>
-                Highlight this value, right click and then click copy.
+                @ODI.Resources.Views.Help.GetDbUsernameResource.HighlightThisValue
                 <p>
         </li>
         <li>
             <p>
-                Paste this value back into the <strong>Username</strong> field. <strong>NOTE:</strong> the username must be in the format of <strong>username@servername</strong>
+                @Html.Raw(ODI.Resources.Views.Help.GetDbUsernameResource.PasteThisValueBackIntoTheUsername)
                 <p>
         </li>
     </ol>

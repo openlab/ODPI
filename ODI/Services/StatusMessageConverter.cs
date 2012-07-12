@@ -11,12 +11,12 @@ namespace ODI.Services
 
         static StatusMessageConverter()
         {
-            Converter.Add( "BusyRole", "Deployment Busy" );
-            Converter.Add( "StartingVM", "Starting the Virtual Machine for Application");
-            Converter.Add( "CreatingVM", "Creating the Virtual Machine for Application");
-            Converter.Add( "RoleStateUnknown", "The deployment status is unknown (this is an expected message)");
-            Converter.Add( "Succeeded", "Upload to Blob Storage was Successfull");
-            Converter.Add("InProgress", "The upload is in progress");
+            Converter.Add( "BusyRole", ODI.Resources.Services.StatusMessageConverterResource.DeploymentBusy);
+            Converter.Add( "StartingVM", ODI.Resources.Services.StatusMessageConverterResource.StartingTheVirtualMachine);
+            Converter.Add( "CreatingVM", ODI.Resources.Services.StatusMessageConverterResource.CreatingTheVirtualMachine);
+            Converter.Add( "RoleStateUnknown", ODI.Resources.Services.StatusMessageConverterResource.ThedeploymentStatusIsUnknown);
+            Converter.Add( "Succeeded", ODI.Resources.Services.StatusMessageConverterResource.UploadToBlobStorageSuccessful);
+            Converter.Add("InProgress", ODI.Resources.Services.StatusMessageConverterResource.TheUploadIsInProgress);
         }
 
         public static string Convert(string key)
