@@ -26,7 +26,7 @@ namespace ODI.Service
 #else
             //points to microsoft azure
 #error Add the blob storage connection string here
-            var acc = ""; 
+           var acc = "DefaultEndpointsProtocol=https;AccountName=[storagename];AccountKey=[storagekey]"; 
 #endif
             storageAccount = CloudStorageAccount.Parse(acc);
             blobClient = storageAccount.CreateCloudBlobClient();

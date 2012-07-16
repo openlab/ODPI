@@ -25,7 +25,7 @@ namespace ODI.Controllers
         {
             dynamic json = (new JsonReader()).Read(data);
             var appToVal = OdiAppRepo.Apps.Where(a => a.Name == app).FirstOrDefault();
-            var message = new CheckMessage() { Status = CheckMessageStatus.Ok, Message = "Validation OK" };
+            var message = new CheckMessage() { Status = CheckMessageStatus.Ok, Message = ODI.Resources.Controllers.AppResource.MessageValidationOK };
 
             foreach (var val in appToVal.Validations)
             {

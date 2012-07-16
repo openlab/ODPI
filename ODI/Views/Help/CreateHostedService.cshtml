@@ -2,55 +2,46 @@
     <button class="close" data-dismiss="modal">
         ×</button>
     <h3>
-        How To Create A Windows Azure Hosted Service</h3>
+        @ODI.Resources.Views.Help.CreateHostedServiceResource.HowToCreateAWindowsAzureHostedService</h3>
 </div>
 <div class="modal-body">
     <p>
-        For the Open Data Platform Installer to function properly, an <strong>empty Hosted Service</strong>
-        is required under your Windows Azure subscription to install selected products.
+        @Html.Raw(ODI.Resources.Views.Help.CreateHostedServiceResource.ForOpenDataPlatformInstallerToFunction)
     </p>
     <p>
-        You must create one <strong>Hosted Service</strong> for every product you install
-        and cannot deploy multiple products to one <strong>Hosted Service. </strong>In the
-        deployment step of the installer, you will have the option to select which <strong>Hosted
-            Service</strong> the product should be assigned to.
+        @Html.Raw(ODI.Resources.Views.Help.CreateHostedServiceResource.YouMustCreateOneHostedService)
     </p>
     <p>
-        The following steps allow you to create a <strong>Hosted Service</strong> under
-        your Windows Azure subscription. Go ahead and create a hosted service for every product you wish to install.</p>
+        @Html.Raw(ODI.Resources.Views.Help.CreateHostedServiceResource.TheFollowingStepsAllowYou)</p>
     <ol>
         <li>
             <p>
-                Go to <a href="http://windows.azure.com" target="_blank">http://windows.azure.com</a> and sign in</p>
+            @Html.Raw(ODI.Resources.Views.Help.CreateHostedServiceResource.GoToWindowsAzure)</p>
         </li>
         <li>
             <p>
-                Click on hosted Services
+                @ODI.Resources.Views.Help.CreateHostedServiceResource.ClickOnHostedServices
                 <br>
                 <img src="/Content/img/help/image001.jpg"></p>
         </li>
         <li>
             <p>
-                Click on your Subscription that are displayed in the center pane<br>
+                @ODI.Resources.Views.Help.CreateHostedServiceResource.ClickOnYourSubscription<br/>
                 <img src="/Content/img/help/image002.jpg"></p>
         </li>
         <li>
             <p>
-                Click on <strong>New Hosted Service<br>
-                </strong>
+                @Html.Raw(ODI.Resources.Views.Help.CreateHostedServiceResource.ClickOnNewHostedService)
+                <br/>
                 <img src="/Content/img/help/image003.png"></p>
         </li>
         <li>
             <p>
-                In the <strong>Create a New Hosted Service</strong> dialog box that pops up select
-                the <strong>Subscription</strong>, a name for the service, prefix for the service
-                (the prefix can be the same as the name) and choose a region. For deployment options
-                check <strong>Do Not Deploy.</strong></p>
+            @Html.Raw(ODI.Resources.Views.Help.CreateHostedServiceResource.InTheCreateANewHostedService)</p>
         </li>
         <li>
             <p>
-                Click OK and after about 10seconds your <strong>Hosted Service </strong>will be
-                created.</p>
+                @Html.Raw(ODI.Resources.Views.Help.CreateHostedServiceResource.ClickOkAndAfter)</p>
         </li>
     </ol>
 </div>

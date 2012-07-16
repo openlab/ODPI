@@ -20,7 +20,7 @@ namespace ODI.Service
                 var url = "http://127.0.0.1:10000/devstoreaccount1/components/";
 #else
 #error Add the url to your blob storage account here
-                var url = "";
+                var url = "http://[storagename].blob.core.windows.net/components/";
 #endif
 
                 CloudBackedStore.Grab(CertDir, "\\makecert.exe", "components", url + "makecert.exe");

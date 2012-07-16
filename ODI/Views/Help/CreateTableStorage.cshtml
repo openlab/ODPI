@@ -2,7 +2,7 @@
     <button class="close" data-dismiss="modal">
         ×</button>
     <h3>
-        How To Get Create Azure Storage</h3>
+        @ODI.Resources.Views.Help.CreateTableStorageResource.HowToGetCreateAzureStorage</h3>
 </div>
 <div class="modal-body">
    @* <p>
@@ -11,27 +11,23 @@
         can skip this step.</p>*@
     <ol>
         <li>
-            <p>Go to <a href="http://windows.azure.com" target="_blank">http://windows.azure.com</a> and
-                sign in</p>
+            <p>@Html.Raw(@ODI.Resources.Views.Help.CreateTableStorageResource.GoToWindowsAzure)</p>
         </li>
         <li>
-            <p>Click on <b>Storage Accounts<br>
-                </b>
+            <p>@Html.Raw(@ODI.Resources.Views.Help.CreateTableStorageResource.ClickOnStorageAccounts)
+                <br>
                 <img src="/Content/img/help/image011.png"></p>
         </li>
         <li>
-            <p>Click on <b>New Storage Account<br>
-                </b>
+            <p>@Html.Raw(@ODI.Resources.Views.Help.CreateTableStorageResource.ClickOnNewStorageAccount)
+                <br>
                 <img src="/Content/img/help/image012.png"></p>
         </li>
         <li>
-            <p>In the <b>Create a New Storage Account </b>dialog, select your <b>Subscription,
-                </b>enter a unique name for the <b>URL</b>, choose the <b>Region or Affinity </b>
-                group of choice</p>
+            <p>@Html.Raw(@ODI.Resources.Views.Help.CreateTableStorageResource.InTheCreateANewStorageAccount)</p>
         </li>
         <li>
-            <p>Click <b>OK. </b>At this point the Table Storage account will take a few
-                minutes to be created.</p>
+            <p>@Html.Raw(@ODI.Resources.Views.Help.CreateTableStorageResource.ClickOkAtThisPoint)</p>
         </li>
     </ol>
 </div>

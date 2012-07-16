@@ -13,7 +13,7 @@ namespace ODI.Actions.PostDeploy
     {
         public void PerformAction(dynamic data)
         {
-            var app = OdiAppRepo.Apps.Where(a => a.Name == "OpenTurf").FirstOrDefault();
+            var app = OdiAppRepo.Apps.Where(a => a.Name == "ODAF Openturf").FirstOrDefault();
 
             // Create a connection string for the sample database
             SqlConnectionStringBuilder connStringBuilder;
@@ -51,7 +51,7 @@ namespace ODI.Actions.PostDeploy
 
                     //Now finally run the last command that set's up openturf so that it knows who it is.
                     var appSql = "Insert into OAuthClientApp (Guid, Name, Comment, ConsumerKey, ConsumerSecret, CallbackUrl, AppUrl, CreatedOn, oauth_service_name) " +
-                                    "values ( 'D5B672D4-7B1C-46cc-8643-FBE8334F4ADF', 'Main Web Site', 'This is the main Silverlight application hosted on Azure', '{0}','{1}', '{2}', '{3}', getdate(), 'Twitter' );";
+                                    "values ( 'c1ec2c57-742b-415b-84a6-4d8ae5b53e9', 'Main Web Site', 'This is the main Silverlight application hosted on Azure', '{0}','{1}', '{2}', '{3}', getdate(), 'Twitter' );";
 
                     command.CommandText = string.Format(appSql, data.twitterconsumerkey, data.twitterconsumersecret, data.twittercallbackurl, data.twitterappurl);
                     command.ExecuteNonQuery();

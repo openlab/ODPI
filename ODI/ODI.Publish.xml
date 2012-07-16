@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<publishData>
-  <publishProfile publishUrl="http://ce538924b71a4fc0bf428f8cfdc887c1.cloudapp.net:8172/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="ODI_IN_0_Web" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="odpi - Staging" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="mark" savePWD="False" userPWD="" SelectedForPublish="True" />
-  <publishProfile publishUrl="https://odpi.cloudapp.net:8172/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="ODI_IN_0_Web" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="odpi - Production" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="mark" savePWD="False" userPWD="" SelectedForPublish="False" />
-</publishData>
