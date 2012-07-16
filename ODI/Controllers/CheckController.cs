@@ -32,11 +32,11 @@ namespace ODI.Controllers
             string errorMessage = null;
 
             if (string.IsNullOrEmpty(subId))
-                errorMessage = "You must provide the Subscription Id";
+                errorMessage = ODI.Resources.Controllers.CheckResource.ErrorSubscriptionId;
             else if (string.IsNullOrEmpty(name))
-                errorMessage = "You must provide the Storage Account Name";
+                errorMessage = ODI.Resources.Controllers.CheckResource.ErrorStorageAccountName;
             else if (string.IsNullOrEmpty(key))
-                errorMessage = "You must provide the Primary Access Key";
+                errorMessage = ODI.Resources.Controllers.CheckResource.ErrorPrimaryAccessKey;
 
             if (string.IsNullOrEmpty(errorMessage))
             {
@@ -49,7 +49,7 @@ namespace ODI.Controllers
                 }
                 catch (Exception e)
                 {
-                    errorMessage = "Storage Account Exception :" + e.Message + "<br />Please recheck your credentials";
+                    errorMessage = string.Format(ODI.Resources.Controllers.CheckResource.StorageAccountException, e.Message);
                 }
             }
 
@@ -81,7 +81,7 @@ namespace ODI.Controllers
                     }
                     else
                     {
-                        errorMessage = "Connected securly to Azure, however there are no Hosted Services could be found for this Subscription.  Please make sure you have at least one Hosted Service set up.";
+                        errorMessage = ODI.Resources.Controllers.CheckResource.ErrorNoHostedServiceFound;
                     }
                 }
                 catch (WebException we)
@@ -90,16 +90,16 @@ namespace ODI.Controllers
 
                     if (resp.StatusCode == HttpStatusCode.NotFound)
                     {
-                        errorMessage = "Could not connect to Azure, Please check that your Subscription Id is correct.";
+                        errorMessage = ODI.Resources.Controllers.CheckResource.ErrorCouldNotConnectToAzure;
                     }
                     if (resp.StatusCode == HttpStatusCode.Forbidden)
                     {
-                        errorMessage = "Could not make a secure connection to Azure.  Please make sure that you have uploaded the certificate using the Management Console.";
+                        errorMessage = ODI.Resources.Controllers.CheckResource.ErrorCouldNotMakeSecureConnection;
                     }
                 }
                 catch (Exception ex)
                 {
-                    errorMessage = "Unknown Error: " + ex.Message;
+                    errorMessage = ODI.Resources.Controllers.CheckResource.UnknownError + ex.Message;
                 }
 
 

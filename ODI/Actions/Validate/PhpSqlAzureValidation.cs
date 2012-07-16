@@ -14,7 +14,7 @@ namespace ODI.Actions.Validate
             string ret = null;
             //First check that the host name is appended to the username.
             if( !data.dbhost.EndsWith(".database.windows.net" ))
-                return "The Database Host must be in the format 'servername.database.windows.net'";
+                return ODI.Resources.Actions.ValidateResource.TheDatabaseHostFormat;
             
 
 
@@ -22,7 +22,7 @@ namespace ODI.Actions.Validate
             string host = data.dbhost.Split('.')[0];
 
             if( !username.EndsWith( "@" + host ))
-                return "For database connections to SQL Azure using PHP, your username must be in the form of 'username@servername' (without the '.database.windows.net'), please re-enter your username";
+                return ODI.Resources.Actions.ValidateResource.ForDatabasePHPUsernameMustBe;
 
             
 

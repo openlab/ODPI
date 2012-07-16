@@ -6,6 +6,8 @@ using System.Diagnostics;
 using ODI.Service;
 using System.IO;
 using System.Threading;
+using Microsoft.WindowsAzure;
+using Microsoft.WindowsAzure.StorageClient;
 
 namespace ODI.Actions.PostDeploy
 {
@@ -43,9 +45,13 @@ namespace ODI.Actions.PostDeploy
                     </settings>
                   </system.net>
                 <startup><supportedRuntime version=""v4.0"" sku="".NETFramework,Version=v4.0""/></startup></configuration>";
+
+        private const string ENDPOINTS_TABLENAME = "AvailableEndpoints";
+
         public void PerformAction(dynamic data)
         {
             //First create the AvailableEndpoints Table.
+            CreateAvailableEndpoints(data);
 
             //fill out the exe.config template
             var dir = Guid.NewGuid();
@@ -87,6 +93,34 @@ namespace ODI.Actions.PostDeploy
             return;
         }
 
+        private void CreateAvailableEndpoints(dynamic data)
+        {
+            if (string.IsNullOrEmpty(data.alias))
+                return;
+
+            string alias = data.alias;
+            string description = data.description;
+            string disclaimer = data.disclaimer;
+
+            var esa = new AvailableEndpoint
+            {
+                PartitionKey = alias,
+                RowKey = "",
+                alias = alias,
+                description = description,
+                disclaimer = disclaimer,
+                storageaccountname = data.storagename,
+                storageaccountkey = data.storagekey
+            };
+
+            CloudStorageAccount ta = CloudStorageAccount.Parse(string.Format("DefaultEndpointsProtocol=https;AccountName={0};AccountKey={1}", data.storagename, data.storagekey));
+            var ctx = new TableServiceContext(ta.TableEndpoint.AbsoluteUri, ta.Credentials);
+            var tableClient = ta.CreateCloudTableClient();
+            tableClient.CreateTableIfNotExist(ENDPOINTS_TABLENAME);
+            ctx.AddObject(ENDPOINTS_TABLENAME, esa);
+            ctx.SaveChanges();
+        }
+
         private void buildConfig(dynamic data, string dir)
         {
             var xml = string.Format(CONFIG_TEMPLATE, data.storagename, data.storagekey);
@@ -111,8 +145,8 @@ namespace ODI.Actions.PostDeploy
 
             copyFromComponentsToDir(compDir, exeDir, new string[]
                 {
-                    "BurlingtonParks.cfg",
-                    "BurlingtonParks.csv",
+                    //"BurlingtonParks.cfg",
+                    //"BurlingtonParks.csv",
                     "DataLoader.dll",
                     "DataLoader.pdb",
                     "DataLoaderUtility.exe",
@@ -132,6 +166,21 @@ namespace ODI.Actions.PostDeploy
 
                 File.Copy(compDir + "\\" + f, exeDir + "\\" + f);
             }
+        }
+
+        public class AvailableEndpoint : TableServiceEntity
+        {
+            public AvailableEndpoint()
+            {
+            }
+
+            // Properties are all lowercase in the Azure table because this was the 
+            // naming convention we picked for consistency due to varying data source.
+            public string alias { get; set; }
+            public string description { get; set; }
+            public string disclaimer { get; set; }
+            public string storageaccountname { get; set; }
+            public string storageaccountkey { get; set; }
         }
     }
 }
