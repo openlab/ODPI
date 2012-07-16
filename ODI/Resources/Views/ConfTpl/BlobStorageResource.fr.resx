@@ -124,7 +124,7 @@
     <value>Cliquez pour voir comment</value>
   </data>
   <data name="OnceComplete" xml:space="preserve">
-    <value>Une fois créé vous allez devoir fournir les informations suivantes:</value>
+    <value>Une fois créé, vous allez devoir fournir les informations suivantes :</value>
   </data>
   <data name="PrimaryAccessKey" xml:space="preserve">
     <value>Clé d'accès primaire</value>

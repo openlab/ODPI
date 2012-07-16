@@ -125,7 +125,7 @@
   </data>
   <data name="ApplicationSettingsWillAllowDataLab" xml:space="preserve">
     <value>Les paramètres de l'application permettent à OGDI DataLab d'être personnalisé lors de l'installation dans Azure.
-Vous devrez fournir les éléments suivants</value>
+Vous devrez fournir les éléments suivants :</value>
   </data>
   <data name="BlobStorageInfo" xml:space="preserve">
     <value>Information sur le stockage Blob</value>
@@ -149,7 +149,7 @@ Vous devrez fournir les éléments suivants</value>
     <value>Disclaimer</value>
   </data>
   <data name="OnceComplete" xml:space="preserve">
-    <value>Une fois complété vous allez devoir fournir les informations suivantes:</value>
+    <value>Une fois complété, vous allez devoir fournir les informations suivantes :</value>
   </data>
   <data name="PrimaryAccessKey" xml:space="preserve">
     <value>Clé d'accès primaire</value>
