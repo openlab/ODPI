@@ -15,14 +15,8 @@ How to deploy ODPI on Azure
 
 ###Solution configuration
 	1. Open Visual Studio with Administrator privileges
-	2. Under ODI/Services
-		(A) Open the CertificateBuilder.cs file.
-			Replace [storageName] by your storage name in var url = "http://[storagename].blob.core.windows.net/components/";
-			Remove the line stating with #error
-		(B) Do the same in PackageBuilder.cs file
-		(C) Open the CloudBackedStore.cs file
-			Find var acc = "DefaultEndpointsProtocol=https;AccountName=[storagename];AccountKey=[storagekey]"
-			Replace [storagename] and [storagekey] respectively by the storage name of your account and its primary access key
-			Remove the line stating with #error
+	2. Under ODI.Azure/Roles
+		(A) Open ODI then click Settings
+		(B) Replace values with you storage account name and key
 			
 	3. Package or publish the application
