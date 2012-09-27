@@ -122,6 +122,7 @@
     <Content Include="Content\img\loader.gif" />
     <Content Include="js\libs\bootstrap-tooltip.js" />
     <Compile Include="Models\CheckMessage.cs" />
+    <Compile Include="Models\Config\CitizenPortalOpenDataConfig.cs" />
     <Compile Include="Models\Config\DatalabConfig.cs" />
     <Compile Include="Models\Config\OdiAppConfig.cs" />
     <Compile Include="Models\Config\OpenIntelConfig.cs" />
@@ -211,6 +212,16 @@
       <DependentUpon>BlobStorageResource.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CitizenPortalOpenDataResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CitizenPortalOpenDataResource.fr.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\Views\ConfTpl\SqlAzureResource.Designer.cs">
       <DependentUpon>SqlAzureResource.resx</DependentUpon>
@@ -628,7 +639,9 @@
   <ItemGroup>
     <Content Include="Views\Help\CreateHostedService.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\CitizenPortalOpenData.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Actions\ValidateResource.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -694,6 +707,14 @@
     <EmbeddedResource Include="Resources\Views\ConfTpl\BlobStorageResource.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>BlobStorageResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CitizenPortalOpenDataResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CitizenPortalOpenDataResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\ConfTpl\SqlAzureResource.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

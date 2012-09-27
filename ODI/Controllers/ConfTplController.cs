@@ -35,5 +35,10 @@ namespace ODI.Controllers
         {
             return View();
         }
+
+        public ActionResult CitizenPortalOpenData()
+        {
+            return View();
+        }
     }
 }

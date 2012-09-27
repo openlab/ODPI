@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CitizenPortalOpenData" xml:space="preserve">
+    <value>Portail Citoyen Open Data</value>
+  </data>
+  <data name="CitizenPortalOpenDataConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;Pour configurer les Portail Citoyen Open Data sur Windows Azure, vous devrez fournir diverses informations permettant de configuer le paquet d'installation du Portail Citoyen Open Data sur Windows Azure.&lt;/p&gt;</value>
+  </data>
+  <data name="CitizenPortalOpenDataDescription" xml:space="preserve">
+    <value>Le portail Citoyen Open Data est un site web adapté au grand public et fournissant une interface claire et intuitive au citoyen.</value>
+  </data>
   <data name="DataLab" xml:space="preserve">
     <value>OGDI DataLab</value>
   </data>

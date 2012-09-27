@@ -5,6 +5,7 @@ using System.Web;
 using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
+using Microsoft.WindowsAzure.ServiceRuntime;
 
 namespace ODI.Service
 {
@@ -19,8 +20,7 @@ namespace ODI.Service
 #if DEBUG
                 var url = "http://127.0.0.1:10000/devstoreaccount1/components/";
 #else
-#error Add the url to your blob storage account here
-                var url = "http://[storagename].blob.core.windows.net/components/";
+                var url = string.Format("http://{0}.blob.core.windows.net/components/", RoleEnvironment.GetConfigurationSettingValue("StorageName"));
 #endif
 
                 CloudBackedStore.Grab(CertDir, "\\makecert.exe", "components", url + "makecert.exe");
