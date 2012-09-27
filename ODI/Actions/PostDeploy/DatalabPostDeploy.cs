@@ -145,8 +145,8 @@ namespace ODI.Actions.PostDeploy
 
             copyFromComponentsToDir(compDir, exeDir, new string[]
                 {
-                    //"BurlingtonParks.cfg",
-                    //"BurlingtonParks.csv",
+                    "BurlingtonParks.cfg",
+                    "BurlingtonParks.csv",
                     "DataLoader.dll",
                     "DataLoader.pdb",
                     "DataLoaderUtility.exe",

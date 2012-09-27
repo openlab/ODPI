@@ -55,6 +55,8 @@ namespace ODI
                     Thread.CurrentThread.CurrentCulture = ci;
                     Thread.CurrentThread.CurrentUICulture = ci;
                 }
+				
+				ODI.Models.OdiAppRepo.Refresh();
             }
         }
 

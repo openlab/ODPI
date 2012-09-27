@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CitizenPortalOpenData" xml:space="preserve">
+    <value>Open Data Citizen Portal</value>
+  </data>
+  <data name="CitizenPortalOpenDataConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;To configure the Open Data Citizen Portal on Windows Azure, you will need to provide us with various items below so we can configure the package of installing the Open Data Citizen Portal on Windows Azure&lt;/p&gt;</value>
+  </data>
+  <data name="CitizenPortalOpenDataDescription" xml:space="preserve">
+    <value>The Open Data Citizen Portal is a web site particularly adapted to the public and offering a user friendly interface.</value>
+  </data>
   <data name="DataLab" xml:space="preserve">
     <value>OGDI DataLab</value>
   </data>
