@@ -17,6 +17,6 @@ How to deploy ODPI on Azure
 	1. Open Visual Studio with Administrator privileges
 	2. Under ODI.Azure/Roles
 		(A) Open ODI then click Settings
-		(B) Replace values with you storage account name and key
+		(B) Replace values with your storage account name and key
 			
 	3. Package or publish the application
