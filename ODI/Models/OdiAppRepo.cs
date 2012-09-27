@@ -80,60 +80,60 @@ namespace ODI.Models
                 SiteUrl = "http://{0}.cloudapp.net"
             });
 
-            Apps.Add(new OdiApp()
-            {
-                Id = 2,
-                DisplayOrder = 2,
-                Name = ODI.Resources.Models.OdiAppRepoResource.Drupal,
-                ConfigHelpText = ODI.Resources.Models.OdiAppRepoResource.DrupalConfigHelpText,
-                Description = ODI.Resources.Models.OdiAppRepoResource.DrupalDescription,
-                Configs = new IOdiAppConfig[] { new SqlAzureConfig() },
-                Validations = new IValidateAction[] { new PhpSqlAzureValidation() },
-                PackageName = "drupal_0.2.cspkg",
-                ConfName = "drupal_0.2.cscfg",
-                SiteUrl = "http://{0}.cloudapp.net/install.php"
-            });
+            //Apps.Add(new OdiApp()
+            //{
+            //    Id = 2,
+            //    DisplayOrder = 2,
+            //    Name = ODI.Resources.Models.OdiAppRepoResource.Drupal,
+            //    ConfigHelpText = ODI.Resources.Models.OdiAppRepoResource.DrupalConfigHelpText,
+            //    Description = ODI.Resources.Models.OdiAppRepoResource.DrupalDescription,
+            //    Configs = new IOdiAppConfig[] { new SqlAzureConfig() },
+            //    Validations = new IValidateAction[] { new PhpSqlAzureValidation() },
+            //    PackageName = "drupal_0.2.cspkg",
+            //    ConfName = "drupal_0.2.cscfg",
+            //    SiteUrl = "http://{0}.cloudapp.net/install.php"
+            //});
 
-            Apps.Add(new OdiApp()
-            {
-                Id = 4,
-                DisplayOrder = 4,
-                Name = ODI.Resources.Models.OdiAppRepoResource.OpenIntel,
-                ConfigHelpText = ODI.Resources.Models.OdiAppRepoResource.OpenIntelConfigHelpText,
-                Description = ODI.Resources.Models.OdiAppRepoResource.OpenIntelDescription,
-                Configs = new IOdiAppConfig[] { new OpenIntelConfig() },
-                Validations = new IValidateAction[] { new SqlAzureValidation(), new TableStorageValidation() },
-                PostAction = new OpenIntelPostDeploy(),
-                PackageName = "openintel_0.2.cspkg",
-                ConfName = "openintel_0.1.cscfg",
-                RequiredFiles = new string[]
-                {
-                    "open_intel_create_tables.0.1.sql",
-                    "OI_Sample.mapx",
-                    "MapFiles.xml",
-                    "ISC.MapDotNetServer.Common.dll",
-                    "ISC.MapDotNetServer.Common.Maps.dll",
-                    "ISC.MapDotNetServer.Common.Maps.xml",
-                    "ISC.MapDotNetServer.Common.xml",
-                    "MoveMap.exe",
-                    "MoveMap.pdb"
-                },
-                SiteUrl = "http://{0}.cloudapp.net"
-            });
+            //Apps.Add(new OdiApp()
+            //{
+            //    Id = 4,
+            //    DisplayOrder = 4,
+            //    Name = ODI.Resources.Models.OdiAppRepoResource.OpenIntel,
+            //    ConfigHelpText = ODI.Resources.Models.OdiAppRepoResource.OpenIntelConfigHelpText,
+            //    Description = ODI.Resources.Models.OdiAppRepoResource.OpenIntelDescription,
+            //    Configs = new IOdiAppConfig[] { new OpenIntelConfig() },
+            //    Validations = new IValidateAction[] { new SqlAzureValidation(), new TableStorageValidation() },
+            //    PostAction = new OpenIntelPostDeploy(),
+            //    PackageName = "openintel_0.2.cspkg",
+            //    ConfName = "openintel_0.1.cscfg",
+            //    RequiredFiles = new string[]
+            //    {
+            //        "open_intel_create_tables.0.1.sql",
+            //        "OI_Sample.mapx",
+            //        "MapFiles.xml",
+            //        "ISC.MapDotNetServer.Common.dll",
+            //        "ISC.MapDotNetServer.Common.Maps.dll",
+            //        "ISC.MapDotNetServer.Common.Maps.xml",
+            //        "ISC.MapDotNetServer.Common.xml",
+            //        "MoveMap.exe",
+            //        "MoveMap.pdb"
+            //    },
+            //    SiteUrl = "http://{0}.cloudapp.net"
+            //});
 
-            Apps.Add(new OdiApp()
-            {
-                Id = 5,
-                DisplayOrder = 5,
-                Name = ODI.Resources.Models.OdiAppRepoResource.DataPublic,
-                ConfigHelpText = ODI.Resources.Models.OdiAppRepoResource.DataPublicConfigHelpText,
-                Description = ODI.Resources.Models.OdiAppRepoResource.DataPublicDescription,
-                Configs = new IOdiAppConfig[] { new SqlAzureConfig() },
-                Validations = new IValidateAction[] { new PhpSqlAzureValidation() },
-                PackageName = "datapub_0.1.cspkg",
-                ConfName = "datapub_0.1.cscfg",
-                SiteUrl = "http://{0}.cloudapp.net/install.php"
-            });
+            //Apps.Add(new OdiApp()
+            //{
+            //    Id = 5,
+            //    DisplayOrder = 5,
+            //    Name = ODI.Resources.Models.OdiAppRepoResource.DataPublic,
+            //    ConfigHelpText = ODI.Resources.Models.OdiAppRepoResource.DataPublicConfigHelpText,
+            //    Description = ODI.Resources.Models.OdiAppRepoResource.DataPublicDescription,
+            //    Configs = new IOdiAppConfig[] { new SqlAzureConfig() },
+            //    Validations = new IValidateAction[] { new PhpSqlAzureValidation() },
+            //    PackageName = "datapub_0.1.cspkg",
+            //    ConfName = "datapub_0.1.cscfg",
+            //    SiteUrl = "http://{0}.cloudapp.net/install.php"
+            //});
 
             Apps.Add(new OdiApp()
             {

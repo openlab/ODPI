@@ -14,7 +14,6 @@ namespace ODI.Model.Config
         public string WelcomeText { get; set; }
         public string InstitutionDecription { get; set; }
         public string InstitutionImage { get; set; }
-        public string LicenseUri { get; set; }
 
         public string BuildSettingsString()
         {
@@ -24,11 +23,10 @@ namespace ODI.Model.Config
                               <Setting name=""WelcomeText"" value=""{3}"" />
                               <Setting name=""InstitutionDescription"" value=""{4}"" />
                               <Setting name=""InstitutionImage"" value=""{5}"" />
-                              <Setting name=""LicenseUri"" value=""{6}"" />
       
                                 ";
 
-            return string.Format(template, BaseDataServiceUrl, InstitutionName, LogoUri, WelcomeText, InstitutionDecription, InstitutionImage, LicenseUri);
+            return string.Format(template, BaseDataServiceUrl, InstitutionName, LogoUri, WelcomeText, InstitutionDecription, InstitutionImage);
         }
 
         public void BuildFromData(dynamic data)
@@ -39,7 +37,6 @@ namespace ODI.Model.Config
             WelcomeText = data.welcometext;
             InstitutionDecription = data.institutiondescription;
             InstitutionImage = data.institutionimage;
-            LicenseUri = data.licenseuri;
         }
 
         public string Template
