@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServiceDefinition name="ODI.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-05.1.7">
   <WebRole name="ODI" vmsize="ExtraSmall">
-    <Sites>
+    <!--<Sites>
       <Site name="Web">
         <Bindings>
           <Binding name="Endpoint1" endpointName="Endpoint1" />
         </Bindings>
       </Site>
-    </Sites>
+    </Sites>-->
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
@@ -19,5 +19,9 @@
     </LocalResources>
     <Certificates>
     </Certificates>
+    <ConfigurationSettings>
+      <Setting name="StorageName" />
+      <Setting name="AccountKey" />
+    </ConfigurationSettings>
   </WebRole>
 </ServiceDefinition>

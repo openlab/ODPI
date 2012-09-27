@@ -3,7 +3,9 @@
   <Role name="ODI">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="StorageName" value="configodiremi" />
+      <Setting name="AccountKey" value="qmCJkVFRItP3V9gdIjGB0JSgoAuszz8u5zH7NPfKSB9ScYScRCMvN+Alz2YuOpZlTL6Ovd7h3F6FJ0zCRfpH0A==" />
     </ConfigurationSettings>
     <Certificates>
     </Certificates>

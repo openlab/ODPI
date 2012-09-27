@@ -70,7 +70,7 @@
 
 tpl.loadTemplates(['Tasklist', 'About', 'Faq', 'AvailAppItem', 'AzureConfig', 'Config', 'Deploy', 'DeployItem', 'Error', 'ManualItem'],
     function () {
-        tpl.loadConfigTemplates(['SqlAzure', 'OpenIntel', 'BlobStorage', 'OpenTurf', 'DataLab'], function () { });
+        tpl.loadConfigTemplates(['SqlAzure', 'OpenIntel', 'BlobStorage', 'OpenTurf', 'DataLab', 'CitizenPortalOpenData'], function () { });
         window.app = new AppRouter();
         Backbone.history.start();
     });
