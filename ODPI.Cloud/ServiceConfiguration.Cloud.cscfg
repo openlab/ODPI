@@ -3,8 +3,8 @@
   <Role name="ODPI">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="StorageName" value="ogdialex" />
-      <Setting name="AccountKey" value="0AJ46DtcETCvQYFpJbgZMk6GLujDZzITLdqYF0TiwilI71hxGSDilEe1VByUPOtbmvHeiKrkqHgryZQz5tLfUg==" />
+      <Setting name="StorageName" value="[StorageName]" />
+      <Setting name="AccountKey" value="[StorageKey]" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
