@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+<div class="row">
+    <div class="span3">
+        <h4>
+            @ODPI.Resources.Views.Tpl.AzureConfigResource.Progress</h4>
+        <ol>
+            <li><del>@ODPI.Resources.Views.Tpl.AzureConfigResource.SelectComponentsToInstall</del></li>
+            <li><strong>@ODPI.Resources.Views.Tpl.AzureConfigResource.ConfigureComponents</strong></li>
+            <li>@ODPI.Resources.Views.Tpl.AzureConfigResource.FinalizeInstallProcedure</li>
+            <li>@ODPI.Resources.Views.Tpl.AzureConfigResource.Install</li>
+        </ol>
+    </div>
+    <div class="span9">
+        <h2>
+            @ODPI.Resources.Views.Tpl.AzureConfigResource.AzureConfig</h2>
+        <div class="page-header">
+            <h3>
+                @ODPI.Resources.Views.Tpl.AzureConfigResource.InstallationTypes</h3>
+        </div>
+        <div class="alert-message block-message ">
+            <p>
+                @ODPI.Resources.Views.Tpl.AzureConfigResource.ODPIHasTwoWays</p>
+            <h4>
+                @ODPI.Resources.Views.Tpl.AzureConfigResource.AutomatedInstaller</h4>
+            <p>
+                @ODPI.Resources.Views.Tpl.AzureConfigResource.TheAutomatedInstallerWillAllow</p>
+            <p>
+                @Html.Raw(ODPI.Resources.Views.Tpl.AzureConfigResource.NoteTheInstallerCanAutomatically)
+            </p>
+            <h4>
+                @ODPI.Resources.Views.Tpl.AzureConfigResource.ManualInstaller</h4>
+            <p>
+                @ODPI.Resources.Views.Tpl.AzureConfigResource.TheManualInstallerIsTheAlternative</p>
+        </div>
+        <div class="page-header">
+            <h3>
+                @ODPI.Resources.Views.Tpl.AzureConfigResource.AzureInfo</h3>
+            <p>
+                @Html.Raw(ODPI.Resources.Views.Tpl.AzureConfigResource.IfYouWouldRatherUseManualInstall)</p>
+        </div>
+        <form class="form-horizontal">
+        <p>
+            @ODPI.Resources.Views.Tpl.AzureConfigResource.ODPICanAutomaticallyDeploy</p>
+        <ol>
+            <li>
+                <p>
+                    @Html.Raw(ODPI.Resources.Views.Tpl.AzureConfigResource.StartByDownloading)</p>
+            </li>
+            <li>
+                <p>
+                    @Html.Raw(ODPI.Resources.Views.Tpl.AzureConfigResource.AddTheDownloadedCertificate)
+                </p>
+            </li>
+            <li>
+                <p>
+                    @Html.Raw(ODPI.Resources.Views.Tpl.AzureConfigResource.OnceYouHaveDownloadedAndUploaded)
+                </p>
+                <div class="control-group">
+                    <label class="control-label">
+                        @ODPI.Resources.Views.Tpl.AzureConfigResource.SubscriptionId</label>
+                    <div class="controls">
+                        <input class="span5" type="text" id="subid" name="subid" placeholder="@ODPI.Resources.Views.Tpl.AzureConfigResource.SubscriptionKeyForAzure" />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>
+                    @Html.Raw(ODPI.Resources.Views.Tpl.AzureConfigResource.FinallyWeRequireTheCredentials)</p>
+                <div class="control-group">
+                    <label class="control-label">
+                        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="@ODPI.Resources.Views.Tpl.AzureConfigResource.ClickToSeeHow">@ODPI.Resources.Views.Tpl.AzureConfigResource.StorageAccountName</a></label>
+                    <div class="controls">
+                        <input class="span5" type="text" id="saname" name="saname" placeholder="@ODPI.Resources.Views.Tpl.AzureConfigResource.Accountname" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">
+                        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="@ODPI.Resources.Views.Tpl.AzureConfigResource.ClickToSeeHow">@ODPI.Resources.Views.Tpl.AzureConfigResource.PrimaryAccessKey</a></label>
+                    <div class="controls">
+                        <input class="span5" type="text" id="sakey" name="sakey" placeholder="@ODPI.Resources.Views.Tpl.AzureConfigResource.LongKeyString"/>
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <div class="actions">
+            <a class="btn btn-large" href="#" id="btn-back">&laquo; @ODPI.Resources.Views.Tpl.AzureConfigResource.GoBack</a> <a class="btn btn-primary btn-large"
+                disabled id="continue_button">@ODPI.Resources.Views.Tpl.AzureConfigResource.Continue &raquo;</a>&nbsp;&nbsp; <a type="submit" id="skip"
+                    name="skip" class="btn btn-large btn-danger">@ODPI.Resources.Views.Tpl.AzureConfigResource.Skip &raquo;&raquo;</a>
+        </div>
+        </form>
+    </div>
+</div>
+<div class="modal hide fade" id="add-certificate" style="display:none;">
+    @Html.Partial("../Help/AddCertificate")
+</div>
+
+<div class="modal hide fade" id="subscriptionIdHelp">
+ @Html.Partial("../Help/GetSubscriptionId")
+</div>
+
+<div class="modal hide fade" id="createTableStorage">
+    @Html.Partial("../Help/CreateTableStorage")
+</div>
+
+<div class="modal hide fade" id="tableStorageName">
+    @Html.Partial("../Help/GetTableStorageName")
+</div>
+
+<div class="modal hide fade" id="tableStorageKey">
+    @Html.Partial("../Help/GetTableStorageKey")
+</div>

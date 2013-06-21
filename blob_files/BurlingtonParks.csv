@@ -1,0 +1,126 @@
+id,label,address,hectare,acres,ward,classification,url,easting,northing,latitude,longitude,parking,washrooms,picinicarea,playground
+1,Aldershot Park,1071 Gallagher Road,3.57,8.82,1,Neighbourhood,http://cms.burlington.ca/Page371.aspx,593593.4375,4796496,43.31547816,-79.8458141,Y,N,N,Y
+2,Amherst Park,2030 Amherst Heights Court,1.3,3.21,3,Parkette,http://cms.burlington.ca/Page54.aspx,594523.977,4800566.533,43.3520075,-79.83363988,N,N,N,Y
+3,Apple Blossom Park,5060 Dryden Ave.,0.08,5,1,Parkette,http://cms.burlington.ca/Page54.aspx,597679.1875,4805841,43.39908702,-79.79377418,N,N,N,N
+4,Avalon Parkette,2284 Avalon Road,0.14,0.33,5,Parkette,http://cms.burlington.ca/Page54.aspx,598777.875,4807129,43.41053814,-79.77997695,N,N,N,N
+5,Bayshore Park,322 North Shore Boulevard,0.44,1.09,1,Parkette,http://cms.burlington.ca/Page54.aspx,594762.875,4795603.5,43.30729673,-79.83154958,Y,N,N,N
+6,Bayview Park,1800 King Road,16.67,41.19,1,City,http://cms.burlington.ca/Page421.aspx,592836,4798502.5,43.33363615,-79.85481359,Y,N,N,N
+7,Beachway Park,1100 Lakeshore Road,6.85,16.93,1,City,http://cms.burlington.ca/Page422.aspx,597304.658,4795891.153,43.30956175,-79.80016446,Y,Y,N,Y
+8,Berton Park,4050 Berton Avenue,2.45,6.05,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595720.4375,4805100.5,43.39267333,-79.81808697,Y,N,N,Y
+9,Berwick Green Park,2086 Berwick Drive,1.71,4.23,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596549.5625,4804356.5,43.38586914,-79.80798276,Y,N,N,Y
+10,Brada Woods Park,5196 Brada Cresent,2.24,5.53,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597752.126,4806005.532,43.40055871,-79.79284426,Y,N,N,Y
+11,Brant Hills Park,2300 Duncaster Drive,13.67,33.78,3,Community,http://cms.burlington.ca/Page48.aspx,593470.211,4801773.489,43.36300528,-79.84643417,Y,Y,N,Y
+12,Breckon Park,4471 Spruce Avenue,2.16,5.34,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,601230.875,4801721,43.36152611,-79.75068688,Y,N,N,Y
+13,Bridgeview Park,1530 Norwood Avenue,1.42,3.51,1,Neighbourhood,http://cms.burlington.ca/Page54.aspx,589593.4375,4794680.5,43.29962069,-79.89542857,N,N,N,Y
+14,Brittany Park,1370 Headon Road,2.34,5.78,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596556,4802504,43.36919111,-79.80823001,N,N,N,Y
+15,Brock Park,450 Nelson Ave.,0.34,0.84,2,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597146.5,4797236.5,43.32169385,-79.80187628,N,N,N,N
+16,Bromley Park,217 Maureen Court,2.35,5.81,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,601795.5625,4801873.5,43.36282259,-79.74369125,N,N,N,Y
+17,Bronte Creek Trail,2120 Burloak Drive,0.67,1.66,5,Special Resource,http://cms.burlington.ca/Page54.aspx,59884.631,4807115.619,43.410421,-79.769204,N,N,N,N
+18,Burloak Waterfront Park,5420 Lakeshore Road,3.71,9.17,,City,http://cms.burlington.ca/Page424.aspx,603048.5,4802495.5,43.36825102,-79.72811485,Y,Y (Temporary),N,Y
+19,Cavendish Park,2155 Cavendish Drive,6.56,16.21,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594121.875,4801120,43.3570407,-79.8385055,N,N,N,Y
+20,Centennial Bikepath,423 Martha Street,5.27,13.02,2,Special Resource,http://cms.burlington.ca/Page54.aspx,597760.579,4797957.679,43.3281067,-79.79417596,N,N,N,N
+21,Central Park,2299 New Street,22.4,55.35,2,Community,http://cms.burlington.ca/Page3971.aspx,597912.75,4799073.5,43.33813213,-79.79210032,Y,Y,N,Y
+22,Champlain Park,2101Mountain Grove Avenue,1.85,4.57,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595045.875,4802015.5,43.36498613,-79.82695005,N,N,N,Y
+23,City Square,426 Brant Street,0.24,0.59,2,Parkette,http://cms.burlington.ca/Page54.aspx,597405.875,4797699.5,43.32582848,-79.79859591,Y,Y,N,N
+24,Clarksdale Park,1220 Nottingham Avenue,2.02,4.99,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596250.0625,4801025.5,43.3559201,-79.81226505,Y,N,N,Y
+25,Cleaver Park,2104 Cleaver Avenue,1.91,4.72,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596192.9375,4803578,43.37890649,-79.81252159,N,N,N,Y
+26,Colin Alton Parkette,,0.77,1.9,6,Parkette,http://cms.burlington.ca/Page54.aspx,594842.772,4805137.457,43.39311758,-79.82891535,N,N,N,N
+27,Coronation Park,2099 Wellington Avenue,0.24,0.59,2,Parkette,http://cms.burlington.ca/Page54.aspx,597293.125,4798319.5,43.33142469,-79.79987636,N,N,N,N
+28,Cumberland Park,562 Cumberland Avenue,1.76,4.35,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,598677.8125,4800145.5,43.3476827,-79.78247135,N,N,N,Y
+29,DesJardines Park,1811 Imperial Way,2,4.94,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,598434.25,4805235.5,43.39353727,-79.78456104,N,N,N,Y
+30,Doug Wright Park,4725 Doug Wright Dr.,3.3,8.15,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595255.101,4806836.65,43.40836239,-79.82352912,Y,N,N,N
+31,Driftwood Park,3123 Driftwood Drive,1.28,3.16,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594302.375,4803627,43.37958768,-79.83584691,N,N,N,Y
+32,Dryden Parkette,5043 Dryden Ave.,0.08,0.2,5,Parkette,http://cms.burlington.ca/Page54.aspx,597656,4805767,43.39842386,-79.79407367,N,N,N,Y
+33,Duncaster Park,2259 Duncaster Drive,3.77,9.32,3,Special Resource,http://cms.burlington.ca/Page54.aspx,593783.5625,4801590.5,43.3613188,-79.84259903,N,N,N,N
+34,Earl Court Park,801 Francis Road,0.91,2.25,1,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595636.2142,4796975.397,43.31953692,-79.82054446,N,N,N,Y
+35,Easton Parkette,2437 Whitehorn Drive,0.09,0.22,1,Parkette,http://cms.burlington.ca/Page54.aspx,597664.112,4807177.27,43.41111869,-79.79372159,N,N,N,N
+36,Elgin Park,1385 Elgin Street,0.14,0.35,2,Parkette,http://cms.burlington.ca/Page54.aspx,597206.625,4797407,43.32322102,-79.80110472,N,N,N,Y
+37,Elizabeth Gardens Parkette,5412 Croydon Road,0.4,1,5,Parkette,http://cms.burlington.ca/Page54.aspx,602492.3125,4802927,43.37221169,-79.73489725,N,N,N,Y
+38,Emerson Park,2390 Sutton Drive,1.7,4.2,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597713.8125,4806920.5,43.40880066,-79.79315376,Y,N,N,Y
+39,Fairchild Park,2175 Fairchild Boulevard,0.88,2.17,1,Parkette,http://cms.burlington.ca/Page54.aspx,593789.5,4800925,43.35532678,-79.84263966,N,N,N,Y
+40,Fairfield Parkette,952 Gorton Avenue,0.16,0.4,1,Parkette,http://cms.burlington.ca/Page54.aspx,592182.9375,4794297,43.29585521,-79.86357377,N,N,N,Y
+41,Forestvale Park,1076 Forestvale Drive,5.69,14.06,1,Special Resource,http://cms.burlington.ca/Page54.aspx,593541.25,4799466.5,43.3422273,-79.84595128,N,N,N,Y
+42,Fothergill Woods Park,480 Fothergill Boulevard,2.36,5.83,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,602025.6875,4803850.5,43.38058893,-79.74048353,Y,N,N,Y
+43,Francis Road Bikeway,917 North Shore Blvd E.,6.43,15.89,1,Special Resource,http://cms.burlington.ca/Page54.aspx,592246.6875,4794162,43.29463201,-79.86281066,N,N,N,Y
+44,Frontenac Park,520 Parkside Cresent,1.34,3.31,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,601170.3125,4803032.5,43.37334088,-79.75119189,N,N,N,Y
+45,Glen Afton Park,254 Glen Afton Drive,1.95,4.82,4,Parkette,http://cms.burlington.ca/Page54.aspx,600741.6875,4800823.5,43.35351228,-79.75688763,N,N,N,Y
+46,Greenwood Park,703 Greenwood Drive,1.69,4.18,1,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595649.4375,4796787,43.31783916,-79.82041422,Y,N,N,N
+47,Grove Park,1120 Gallagher Road,0.71,1.75,1,Parkette,http://cms.burlington.ca/Page54.aspx,593302.125,4796475,43.31532531,-79.84940939,N,N,N,N
+48,Henderson Park,328 Henderson Road,0.67,1.66,4,Parkette,http://cms.burlington.ca/Page54.aspx,600950,4801559.5,43.36011006,-79.75418216,N,N,N,Y
+49,Hidden Valley Park,1137 Hidden Valley Road,27.01,66.74,1,City,http://cms.burlington.ca/Page426.aspx,592217.3125,4795388.5,43.3056776,-79.86296695,Y,Y,Y,Y
+50,Ireland Park,2315 Headon Forest Drive,19.15,47.32,6,Community,http://cms.burlington.ca/Page54.aspx,595105,4803377,43.3772357,-79.82598405,Y,Y,N,Y
+51,Iroquois Park,4203 Longmoor Drive,4.73,11.69,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,599420.6875,4801355.5,43.35847769,-79.77308804,Y,N,N,Y
+52,Irving Parkette,5680 Rosaline Road,0.2,0.49,5,Parkette,http://cms.burlington.ca/Page54.aspx,598800.875,4806666,43.406367,-79.77977662,N,N,N,Y
+53,Kerncliff Park,2198 Kerns Road,40,98.84,1,Special Resource,http://cms.burlington.ca/Page425.aspx,592583.502,4799953.385,43.34672927,-79.85768281,Y,Y (Temporary),N,N
+54,Kerns Park,1801 Kerns Road,6.88,17,1,Neighbourhood,http://cms.burlington.ca/Page54.aspx,593907.3125,4799745.5,43.34469337,-79.84138818,Y,Y (Temporary),N,Y
+55,Kilbride Park,2175 Blessington Street,7.47,18.46,3,Community,http://cms.burlington.ca/Page54.aspx,585875.5,4808998,43.42895436,-79.9390138,Y,Y,N,Y
+56,Kinsmen Park,2496 Cavendish Drive,2.15,5.31,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594127.875,4802751,43.37172329,-79.83815125,Y,N,N,Y
+57,Kiwanis Park,494 Townsend Ave.,1.78,4.4,1,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594639.4375,4796661,43.31683266,-79.8328891,Y,N,N,Y
+58,La Salle Park,50 North Shore Boulevard,21.81,53.89,1,City,http://cms.burlington.ca/Page427.aspx,593605.687,4794997.44,43.30198544,-79.84591838,Y,Y,Y,Y
+59,Lampman Park,1691 Lampman Avenue,1.4,3.46,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,598900.375,4804995.5,43.39131535,-79.77885013,Y,N,N,Y
+60,Lansdown Park,3448 Hannibal Rd.,1.18,2.92,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597091.4978,4802798.954,43.37177734,-79.8015696,Y,N,N,N
+61,Leighland Park,1200 Leighland Road,5.1,12.6,2,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594898.4375,4798302,43.33157343,-79.82941205,Y,N,N,N
+62,Lions Park,471 Pearl Street,1.25,3.1,2,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597581.5,4797988,43.32840294,-79.79637893,N,N,N,Y
+63,Longmoor Park,4501 Longmoor Drive,2.02,4.99,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,600574,4802484.5,43.36848775,-79.75865148,N,N,N,Y
+64,Lowville Park,6207 Guelph Line,27.98,69.14,3,City,http://cms.burlington.ca/Page428.aspx,588556.5,4809510,43.43325153,-79.90581303,Y,Y,Y,Y
+65,Mansfield Park,1300 Havendale Boulevard,1.55,3.83,1,Special Resource,http://cms.burlington.ca/Page54.aspx,593063.125,4801027.5,43.35633995,-79.85158393,N,N,N,N
+66,Maple Park,750 Maple Avenue,8.63,21.32,1,Community,http://cms.burlington.ca/Page429.aspx,596036.8125,4797415.5,43.32344794,-79.81552804,Y,Y,N,Y
+67,Maplehurst Park,1066 Joan Drive,0.55,1.36,1,Parkette,http://cms.burlington.ca/Page54.aspx,594259.3125,4797165,43.32141779,-79.83748941,N,N,N,Y
+68,McCoy Common,1795 McCoy Avenue,0.2,0.49,5,Parkette,http://cms.burlington.ca/Page54.aspx,598372.483,4805107.286,43.39239114,-79.78534661,N,N,N,N
+69,Millcroft Park,4520 Millcroft Park Drive,13.67,33.78,6,Community,http://cms.burlington.ca/Page54.aspx,597265.299,4805489.947,43.3959805,-79.79894655,Y,Y,N,Y
+70,Mohawk Park,240 Kenwood Avenue,2.95,7.29,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,602222.875,4802716,43.37034896,-79.73826161,N,N,N,Y
+71,Mountain Gardens Parkette,2080 Mount Forest Drive,0.2,0.49,3,Parkette,http://cms.burlington.ca/Page54.aspx,595153.8125,4800187,43.34851114,-79.82593562,N,N,N,Y
+72,Mountainside Park,2205 Mount Forest Drive,10.52,25.99,3,Community,http://cms.burlington.ca/Page409.aspx,595391.25,4800799.5,43.35399513,-79.82290001,Y,N,N,Y
+73,Nelson Park,4183 New Street,21.26,52.53,4,Community,http://cms.burlington.ca/Page410.aspx,600133.0625,4801627,43.36082716,-79.76424929,Y,Y,N,Y
+74,New City Park,2500 Kerns Rd.,67,165.55,1,City,http://cms.burlington.ca/Page6422.aspx,592344.902,4800795.418,43.35433927,-79.86048431,Y,Y,N,Y
+75,Newport Park,3020 Headon Forest Drive,2.41,5.96,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595589.75,4804367,43.38608663,-79.81982845,Y,N,N,Y
+76,Norton Community Park,4275 Dundas Street,6.9,17.05,6,Community,http://cms.burlington.ca/Page54.aspx,595758.693,4805885.956,43.39973955,-79.81747719,Y,Y,N,N
+77,Optimist Park,2131 Prospect Street,3.11,7.68,2,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596803.8125,4799022,43.33781223,-79.80578687,Y,Y,N,Y
+78,Orchard Community Park,2255 Sutton Drive,7.84,19.37,5,Community,http://cms.burlington.ca/Page54.aspx,598246.0747,4806664.687,43.40642812,-79.78662731,Y,Y,N,Y
+79,Orchard Woodlot,2035 Oak Grove,8.34,20.61,5,Special Resources,http://cms.burlington.ca/Page54.aspx,598143.9602,4805749.222,43.39820008,-79.7880525,N,N,N,N
+80,Orchard Woodlot - Central,5390 Duchess Court,2.87,7.09,5,Special Resources,http://cms.burlington.ca/Page54.aspx,598022.8162,4806577.744,43.40567466,-79.78939961,N,N,N,N
+81,Paletta Lakefront Park,4280 Lakeshore Road,5.7,14.08,4,City,http://cms.burlington.ca/Page432.aspx,601073.1875,4800904,43.35419241,-79.75278315,Y,Y,N,N
+82,Palladium Park,4130 Palladium Way,2.16,5.34,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594803.742,4805868.376,43.39970267,-79.82927049,Y,N,N,N
+83,Palmer Park,3409 Palmer Drive,5.34,13.19,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597025.9172,4803029.206,43.37385867,-79.80233811,Y,N,N,N
+84,Pathfinder Park,2270 Pathfinder Drive,2.95,7.28,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597256.375,4806206.5,43.40243241,-79.79892929,Y,N,N,N
+85,Peart Park,1410 Colonsay Drive,1.42,3.51,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595674.375,4801287,43.35834787,-79.81932196,N,N,N,Y
+86,Pineland Park,371 Bryant Crescent,1.42,3.51,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,601220.75,4802275.5,43.36651929,-79.75070936,N,N,N,Y
+87,Pinemeadow Park,3171 Pinemeadow Road,2.62,6.47,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595273.6875,4802680,43.37093948,-79.8240234,N,N,N,Y
+88,Port Nelson Park,3000 Lakeshore Road,0.46,1.14,4,Parkette,http://cms.burlington.ca/Page54.aspx,599099.875,4798540.5,43.33317811,-79.77755489,Y,N,N,Y
+89,Prescott Parkette,5120 Dryden Ave.,0.23,0.57,5,Parkette,http://cms.burlington.ca/Page54.aspx,597489.25,4806040.5,43.40090774,-79.79608361,N,N,N,N
+90,Queensway Park,2440 Glenwood School Drive,1.07,2.64,2,Neighbourhood,http://cms.burlington.ca/Page54.aspx,597022,4800265,43.34897428,-79.8028759,N,N,N,Y
+91,Roly Bird Park,2203 Industrial Street,3.19,7.88,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595849.2417,4800012.211,43.34684913,-79.81738734,Y,N,N,Y
+92,Ryerson Park,555 Woodview Road,2.77,6.84,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,599184.375,4800547.5,43.35123496,-79.77614984,Y,N,N,Y
+93,Sheldon Creek Woodlot,5200 Corporate Drive,9.07,22.41,5,Special Resources,http://cms.burlington.ca/Page54.aspx,598821.375,4805182.5,43.39300922,-79.77979157,N,N,N,N
+94,Sheldon Park,5320 Riverside Drive,3.3,8.15,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,601460.5,4803779.5,43.38002644,-79.74747234,Y,N,N,Y
+95,Sheraton Park,594 Sheraton Road,0.66,1.63,5,Parkette,http://cms.burlington.ca/Page54.aspx,600735.125,4803024.5,43.37332742,-79.75656391,N,N,N,Y
+96,Sherwood Forest Park,5270 Fairview Street,30.38,75.07,5,City,http://cms.burlington.ca/Page54.aspx,601109.4375,4804584,43.38731623,-79.75165657,Y,Y,N,Y
+97,Shoreacres Park,316 Wilson Avenue,0.93,2.3,4,Special Resources,http://cms.burlington.ca/Page54.aspx,600881.5625,4801453,43.3591605,-79.75504616,N,N,N,N
+98,Sinclair Park,2365 Sinclair Circle,2.52,6.23,3,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594376.0488,4801930.479,43.36430525,-79.83522996,N,N,N,Y
+99,Sioux Lookout Park,3252 Lakeshore Road,0.7,1.73,4,Parkette,http://cms.burlington.ca/Page435.aspx,599707.5,4799084,43.33799056,-79.76996246,Y,N,N,N
+100,Skyway Park,129 Kenwood Avenue,3.44,8.5,5,Neighbourhood,http://cms.burlington.ca/Page54.aspx,602504.5,4802531.5,43.36864961,-79.73482087,Y,N,N,Y
+101,Spencer Smith Park,1400 Lakeshore Road,6.37,15.74,2,City,http://cms.burlington.ca/Page434.aspx,597355.3373,4797222.349,43.32153944,-79.79930372,Y,Y,N,Y
+102,Spring Gardens Trail,716 Spring Gardens Road,2,4.95,1,Special Resources,http://cms.burlington.ca/Page54.aspx,591223.8125,4793445,43.28830167,-79.8755369,N,N,N,N
+103,Strathcona Park,376 Belvenia Road,1.92,4.74,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,600219.125,4800994,43.35511713,-79.76330319,N,N,N,Y
+104,Sutton Common,2339 Sutton Drive,0.07,0.18,5,Parkette,http://cms.burlington.ca/Page54.aspx,597939.8125,4806833,43.40798344,-79.79037877,N,N,N,N
+105,Sycamore Park,3157 Centennial Drive,1.92,4.74,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596312.2509,4801987.826,43.36457555,-79.81132867,N,N,N,Y
+106,Tansley Woodlot,2020 Itabashi Way,2.91,7.19,4,Special Resources,http://cms.burlington.ca/Page50.aspx,597432.1686,4804015.507,43.3826852,-79.79714901,N,N,N,Y
+107,Tansley Woods Park,4100 Kilmer Drive,5.71,14.11,4,Community,http://cms.burlington.ca/Page54.aspx,597229.6875,4803649.5,43.3794165,-79.79971321,Y,Y,N,Y
+108,Taywood Park,4357 Millcroft Park Drive,2.64,6.52,6,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596495.5,4805713,43.39808802,-79.80841082,Y,N,N,Y
+109,Teal Greenway Park,881 Teal Drive,1.82,4.5,1,Special Resources,http://cms.burlington.ca/Page54.aspx,594154.3125,4796040.5,43.31130738,-79.8389769,N,N,N,Y
+110,Tecumseh Park,685 Regency Court,1.21,2.99,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,598078.375,4799984,43.34630733,-79.78989472,N,N,N,Y
+111,Thorpe Park,1140 Stephenson Drive,2.05,5.07,2,Neighbourhood,http://cms.burlington.ca/Page54.aspx,595950.25,4797960.5,43.32836544,-79.81650018,Y,N,N,Y
+112,Trail Head Parkette,5401 Redstone Street,0.23,0.57,5,Parkette,http://cms.burlington.ca/Page54.aspx,598138.5796,4806283.141,43.40300737,-79.7880231,N,N,N,N
+113,Tuck Park,3405 Spruce Avenue,3.6,8.9,4,Neighbourhood,http://cms.burlington.ca/Page54.aspx,599783.5625,4799996.5,43.34619521,-79.76885832,N,N,N,Y
+114,Wardley Park,1100 Oneida Place,0.75,1.85,1,Parkette,http://cms.burlington.ca/Page54.aspx,596418.6178,4796596.854,43.31602907,-79.81096378,N,N,N,N
+115,Wellington Park,1371 Baldwin Street,3.3,8.15,2,Neighbourhood,http://cms.burlington.ca/Page54.aspx,596630.0291,4797944.845,43.32813739,-79.80811996,Y,N,N,Y
+116,Westbury Park,1470 Westbury Avenue,1.62,4,1,Neighbourhood,http://cms.burlington.ca/Page54.aspx,594284.6875,4800022.5,43.34713983,-79.83668551,N,N,N,Y
+117,Zimmerman Park,4275 No. 2 Side Road,6.9,17.05,6,Special Resources,http://cms.burlington.ca/Page54.aspx,592895.9375,4808822,43.42653192,-79.85232316,N,N,N,N
+118,Appleby Ice Centre,1201 Appleby Line,0.1,0.1,5,Other,http://cms.burlington.ca/Page369.aspx,599138,4804426,43.38615709,-79.77601995,N,N,N,N
+119,Mainway Arena,4015 Mainway,0.1,0.1,4,Other,http://cms.burlington.ca/Page372.aspx,597613.8125,4803016.5,43.37366803,-79.79508513,N,N,N,N
+122,Velocity Youth Centre,3230 Fairview Street,0.1,0.1,2,Other,http://cms.burlington.ca/Page47.aspx,598177.6875,4800576,43.35162385,-79.78856366,N,N,N,N
+123,Tyandaga Golf Course,1265 Tyandaga Park Drive,0.1,0.1,1,Other,http://cms.burlington.ca/Page52.aspx,593743.0625,4800081.5,43.3477388,-79.84335682,N,N,N,N
+124,Aldershot Pool,50 Fairwood Place,0.1,0.1,1,Other,http://cms.burlington.ca/Page405.aspx,593074.8125,4795181,43.30370388,-79.85243125,Y,Y,N,N
+125,Angela Coughlan Pool,2425 Upper Middle Road,0.1,0.1,3,Other,http://cms.burlington.ca/Page406.aspx,595215.8746,4801904.125,43.36396192,-79.82487171,Y,Y,N,N
+126,Burlington Centennial Pool,5151 New Street,0.1,0.1,5,Other,http://cms.burlington.ca/Page407.aspx,601267.8125,4802859.5,43.37177032,-79.75002066,Y,Y,N,N
+127,Lester B. Pearson High School Court,1433 Headon Road,0.1,0.1,6,Other,http://cms.burlington.ca/Page420.aspx,596535.5,4802992.5,43.37359149,-79.80839687,Y,N,N,N

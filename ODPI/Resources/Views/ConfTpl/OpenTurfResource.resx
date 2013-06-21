@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALoginUsernameToUse" xml:space="preserve">
+    <value>a login username to use for bit.ly URL shortening</value>
+  </data>
+  <data name="AnAPIKeyToUse" xml:space="preserve">
+    <value>an API key to use for URL Shortening</value>
+  </data>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>Application Name</value>
+  </data>
+  <data name="ApplicationSettings" xml:space="preserve">
+    <value>Application Settings</value>
+  </data>
+  <data name="ApplicationSettingsWillAllow" xml:space="preserve">
+    <value>Application settings will allow ODAF OpenTurf to be customized when installed on Azure.
+        You will need to provide the following</value>
+  </data>
+  <data name="AppUrl" xml:space="preserve">
+    <value>App Url</value>
+  </data>
+  <data name="BitlyAPIKey" xml:space="preserve">
+    <value>Bit.ly API Key</value>
+  </data>
+  <data name="BitlyLogin" xml:space="preserve">
+    <value>Bit.ly Login</value>
+  </data>
+  <data name="CallbackUrl" xml:space="preserve">
+    <value>Callback Url</value>
+  </data>
+  <data name="ClickToSeeHow" xml:space="preserve">
+    <value>Click to see how</value>
+  </data>
+  <data name="ConsumerKey" xml:space="preserve">
+    <value>Consumer Key</value>
+  </data>
+  <data name="ConsumerKeyProvidedByTwitter" xml:space="preserve">
+    <value>consumer key provided by Twitter</value>
+  </data>
+  <data name="ConsumerSecret" xml:space="preserve">
+    <value>Consumer Secret</value>
+  </data>
+  <data name="ConsumerSecretProvidedByTwitter" xml:space="preserve">
+    <value>consumer secret provided by Twitter</value>
+  </data>
+  <data name="DatabaseHostname" xml:space="preserve">
+    <value>Database Hostname</value>
+  </data>
+  <data name="DatabaseName" xml:space="preserve">
+    <value>Database Name</value>
+  </data>
+  <data name="IfYouDoNotHaveAlready" xml:space="preserve">
+    <value>If you do not have a SQL Azure database already created, click &lt;a href='#' data-toggle='modal'
+            data-target='#CreateSqlAzureDb' rel='tooltip' data-original-title='Click to see how'&gt;
+            here&lt;/a&gt; for instructions to create a SQL Azure database.&lt;/p&gt;</value>
+  </data>
+  <data name="NameOfTheApplication" xml:space="preserve">
+    <value>name of the application in the title screen</value>
+  </data>
+  <data name="OnceDatabaseIsCreated" xml:space="preserve">
+    <value>Once the database is created, enter the values below.</value>
+  </data>
+  <data name="OpenTurfHasTwitterIntegration" xml:space="preserve">
+    <value>ODAF OpenTurf has Twitter integration and will require some details to be functional.
+        Please refer to Twitter Developer documentation at &lt;a href="https://dev.twitter.com"&gt;
+            https://dev.twitter.com&lt;/a&gt; on how to setup appropriate twitter keys. You will
+        need to provide the following</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordYouCreated" xml:space="preserve">
+    <value>password you created</value>
+  </data>
+  <data name="SameCallBackURLSetup" xml:space="preserve">
+    <value>same callback URL setup when creating app on Twitter</value>
+  </data>
+  <data name="SQLAzureInfo" xml:space="preserve">
+    <value>SQL Azure Info</value>
+  </data>
+  <data name="TwitterSettings" xml:space="preserve">
+    <value>Twitter Settings</value>
+  </data>
+  <data name="TwitterUsernameToUse" xml:space="preserve">
+    <value>Twitter Username to be used as Admin</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="UsernameThatWillBeUsed" xml:space="preserve">
+    <value>username that will be used for administration</value>
+  </data>
+</root>

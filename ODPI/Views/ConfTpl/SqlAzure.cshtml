@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+<div class="page-header">
+    <h4>
+        @ODPI.Resources.Views.ConfTpl.SqlAzureResource.SQLAzureInfo</h4>
+    <p>
+        @Html.Raw(ODPI.Resources.Views.ConfTpl.SqlAzureResource.IfYouDoNotHaveASqlAzure)</p>
+    <p>
+        @ODPI.Resources.Views.ConfTpl.SqlAzureResource.OnceTheDataBaseIsCreated</p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbHostName" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.SqlAzureResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.SqlAzureResource.DatabaseHostname</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbhost" name="dbhost" placeholder="@ODPI.Resources.Views.ConfTpl.SqlAzureResource.YourServerDatabase" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbName" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.SqlAzureResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.SqlAzureResource.DatabaseName</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbname" name="dbname" placeholder="@ODPI.Resources.Views.ConfTpl.SqlAzureResource.DatabaseNamePlaceholder" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#GetDbUsername" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.SqlAzureResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.SqlAzureResource.Username</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dbusername" name="dbusername" placeholder="@ODPI.Resources.Views.ConfTpl.SqlAzureResource.UsernameAtYourServer" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        @ODPI.Resources.Views.ConfTpl.SqlAzureResource.Password</label>
+    <div class="controls">
+        <input class="input-xlarge" type="password" id="dbpassword" name="dbpassword" placeholder="@ODPI.Resources.Views.ConfTpl.SqlAzureResource.PasswordYouCreated" />
+    </div>
+</div>
+<div class="modal hide fade" id="GetDbHostName">
+    @Html.Partial("../Help/GetDbHostName")
+</div>
+<div class="modal hide fade" id="GetDbName">
+    @Html.Partial("../Help/GetDbName")
+</div>
+<div class="modal hide fade" id="GetDbUsername">
+    @Html.Partial("../Help/GetDbUsername")
+</div>
+<div class="modal hide fade" id="CreateSqlAzureDb">
+    @Html.Partial("../Help/CreateSqlAzureDb")
+</div>

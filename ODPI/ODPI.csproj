@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F51D05B5-545C-4D26-ACCA-A8D72B0DD356}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ODPI</RootNamespace>
+    <AssemblyName>ODPI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\external_libs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonFx">
+      <HintPath>..\packages\JsonFx.2.0.1106.2610\lib\net40\JsonFx.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.7.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.1.7.0.0\lib\net35-full\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\ConfigWriter\DuplicateConfigWriter.cs" />
+    <Compile Include="Actions\ConfigWriter\ICustomConfigWriter.cs" />
+    <Compile Include="Actions\PostDeploy\DatalabPostDeploy.cs" />
+    <Compile Include="Actions\PostDeploy\IPostDeployAction.cs" />
+    <Compile Include="Actions\PostDeploy\OpenIntelPostDeploy.cs" />
+    <Compile Include="Actions\PostDeploy\OpenTurfPostDeploy.cs" />
+    <Compile Include="Actions\Validate\IValidateAction.cs" />
+    <Compile Include="Actions\Validate\PhpSqlAzureValidation.cs" />
+    <Compile Include="Actions\Validate\SqlAzureValidation.cs" />
+    <Compile Include="Actions\Validate\TableStorageValidation.cs" />
+    <Compile Include="Controllers\AppController.cs" />
+    <Compile Include="Controllers\AzureController.cs" />
+    <Compile Include="Controllers\CheckController.cs" />
+    <Compile Include="Controllers\ConfTplController.cs" />
+    <Compile Include="Controllers\DeployController.cs" />
+    <Compile Include="Controllers\HelpController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TesterController.cs" />
+    <Compile Include="Controllers\TplController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Content Include="Content\img\loader.gif" />
+    <Content Include="js\libs\bootstrap-tooltip.js" />
+    <Compile Include="Models\CheckMessage.cs" />
+    <Compile Include="Models\Config\CitizenPortalOpenDataConfig.cs" />
+    <Compile Include="Models\Config\DatalabConfig.cs" />
+    <Compile Include="Models\Config\OdpiAppConfig.cs" />
+    <Compile Include="Models\Config\OpenIntelConfig.cs" />
+    <Compile Include="Models\Config\OpenTurfConfig.cs" />
+    <Compile Include="Models\Config\SqlAzureConfig.cs" />
+    <Compile Include="Models\Config\TableStorageConfig.cs" />
+    <Compile Include="Models\DeployStatusModel.cs" />
+    <Compile Include="Models\OdpiApp.cs" />
+    <Compile Include="Models\OdpiAppRepo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Actions\ValidateResource.fr.Designer.cs">
+      <DependentUpon>ValidateResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Actions\ValidateResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidateResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controllers\AppResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controllers\AppResource.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResource.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controllers\CheckResource.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheckResource.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controllers\CheckResource.Designer.cs">
+      <DependentUpon>CheckResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controllers\TesterResource.fr.Designer.cs">
+      <DependentUpon>TesterResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controllers\TesterResource.Designer.cs">
+      <DependentUpon>TesterResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controllers\DeployResource.fr.Designer.cs">
+      <DependentUpon>DeployResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controllers\DeployResource.Designer.cs">
+      <DependentUpon>DeployResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Models\OdpiAppRepoResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OdpiAppRepoResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Models\OdpiAppRepoResource.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OdpiAppRepoResource.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Services\StatusMessageConverterResource.fr.Designer.cs">
+      <DependentUpon>StatusMessageConverterResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Services\StatusMessageConverterResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatusMessageConverterResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\BlobStorageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlobStorageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\BlobStorageResource.fr.Designer.cs">
+      <DependentUpon>BlobStorageResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CitizenPortalOpenDataResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CitizenPortalOpenDataResource.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\SqlAzureResource.Designer.cs">
+      <DependentUpon>SqlAzureResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\SqlAzureResource.fr.Designer.cs">
+      <DependentUpon>SqlAzureResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\OpenIntelResource.Designer.cs">
+      <DependentUpon>OpenIntelResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\OpenIntelResource.fr.Designer.cs">
+      <DependentUpon>OpenIntelResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\OpenTurfResource.fr.Designer.cs">
+      <DependentUpon>OpenTurfResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\DataLabResource.fr.Designer.cs">
+      <DependentUpon>DataLabResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\DataLabResource.Designer.cs">
+      <DependentUpon>DataLabResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\ConfTpl\OpenTurfResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OpenTurfResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\Help\AddCertificateResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddCertificateResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\Help\AddCertificateResource.fr.Designer.cs">
+      <DependentUpon>AddCertificateResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetTableStorageNameResource.Designer.cs">
+      <DependentUpon>GetTableStorageNameResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetTableStorageNameResource.fr.Designer.cs">
+      <DependentUpon>GetTableStorageNameResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetTableStorageKeyResource.Designer.cs">
+      <DependentUpon>GetTableStorageKeyResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetTableStorageKeyResource.fr.Designer.cs">
+      <DependentUpon>GetTableStorageKeyResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetSubscriptionIdResource.Designer.cs">
+      <DependentUpon>GetSubscriptionIdResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetSubscriptionIdResource.fr.Designer.cs">
+      <DependentUpon>GetSubscriptionIdResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetDbUsernameResource.Designer.cs">
+      <DependentUpon>GetDbUsernameResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetDbUsernameResource.fr.Designer.cs">
+      <DependentUpon>GetDbUsernameResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetDbNameResource.Designer.cs">
+      <DependentUpon>GetDbNameResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetDbNameResource.fr.Designer.cs">
+      <DependentUpon>GetDbNameResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetDbHostNameResource.Designer.cs">
+      <DependentUpon>GetDbHostNameResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\GetDbHostNameResource.fr.Designer.cs">
+      <DependentUpon>GetDbHostNameResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\CreateTableStorageResource.Designer.cs">
+      <DependentUpon>CreateTableStorageResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\CreateTableStorageResource.fr.Designer.cs">
+      <DependentUpon>CreateTableStorageResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\CreateSqlAzureDbResource.Designer.cs">
+      <DependentUpon>CreateSqlAzureDbResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\CreateSqlAzureDbResource.fr.Designer.cs">
+      <DependentUpon>CreateSqlAzureDbResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\CreateHostedServiceResource.Designer.cs">
+      <DependentUpon>CreateHostedServiceResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\CreateHostedServiceResource.fr.Designer.cs">
+      <DependentUpon>CreateHostedServiceResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Shared\ErrorResource.fr.Designer.cs">
+      <DependentUpon>ErrorResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Shared\ErrorResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ErrorResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\Shared\_LayoutResource.fr.Designer.cs">
+      <DependentUpon>_LayoutResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Shared\_LayoutResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_LayoutResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\AvailAppItemResource.Designer.cs">
+      <DependentUpon>AvailAppItemResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\AvailAppItemResource.fr.Designer.cs">
+      <DependentUpon>AvailAppItemResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\AzureConfigResource.Designer.cs">
+      <DependentUpon>AzureConfigResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\AzureConfigResource.fr.Designer.cs">
+      <DependentUpon>AzureConfigResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\ConfigResource.Designer.cs">
+      <DependentUpon>ConfigResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\ConfigResource.fr.Designer.cs">
+      <DependentUpon>ConfigResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\TasklistResource.Designer.cs">
+      <DependentUpon>TasklistResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\TasklistResource.fr.Designer.cs">
+      <DependentUpon>TasklistResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\ManualItemResource.Designer.cs">
+      <DependentUpon>ManualItemResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\ManualItemResource.fr.Designer.cs">
+      <DependentUpon>ManualItemResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\ErrorResource.Designer.cs">
+      <DependentUpon>ErrorResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\ErrorResource.fr.Designer.cs">
+      <DependentUpon>ErrorResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\DeployItemResource.Designer.cs">
+      <DependentUpon>DeployItemResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\DeployItemResource.fr.Designer.cs">
+      <DependentUpon>DeployItemResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\DeployResource.Designer.cs">
+      <DependentUpon>DeployResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Tpl\DeployResource.fr.Designer.cs">
+      <DependentUpon>DeployResource.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Services\AzureManagement.cs" />
+    <Compile Include="Services\CertificateBuilder.cs" />
+    <Compile Include="Services\CloudBackedStore.cs" />
+    <Compile Include="Services\PackageBuilder.cs" />
+    <Compile Include="Services\StatusMessageConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\bootstrap-responsive.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="Content\img\help\add-certificate-1.png" />
+    <Content Include="Content\img\help\add-certificate-2.png" />
+    <Content Include="Content\img\help\add-certificate-3.png" />
+    <Content Include="Content\img\help\image001.jpg" />
+    <Content Include="Content\img\help\image002.jpg" />
+    <Content Include="Content\img\help\image003.png" />
+    <Content Include="Content\img\help\image004.png" />
+    <Content Include="Content\img\help\image005.png" />
+    <Content Include="Content\img\help\image006.png" />
+    <Content Include="Content\img\help\image007.jpg" />
+    <Content Include="Content\img\help\image008.jpg" />
+    <Content Include="Content\img\help\image009.png" />
+    <Content Include="Content\img\help\image010.png" />
+    <Content Include="Content\img\help\image011.png" />
+    <Content Include="Content\img\help\image012.png" />
+    <Content Include="Content\img\help\image013.png" />
+    <Content Include="Content\img\help\image014.jpg" />
+    <Content Include="Content\img\help\image015.png" />
+    <Content Include="Content\img\help\image016.jpg" />
+    <Content Include="Content\img\help\image017.png" />
+    <Content Include="Content\img\help\image018.png" />
+    <Content Include="Content\img\help\image019.jpg" />
+    <Content Include="Content\img\help\image020.jpg" />
+    <Content Include="Content\img\help\image021.png" />
+    <Content Include="Content\img\help\image022.png" />
+    <Content Include="Content\img\help\image023.png" />
+    <Content Include="Global.asax" />
+    <Content Include="js\libs\backbone-min.js" />
+    <Content Include="js\libs\bootstrap-collapse.js" />
+    <Content Include="js\libs\bootstrap-modal.js" />
+    <Content Include="js\libs\json2.js" />
+    <Content Include="js\libs\underscore-min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\models\azureconfig.js" />
+    <Content Include="js\models\config.js" />
+    <Content Include="js\models\odpiapp.js" />
+    <Content Include="js\util.js" />
+    <Content Include="js\views\availapp.js" />
+    <Content Include="js\views\azureconfig.js" />
+    <Content Include="js\views\config.js" />
+    <Content Include="js\views\configitem.js" />
+    <Content Include="js\views\deploy.js" />
+    <Content Include="js\views\deployitem.js" />
+    <Content Include="js\views\error.js" />
+    <Content Include="js\views\manualitem.js" />
+    <Content Include="js\views\tasklist.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\AvailAppItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Tasklist.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\AzureConfig.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Config.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\SqlAzure.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\BlobStorage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\OpenIntel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\OpenTurf.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Deploy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\DeployItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\Error.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\ManualItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\DataLab.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tester\DatalabPostDeploy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\AddCertificate.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetSubscriptionId.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetTableStorageName.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\CreateTableStorage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetTableStorageKey.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\CreateSqlAzureDb.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetDbHostName.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetDbName.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\GetDbUsername.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Help\CreateHostedService.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ConfTpl\CitizenPortalOpenData.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Actions\ValidateResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidateResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Actions\ValidateResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidateResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\AppResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\AppResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\CheckResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CheckResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\CheckResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CheckResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\TesterResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TesterResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\TesterResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TesterResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\DeployResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeployResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controllers\DeployResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeployResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Models\OdpiAppRepoResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdpiAppRepoResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Models\OdpiAppRepoResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OdpiAppRepoResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Services\StatusMessageConverterResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusMessageConverterResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Services\StatusMessageConverterResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StatusMessageConverterResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\BlobStorageResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BlobStorageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\BlobStorageResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BlobStorageResource.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CitizenPortalOpenDataResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\CitizenPortalOpenDataResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CitizenPortalOpenDataResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\SqlAzureResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SqlAzureResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\SqlAzureResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SqlAzureResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\OpenIntelResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OpenIntelResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\OpenIntelResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OpenIntelResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\OpenTurfResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OpenTurfResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\DataLabResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataLabResource.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\DataLabResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DataLabResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\ConfTpl\OpenTurfResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OpenTurfResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\AddCertificateResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddCertificateResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\AddCertificateResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddCertificateResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetTableStorageNameResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetTableStorageNameResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetTableStorageNameResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetTableStorageNameResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetTableStorageKeyResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetTableStorageKeyResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetTableStorageKeyResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetTableStorageKeyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetSubscriptionIdResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetSubscriptionIdResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetSubscriptionIdResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetSubscriptionIdResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetDbUsernameResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetDbUsernameResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetDbUsernameResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetDbUsernameResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetDbNameResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetDbNameResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetDbNameResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetDbNameResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetDbHostNameResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetDbHostNameResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\GetDbHostNameResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GetDbHostNameResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\CreateTableStorageResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateTableStorageResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\CreateTableStorageResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateTableStorageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\CreateSqlAzureDbResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateSqlAzureDbResource.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\CreateSqlAzureDbResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateSqlAzureDbResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\CreateHostedServiceResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateHostedServiceResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\CreateHostedServiceResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateHostedServiceResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Shared\ErrorResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Shared\ErrorResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Shared\_LayoutResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_LayoutResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Shared\_LayoutResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_LayoutResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\AvailAppItemResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvailAppItemResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\AvailAppItemResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvailAppItemResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\AzureConfigResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AzureConfigResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\AzureConfigResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AzureConfigResource.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\ConfigResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfigResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\ConfigResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConfigResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\TasklistResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TasklistResource.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\TasklistResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TasklistResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\ManualItemResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ManualItemResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\ManualItemResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ManualItemResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\ErrorResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\ErrorResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ErrorResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\DeployItemResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeployItemResource.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\DeployItemResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeployItemResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\DeployResource.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeployResource.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Tpl\DeployResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DeployResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tpl\ConfigItem.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49768</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49768/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

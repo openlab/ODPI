@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+<div class="row">
+    <div class="span3">
+        <h4>
+            @ODPI.Resources.Views.Tpl.ConfigResource.Progress</h4>
+        <ol>
+            <li><del>@ODPI.Resources.Views.Tpl.ConfigResource.SelectComponentsToInstall</del></li>
+            <li><strong>@ODPI.Resources.Views.Tpl.ConfigResource.ConfigureComponents</strong></li>
+            <li>@ODPI.Resources.Views.Tpl.ConfigResource.FinalizeInstallProcedure</li>
+            <li>@ODPI.Resources.Views.Tpl.ConfigResource.Install</li>
+        </ol>
+    </div>
+    <div class="span9">
+        <h2 id="config-title">
+            @ODPI.Resources.Views.Tpl.ConfigResource.Configuring <%= Name %>:</h2>
+        <div id="config-help-text">
+           <%= ConfigHelpText %>
+        </div>
+        <form class="form-horizontal">
+        <div id="config-container">
+        </div>
+        </form>
+        <div class="actions">
+            <a id="btnBack" class="btn btn-large" href="#">&laquo; @ODPI.Resources.Views.Tpl.ConfigResource.GoBack</a>
+            <a id="btnContinue" class="btn btn-primary btn-large" href="#">@ODPI.Resources.Views.Tpl.ConfigResource.Continue &raquo;</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+﻿@{
+    Layout = null;
+}
+<div id="app-<%= Id %>" class="alert">
+    <h3><%= Name %></h3>
+    <p><%= Description %></p>
+    <div class="alert-actions">
+        <a class="btn small enable" data-key="<%= Id %>">@ODPI.Resources.Views.Tpl.AvailAppItemResource.Enable</a> <a class="btn small disable" data-key="<%= Id %>" disabled>@ODPI.Resources.Views.Tpl.AvailAppItemResource.Disable</a>
+    </div>
+</div>

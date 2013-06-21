@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CitizenPortalOpenData" xml:space="preserve">
+    <value>Open Data Citizen Portal</value>
+  </data>
+  <data name="CitizenPortalOpenDataConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;To configure the Open Data Citizen Portal on Windows Azure, you will need to provide us with various items below so we can configure the package of installing the Open Data Citizen Portal on Windows Azure&lt;/p&gt;</value>
+  </data>
+  <data name="CitizenPortalOpenDataDescription" xml:space="preserve">
+    <value>The Open Data Citizen Portal is a web site particularly adapted to the public and offering a user friendly interface.</value>
+  </data>
+  <data name="DataLab" xml:space="preserve">
+    <value>OGDI DataLab</value>
+  </data>
+  <data name="DataLabConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;To configure OGDI DataLab on Windows Azure, we will first need to get information on blob storage information plus other settings. 
+You will need to provide us with various items below so we can configure the package of installing OGDI DataLab on Windows Azure.&lt;/p&gt;</value>
+  </data>
+  <data name="DataLabDescription" xml:space="preserve">
+    <value>OGDI DataLab is a solution that makes it possible for agencies to publish government and public data more quickly and efficiently.</value>
+  </data>
+  <data name="DataPublic" xml:space="preserve">
+    <value>Data Public</value>
+  </data>
+  <data name="DataPublicConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;To configure Data Public on Windows Azure, we will first need to get information on a SQL Azure database to use. 
+You will need to provide us with various items below so we can configure the package for installing Data Public on Windows Azure.&lt;/p&gt;</value>
+  </data>
+  <data name="DataPublicDescription" xml:space="preserve">
+    <value>DataPublic: a web portal for Open Government initiatives.</value>
+  </data>
+  <data name="Drupal" xml:space="preserve">
+    <value>Drupal</value>
+  </data>
+  <data name="DrupalConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;To configure Drupal on Windows Azure, we will first need to get information on a SQL Azure database to use. 
+You will need to provide us with various items below so we can configure the package of installing Drupal on Windows Azure.&lt;/p&gt;</value>
+  </data>
+  <data name="DrupalDescription" xml:space="preserve">
+    <value>Drupal is an open source content management platform powering millions of websites and applications. It’s built, used, and supported by an active and diverse community of people around the world.</value>
+  </data>
+  <data name="OpenIntel" xml:space="preserve">
+    <value>OpenIntel</value>
+  </data>
+  <data name="OpenIntelConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;To configure OpenIntel on Windows Azure, we will first need to get information on a SQL Azure database to use and blob storage information. 
+You will need to provide us with various items below so we can configure the package of installing OpenIntel on Windows Azure.&lt;/p&gt;</value>
+  </data>
+  <data name="OpenIntelDescription" xml:space="preserve">
+    <value>Open Intel is an accelerator for governments and private companies to rapidly build open data portals and killer business intelligence solutions with an emphasis on spatial analysis, data interaction and visualization.</value>
+  </data>
+  <data name="Openturf" xml:space="preserve">
+    <value>ODAF Openturf</value>
+  </data>
+  <data name="OpenturfConfigHelpText" xml:space="preserve">
+    <value>&lt;p&gt;To configure ODAF OpenTurf on Windows Azure, we will first need to get information on a SQL Azure database to use, set some application settings, Twitter settings and blob storage info.&lt;/p&gt;
+&lt;p&gt;You will need to provide us with various items below so we can configure the package of installing ODAF OpenTurf on Windows Azure.&lt;/p&gt;</value>
+  </data>
+  <data name="OpenturfDescription" xml:space="preserve">
+    <value>This is an OpenData Framework that makes it easy to Add and Consume OpenData Endpoints into a reusable code base.</value>
+  </data>
+</root>

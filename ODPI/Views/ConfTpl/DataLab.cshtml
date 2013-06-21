@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+<div class="page-header">
+    <h4>
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.BlobStorageInfo</h4>
+    <p>@Html.Raw(ODPI.Resources.Views.ConfTpl.DataLabResource.TheUseOfBlobStorageIsRequired)</p>
+    <p>@ODPI.Resources.Views.ConfTpl.DataLabResource.OnceComplete</p>
+</div>
+<div class="control-group">
+    <label  class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.DataLabResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.DataLabResource.StorageAccountName</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagename" name="storagename" />
+    </div>
+</div>
+<div class="control-group">
+    <label  class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.DataLabResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.DataLabResource.PrimaryAccessKey</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagekey" name="storagekey" />
+    </div>
+</div>
+<div class="modal hide fade" id="createTableStorage">
+    @Html.Partial("../Help/CreateTableStorage")
+</div>
+<div class="modal hide fade" id="tableStorageName">
+    @Html.Partial("../Help/GetTableStorageName")
+</div>
+<div class="modal hide fade" id="tableStorageKey">
+    @Html.Partial("../Help/GetTableStorageKey")
+</div>
+
+
+<div class="page-header">
+    <h4>@ODPI.Resources.Views.ConfTpl.DataLabResource.ApplicationSettings</h4>
+     <p>
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.ApplicationSettingsWillAllowDataLab
+    </p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.DataServiceDNS</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="dns" name="dns" placeholder="xxxx.cloudapp.net" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.RecaptchaPrivateKey</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="recappriv" name="recappriv" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.RecaptchaPublickey</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="recappub" name="recappub" />
+    </div>
+</div>
+
+<div class="page-header">
+    <h4>@ODPI.Resources.Views.ConfTpl.DataLabResource.CatalogDefinition</h4>
+     <p>
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.CatalogDefinitionDescription
+    </p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.Alias</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="alias" name="alias" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.Description</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="description" name="description" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.Disclaimer</label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="disclaimer" name="disclaimer" />
+    </div>
+</div>

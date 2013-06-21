@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+<div class="page-header">
+    <h4>
+        @ODPI.Resources.Views.ConfTpl.BlobStorageResource.BlobStorageInfo</h4>
+    <p>
+        @Html.Raw(ODPI.Resources.Views.ConfTpl.BlobStorageResource.TheUseOfBlobStorageIsRequired)
+    </p>
+    <p>@ODPI.Resources.Views.ConfTpl.BlobStorageResource.OnceComplete</p>
+</div>
+<div class="control-group">
+    <label  class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.BlobStorageResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.BlobStorageResource.StorageAccountName</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagename" name="storagename" />
+    </div>
+</div>
+<div class="control-group">
+    <label  class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.BlobStorageResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.BlobStorageResource.PrimaryAccessKey</a></label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagekey" name="storagekey" />
+    </div>
+</div>
+<div class="modal hide fade" id="createTableStorage">
+    @Html.Partial("../Help/CreateTableStorage")
+</div>
+<div class="modal hide fade" id="tableStorageName">
+    @Html.Partial("../Help/GetTableStorageName")
+</div>
+<div class="modal hide fade" id="tableStorageKey">
+    @Html.Partial("../Help/GetTableStorageKey")
+</div>

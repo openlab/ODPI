@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ODPI.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="ODPI">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="StorageName" value="ogdialex" />
+      <Setting name="AccountKey" value="0AJ46DtcETCvQYFpJbgZMk6GLujDZzITLdqYF0TiwilI71hxGSDilEe1VByUPOtbmvHeiKrkqHgryZQz5tLfUg==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
