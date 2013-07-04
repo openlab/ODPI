@@ -20,7 +20,7 @@ namespace ODPI.Service
             //First get a reference to the local file structure.
             localStorage = RoleEnvironment.GetLocalResource("scratchpad");
             
-            var acc = string.Format("DefaultEndpointsProtocol=https;AccountName={0};AccountKey={1}", RoleEnvironment.GetConfigurationSettingValue("StorageName"), RoleEnvironment.GetConfigurationSettingValue("AccountKey")); 
+            var acc = string.Format("DefaultEndpointsProtocol=https;AccountName={0};AccountKey={1}", RoleEnvironment.GetConfigurationSettingValue("StorageName"), RoleEnvironment.GetConfigurationSettingValue("StorageKey")); 
 
             storageAccount = CloudStorageAccount.Parse(acc);
             blobClient = storageAccount.CreateCloudBlobClient();

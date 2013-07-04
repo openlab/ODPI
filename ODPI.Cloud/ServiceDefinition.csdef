@@ -11,10 +11,11 @@
     <Endpoints>
       <InputEndpoint name="Endpoint1" protocol="http" port="80" />
     </Endpoints>
-    <Imports></Imports>
+    <Imports>
+    </Imports>
     <ConfigurationSettings>
       <Setting name="StorageName" />
-      <Setting name="AccountKey" />
+      <Setting name="StorageKey" />
     </ConfigurationSettings>
     <LocalResources>
       <LocalStorage name="scratchpad" cleanOnRoleRecycle="true" sizeInMB="500" />

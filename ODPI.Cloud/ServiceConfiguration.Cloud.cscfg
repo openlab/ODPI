@@ -4,7 +4,7 @@
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="StorageName" value="[StorageName]" />
-      <Setting name="AccountKey" value="[StorageKey]" />
+      <Setting name="StorageKey" value="[StorageKey]" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
