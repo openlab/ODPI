@@ -22,4 +22,5 @@ How to deploy ODPI in Azure
 1. Open Visual Studio 2012 with administrator privileges.
 2. Under *ODPI.Cloud/Roles*, open the ODPI role and go to the settings tab.
 3. Now replace **[StorageName]** and **[StorageKey]** by your the credentials of your Azure Storage account containing your blob files.
-4. You can now "package" and deploy your ODPI solution to Azure Cloud Services.
+4. Resolve all references errors using NuGet package manager.
+5. You can now "package" and deploy your ODPI solution to Azure Cloud Services.
