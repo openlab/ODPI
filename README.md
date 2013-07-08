@@ -12,7 +12,7 @@ How to deploy ODPI in Azure
 
 ###Storage account configuration
 
-1. Download the [ODAF Blob Files](http://frogdidata.blob.core.windows.net/public/ODAF_Blob_Files.zip) archive.
+1. Download the [ODPI Blob Files](http://frogdidata.blob.core.windows.net/public/ODPI_Blob_Files.zip) archive.
 2. If you don't have an Azure Storage account yet, create one.
 3. In your Azure Storage account, create a container named "components" in the blob storage.
 4. Uncompress the zip archive downloaded step 1 and upload all the files to the components container of your blob storage.
