@@ -44,16 +44,16 @@ namespace ODPI.Models
                 Validations = new IValidateAction[] { new TableStorageValidation() },
                 RequiredFiles = new string[]
                 {
-                    "BurlingtonParks.cfg",
-                    "BurlingtonParks.csv",
-                    "DataLoader.dll",
-                    "DataLoader.pdb",
-                    "DataLoaderUtility.exe",
-                    "DataLoaderUtility.exe.config.template",
-                    "DataLoaderUtility.pdb",
-                    "LumenWorks.Framework.IO.dll",
-                    "Microsoft.WindowsAzure.StorageClient.dll",
-                    "Microsoft.WindowsAzure.StorageClient.xml"
+                    //"BurlingtonParks.cfg",
+                    //"BurlingtonParks.csv",
+                    //"DataLoader.dll",
+                    //"DataLoader.pdb",
+                    //"DataLoaderUtility.exe",
+                    //"DataLoaderUtility.exe.config.template",
+                    //"DataLoaderUtility.pdb",
+                    //"LumenWorks.Framework.IO.dll",
+                    //"Microsoft.WindowsAzure.StorageClient.dll",
+                    //"Microsoft.WindowsAzure.StorageClient.xml"
                 },
                 SiteUrl = "http://{0}.cloudapp.net"
             });
@@ -73,8 +73,6 @@ namespace ODPI.Models
                 RequiredFiles = new string[] 
                 { 
                     "open_turf_create_tables.0.1.sql"
-                    //,
-                    //"open_turf_create_views.0.1.sql"  
                 },
                 SiteUrl = "http://{0}.cloudapp.net"
             });

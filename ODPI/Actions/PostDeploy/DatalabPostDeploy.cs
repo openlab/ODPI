@@ -53,10 +53,11 @@ namespace ODPI.Actions.PostDeploy
             //First create the AvailableEndpoints Table.
             CreateAvailableEndpoints(data);
 
+            //TODO: Uncomment to add initial data
+            /*
             //fill out the exe.config template
             var dir = Guid.NewGuid();
             setupExe(dir.ToString());
-
 
             var exeDir = CloudBackedStore.RootDir + "Datalab\\" + dir; ;
 
@@ -80,7 +81,7 @@ namespace ODPI.Actions.PostDeploy
                 do
                 {
                     Thread.Sleep(1000);
-                    var output = process.StandardOutput.ReadToEnd();
+                    //var output = process.StandardOutput.ReadToEnd();
                     var error = process.StandardError.ReadToEnd();
                 }
                 while (!process.HasExited);
@@ -88,9 +89,7 @@ namespace ODPI.Actions.PostDeploy
                 //var output = process.StandardOutput.ReadToEnd();
                 //var error = process.StandardError.ReadToEnd();
             }
-
-
-            return;
+            */
         }
 
         private void CreateAvailableEndpoints(dynamic data)
