@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Go to &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; and sign in</value>
+    <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToGetAzureTableStorageAccessKey" xml:space="preserve">
-    <value>How To Get Azure Table Storage Access Key</value>
+    <value>How to get the Azure Storage Account key</value>
   </data>
   <data name="PasteThisValueBack" xml:space="preserve">
     <value>Paste this value back in the &lt;b&gt;Azure Config &lt;/b&gt;page &lt;b&gt;Primary Access Key &lt;/b&gt;

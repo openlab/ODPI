@@ -118,21 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Go to &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; and sign in</value>
+    <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToGetAzureTableAccountName" xml:space="preserve">
-    <value>How To Get Azure Table Account Name</value>
+    <value>How to get the Azure Storage Account name</value>
   </data>
   <data name="PasteThisValueBack" xml:space="preserve">
     <value>Paste this value back in the &lt;b&gt;Azure Config &lt;/b&gt;page &lt;b&gt;Storage Account Name &lt;/b&gt;
                 field</value>
   </data>
   <data name="ClickOnStorageAccounts" xml:space="preserve">
-    <value>Click on &lt;b&gt;Storage Accounts&lt;/b&gt;</value>
+    <value>Click on &lt;b&gt;STORAGE&lt;/b&gt;.</value>
   </data>
   <data name="ClickOnTheNewlyCreatedStorage" xml:space="preserve">
-    <value>Click on the newly created Table Storage account (or existing account if a new one
-                is not created)</value>
+    <value>Click on the newly created storage account (or existing account if a new one is not created).</value>
   </data>
   <data name="InThePropertiesWindowsFind" xml:space="preserve">
     <value>In the &lt;b&gt;Properties &lt;/b&gt;window find the &lt;b&gt;Name&lt;/b&gt; field, highlight the value,

@@ -1,33 +1,47 @@
 ﻿<div class="modal-header">
-    <button class="close" data-dismiss="modal">
-        ×</button>
-    <h3>
-        @ODPI.Resources.Views.Help.CreateTableStorageResource.HowToGetCreateAzureStorage</h3>
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>@ODPI.Resources.Views.Help.CreateTableStorageResource.HowToGetCreateAzureStorage</h3>
 </div>
 <div class="modal-body">
-   @* <p>
+   @*
+    <p>
         We recommend creating a temporary storage account for the Installer tool but you
         can use an existing one. If you are using an existing Table Storage account you
-        can skip this step.</p>*@
+        can skip this step.
+    </p>
+    *@
+
     <ol>
         <li>
-            <p>@Html.Raw(@ODPI.Resources.Views.Help.CreateTableStorageResource.GoToWindowsAzure)</p>
+            <p>@Html.Raw(ODPI.Resources.Views.Help.CreateTableStorageResource.GoToWindowsAzure)</p>
         </li>
         <li>
-            <p>@Html.Raw(@ODPI.Resources.Views.Help.CreateTableStorageResource.ClickOnStorageAccounts)
+            <p>
+                @Html.Raw(ODPI.Resources.Views.Help.CreateTableStorageResource.ClickOnStorageAccounts)
                 <br>
-                <img src="/Content/img/help/image011.png"></p>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.CreateTableStorageResource.Image5">
+            </p>
         </li>
         <li>
-            <p>@Html.Raw(@ODPI.Resources.Views.Help.CreateTableStorageResource.ClickOnNewStorageAccount)
+            <p>
+                @Html.Raw(ODPI.Resources.Views.Help.CreateTableStorageResource.ClickOnNewStorageAccount)
                 <br>
-                <img src="/Content/img/help/image012.png"></p>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.CreateTableStorageResource.Image2">
+            </p>
         </li>
         <li>
-            <p>@Html.Raw(@ODPI.Resources.Views.Help.CreateTableStorageResource.InTheCreateANewStorageAccount)</p>
+            <p>
+                @Html.Raw(ODPI.Resources.Views.Help.CreateTableStorageResource.InTheCreateANewStorageAccount)
+                <br>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.CreateTableStorageResource.Image6">
+            </p>
         </li>
         <li>
-            <p>@Html.Raw(@ODPI.Resources.Views.Help.CreateTableStorageResource.ClickOkAtThisPoint)</p>
+            <p>
+                @Html.Raw(ODPI.Resources.Views.Help.CreateTableStorageResource.ClickOkAtThisPoint)
+                <br>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.CreateTableStorageResource.Image7">
+            </p>
         </li>
     </ol>
 </div>

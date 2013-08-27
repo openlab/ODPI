@@ -136,11 +136,10 @@
     <value>Précédent</value>
   </data>
   <data name="HostedService" xml:space="preserve">
-    <value>Service Hébergé</value>
+    <value>Service de Cloud</value>
   </data>
   <data name="IfYouDontAlreadyHaveAWindowsAzure" xml:space="preserve">
-    <value>Si vous ne possédez pas encore de compte Windows Azure, vous pouvez en créer un sur &lt;a href="http://www.windowsazure.com"
-                            target="_blank"&gt;www.windowsazure.com&lt;/a&gt;. Vous y trouverez toutes les informations et étapes requises à la création d'un compte.</value>
+    <value>Si vous ne possédez pas encore de compte Windows Azure, vous pouvez en créer un sur &lt;a href="http://www.windowsazure.com" target="_blank"&gt;www.windowsazure.com&lt;/a&gt;. Vous y trouverez toutes les informations et étapes requises à la création d'un compte.</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Installation</value>
@@ -149,7 +148,7 @@
     <value>Certificats de Gestion</value>
   </data>
   <data name="OnceYourAccountIsCreated" xml:space="preserve">
-    <value>Une fois votre compte créé, vous devez créer un Service Hébergé sur votre abonnement Windows Azure afin d'y déployer les produits. Ce Service Hébergé doit être vide. Dans le cas contraire vous ne pourrez pas déployer via l'Open Data Platform Installer.</value>
+    <value>Une fois votre compte créé, vous devez créer un Service de Cloud sur votre abonnement Windows Azure afin d'y déployer les produits. Ce Service de Cloud doit être vide. Dans le cas contraire vous ne pourrez pas déployer via l'Open Data Platform Installer.</value>
   </data>
   <data name="OpenDataPlatformInstalled" xml:space="preserve">
     <value>Open Data Platform Installer pour Windows Azure</value>
@@ -167,8 +166,7 @@
     <value>L'Open Data Platform Installer (ODPI) permet à toutes personnes, même les moins techniques, d'obtenir une collection personnalisée d'applications Open Data installées et fonctionnant sur Windows Azure en remplissant un minimum d'informations.</value>
   </data>
   <data name="TheOpenDataPlatformInstallerRequires" xml:space="preserve">
-    <value>L'Open Data Platform Installer nécessite un compte de stockage pour stocker temporairement les paquets lors du déploiement. Ces paquets seront supprimés mais le compte de stockage restera présent. Nous vous expliquerons comment créer un compte de stockage quand vous en aurez besoin. Cependant si vous désirez en créer un cliquez &lt;a href="#" data-toggle="modal" data-target="#createTableStorage"&gt;
-ici&lt;/a&gt;</value>
+    <value>L'Open Data Platform Installer nécessite un Compte de Stockage pour stocker temporairement les paquets lors du déploiement. Ces paquets seront supprimés mais le Compte de Stockage restera présent. Nous vous expliquerons comment créer un Compte de Stockage quand vous en aurez besoin. Cependant si vous désirez en créer un, cliquez &lt;a href="#" data-toggle="modal" data-target="#createTableStorage"&gt;ici&lt;/a&gt;.</value>
   </data>
   <data name="ToAllowOpenDataPlatformInstaller" xml:space="preserve">
     <value>Afin d'autoriser Open Data Platform Installer à accéder à votre compte Windows Azure, il vous sera demandé d'ajouter temporairement un certificat sur votre compte Windows Azure. Ne vous inquiétez pas, nous nous occupons de créer automatiquement  les certificats. De même nous vous montrerons en temps voulu comment ajouter le certificat sur votre compte Azure.</value>
@@ -177,7 +175,6 @@ ici&lt;/a&gt;</value>
     <value>Compte Windows Azure</value>
   </data>
   <data name="YouMustAlsoCreate" xml:space="preserve">
-    <value>Vous devez aussi créer un Service Hébergé différent pour chaque produit que vous souhaitez installer. Réferrez-vous au lien suivant pour savoir &lt;a href="#" data-toggle="modal" data-target="#CreateHostedService" rel="tooltip"
-                        data-original-title="Cliquer pour voir comment"&gt;Comment créer un Service Hébergé&lt;/a&gt;</value>
+    <value>Vous devez aussi créer un Service de Cloud différent pour chaque produit que vous souhaitez installer. Réferrez-vous au lien suivant pour savoir &lt;a href="#" data-toggle="modal" data-target="#CreateCloudService" rel="tooltip" data-original-title="Cliquer pour voir comment"&gt;comment créer un Service de Cloud&lt;/a&gt;.</value>
   </data>
 </root>

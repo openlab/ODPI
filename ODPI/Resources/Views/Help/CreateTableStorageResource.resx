@@ -118,24 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOkAtThisPoint" xml:space="preserve">
-    <value>Click &lt;b&gt;OK. &lt;/b&gt;At this point the Table Storage account will take a few
-                minutes to be created.</value>
+    <value>Click on &lt;b&gt;CREATE STORAGE ACCOUNT&lt;/b&gt;. After a few seconds, your &lt;b&gt;Storage Account&lt;/b&gt; is operational.</value>
   </data>
   <data name="ClickOnNewStorageAccount" xml:space="preserve">
-    <value>Click on &lt;b&gt;New Storage Account&lt;/b&gt;</value>
+    <value>Click on &lt;b&gt;NEW&lt;/b&gt;.</value>
   </data>
   <data name="ClickOnStorageAccounts" xml:space="preserve">
-    <value>Click on &lt;b&gt;Storage Accounts&lt;/b&gt;</value>
+    <value>Click on &lt;b&gt;STORAGE&lt;/b&gt;.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Go to &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; and sign in</value>
+    <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToGetCreateAzureStorage" xml:space="preserve">
-    <value>How To Get Create Azure Storage</value>
+    <value>How to create an Azure Storage Account</value>
+  </data>
+  <data name="Image2" xml:space="preserve">
+    <value>image002.jpg</value>
+  </data>
+  <data name="Image5" xml:space="preserve">
+    <value>image005.jpg</value>
+  </data>
+  <data name="Image6" xml:space="preserve">
+    <value>image006.jpg</value>
+  </data>
+  <data name="Image7" xml:space="preserve">
+    <value>image007.jpg</value>
   </data>
   <data name="InTheCreateANewStorageAccount" xml:space="preserve">
-    <value>In the &lt;b&gt;Create a New Storage Account &lt;/b&gt;dialog, select your &lt;b&gt;Subscription,
-                &lt;/b&gt;enter a unique name for the &lt;b&gt;URL&lt;/b&gt;, choose the &lt;b&gt;Region or Affinity &lt;/b&gt;
-                group of choice</value>
+    <value>In the panel that appears, choose &lt;b&gt;QUICK CREATE&lt;/b&gt;. Then enter your URL and select a region.</value>
   </data>
 </root>

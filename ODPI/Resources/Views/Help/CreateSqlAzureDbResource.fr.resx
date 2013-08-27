@@ -139,7 +139,7 @@
     <value>Entrez un &lt;b&gt;nom de base de données&lt;/b&gt; pour votre base et sélectionnez l'édition ainsi que la taille maximale. &lt;b&gt;NOTE :&lt;/b&gt; Souvenez-vous du nom de la base de données car vous en aurez besoin dans l'étape suivante.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Allez sur &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; et connectez-vous.</value>
+    <value>Allez sur &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; et connectez-vous.</value>
   </data>
   <data name="HowToGetCreateSqlAzureDatabase" xml:space="preserve">
     <value>Comment créer un Base de Données SQL Azure</value>

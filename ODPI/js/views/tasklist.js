@@ -67,11 +67,11 @@
     showHideBeforeStart: function(){
         var panel = $('#beforeStart');
         if(panel.css('display') === 'block'){
-            $('#showMore').html('Show More');
+            $('#showMore').html('Show more');
             panel.slideUp();
         }
         else{
-            $('#showMore').html('Show Less');
+            $('#showMore').html('Show less');
             panel.slideDown();
         }
         return false;

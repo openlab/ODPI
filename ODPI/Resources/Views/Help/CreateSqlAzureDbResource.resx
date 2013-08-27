@@ -144,7 +144,7 @@
                 for later</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Go to &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; and sign in</value>
+    <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToGetCreateSqlAzureDatabase" xml:space="preserve">
     <value>How To Get Create SQL Azure Database</value>

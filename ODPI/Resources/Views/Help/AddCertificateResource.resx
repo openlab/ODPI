@@ -118,27 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOk" xml:space="preserve">
-    <value>Click Ok</value>
+    <value>Click on &lt;b&gt;OK&lt;/b&gt;.</value>
   </data>
   <data name="ClickOnAddCertificate" xml:space="preserve">
-    <value>Click on Add Certificate</value>
+    <value>Click on &lt;b&gt;UPLOAD A MANAGEMENT CERTIFICATE&lt;/b&gt;.</value>
   </data>
   <data name="ClickOnManagementCertificates" xml:space="preserve">
-    <value>Click on &lt;strong&gt;Management Certificates&lt;/strong&gt;</value>
+    <value>Click on &lt;b&gt;SETTINGS&lt;/b&gt;.</value>
   </data>
   <data name="ClickTheBrowserButtonAndSelect" xml:space="preserve">
-    <value>Click the Browse button and select the generated certificate that was downloaded
-            to your computer.</value>
+    <value>Select the generated certificate that was downloaded to your computer.</value>
   </data>
   <data name="GoToManagementSite" xml:space="preserve">
-    <value>Go to the &lt;a href="http://windows.azure.com" target="_blank"&gt;Management Site&lt;/a&gt;
-            and sign in</value>
+    <value>Go to the &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToAddACertificate" xml:space="preserve">
-    <value>How to Add a Certificate</value>
+    <value>How to add a Management Certificate</value>
   </data>
-  <data name="InTheAddNewManagementCertificate" xml:space="preserve">
-    <value>In the Add New Management Certificate popup window select the subscription to add
-            to add the generated certificate.</value>
+  <data name="Image10" xml:space="preserve">
+    <value>image010.jpg</value>
+  </data>
+  <data name="Image8" xml:space="preserve">
+    <value>image008.jpg</value>
+  </data>
+  <data name="Image9" xml:space="preserve">
+    <value>image009.jpg</value>
   </data>
 </root>

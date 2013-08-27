@@ -118,27 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Go to &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; and sign in</value>
+    <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToGetAzureSubscriptionId" xml:space="preserve">
-    <value>How To Get Azure Subscription ID</value>
-  </data>
-  <data name="ClickOnHostedServices" xml:space="preserve">
-    <value>Click on hosted Services</value>
-  </data>
-  <data name="ClickOnYourSubscriptionThatAreDisplayed" xml:space="preserve">
-    <value>Click on your Subscription that are displayed in the center pane</value>
+    <value>How to get you Azure subscription ID</value>
   </data>
   <data name="HighlightTheSubscriptionIDNumber" xml:space="preserve">
-    <value>Highlight the Subscription ID number, right click and on the popup menu click
-                &lt;b&gt;Copy&lt;/b&gt;</value>
-  </data>
-  <data name="InThePropertiesWindow" xml:space="preserve">
-    <value>In the properties Window you will find your &lt;b&gt;Subscription ID&lt;/b&gt; near the
-                bottom</value>
+    <value>Highlight the &lt;b&gt;SUBSCRIPTION ID&lt;/b&gt; number, right click and select &lt;b&gt;Copy&lt;/b&gt;.</value>
   </data>
   <data name="PasteThisValueBack" xml:space="preserve">
-    <value>Paste this value back in the &lt;b&gt;Azure Config &lt;/b&gt;page &lt;b&gt;Subscription Id
-                &lt;/b&gt;field</value>
+    <value>Paste this value back in the &lt;b&gt;Azure Config&lt;/b&gt; page in the &lt;b&gt;Subscription Id&lt;/b&gt; field.</value>
+  </data>
+  <data name="ClickOnAdministratorsTab" xml:space="preserve">
+    <value>Click on the &lt;b&gt;ADMINISTRATORS&lt;/b&gt; tab.</value>
+  </data>
+  <data name="ClickOnSettings" xml:space="preserve">
+    <value>Click on &lt;b&gt;SETTINGS&lt;/b&gt;.</value>
+  </data>
+  <data name="Image11" xml:space="preserve">
+    <value>image011.jpg</value>
+  </data>
+  <data name="Image8" xml:space="preserve">
+    <value>image008.jpg</value>
+  </data>
+  <data name="Image12" xml:space="preserve">
+    <value>image012.jpg</value>
+  </data>
+  <data name="Image13" xml:space="preserve">
+    <value>image013.jpg</value>
   </data>
 </root>

@@ -127,7 +127,7 @@
     <value>Cliquez sur &lt;b&gt;l'Abonnement&lt;/b&gt; dans lequel réside votre base de données et étendez la sélection.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Allez sur &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; et connectez-vous.</value>
+    <value>Allez sur &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; et connectez-vous.</value>
   </data>
   <data name="HighlightThisValue" xml:space="preserve">
     <value>Sélectionnez cette valeur, faîtes un clic droit puis copier.</value>

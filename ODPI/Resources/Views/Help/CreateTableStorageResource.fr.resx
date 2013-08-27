@@ -118,21 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOkAtThisPoint" xml:space="preserve">
-    <value>Cliquez sur &lt;b&gt;OK&lt;/b&gt;. A ce stade la table de stockage peut mettre quelques minutes à être créée.</value>
+    <value>Cliquez sur &lt;b&gt;CREER UN COMPTE DE STOCKAGE&lt;/b&gt;. Après quelques secondes, votre &lt;b&gt;Compte de Stockage&lt;/b&gt; est opérationnel.</value>
   </data>
   <data name="ClickOnNewStorageAccount" xml:space="preserve">
-    <value>Cliquez sur &lt;b&gt;Nouveau compte de stockage&lt;/b&gt;</value>
+    <value>Cliquez sur &lt;b&gt;NOUVEAU&lt;/b&gt;.</value>
   </data>
   <data name="ClickOnStorageAccounts" xml:space="preserve">
-    <value>Cliquez sur &lt;b&gt;Comptes de stockage&lt;/b&gt;</value>
+    <value>Cliquez sur &lt;b&gt;STOCKAGE&lt;/b&gt;.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Allez sur &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; et connectez-vous.</value>
+    <value>Allez sur &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; et connectez-vous.</value>
   </data>
   <data name="HowToGetCreateAzureStorage" xml:space="preserve">
-    <value>Comment créer un Stockage Azure</value>
+    <value>Comment créer un Compte de Stockage Azure</value>
+  </data>
+  <data name="Image2" xml:space="preserve">
+    <value>fr/image002.jpg</value>
+  </data>
+  <data name="Image5" xml:space="preserve">
+    <value>fr/image005.jpg</value>
+  </data>
+  <data name="Image6" xml:space="preserve">
+    <value>fr/image006.jpg</value>
+  </data>
+  <data name="Image7" xml:space="preserve">
+    <value>fr/image007.jpg</value>
   </data>
   <data name="InTheCreateANewStorageAccount" xml:space="preserve">
-    <value>Dans la fenêtre &lt;b&gt;Créer un nouveau compte de stockage&lt;/b&gt;, sélectionnez votre &lt;b&gt;Abonnement&lt;/b&gt;, entrez un nom unique pour l'URL et choisissez une &lt;b&gt;Région ou un Group d'affinités&lt;/b&gt;</value>
+    <value>Dans le panneau qui s'affiche, choisissez &lt;b&gt;CREATION RAPIDE&lt;/b&gt;. Ensuite, renseignez votre URL et choisissez une région.</value>
   </data>
 </root>

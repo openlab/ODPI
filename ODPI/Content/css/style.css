@@ -2,3 +2,4 @@
 .collapse { height: 90px; overflow: auto; }
 .hero-unit { padding: 30px !important }
 .modal { display: none; }
+.greyBorder { border: 1px solid #ddd; }

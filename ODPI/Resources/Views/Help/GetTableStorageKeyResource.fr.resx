@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Allez sur &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; et connectez-vous.</value>
+    <value>Allez sur &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; et connectez-vous.</value>
   </data>
   <data name="HowToGetAzureTableStorageAccessKey" xml:space="preserve">
-    <value>Comment obtenir l'ID d'abonnement Azure</value>
+    <value>Comment obtenir la clé du Compte de Stockage Azure</value>
   </data>
   <data name="PasteThisValueBack" xml:space="preserve">
     <value>Collez la valeur dans la page de &lt;b&gt;Configuration Azure&lt;/b&gt; dans le champ &lt;b&gt;Clé d'accès primaire&lt;/b&gt;</value>

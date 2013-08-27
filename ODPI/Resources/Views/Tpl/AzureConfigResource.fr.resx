@@ -174,7 +174,7 @@ Si vous préférez utiliser l'installation automatisée veuillez suivre les inst
     <value>ODPI peut automatiquement déployer votre/vos paquet(s) à votre place mais vous devez d'abord suivre les étapes suivantes.</value>
   </data>
   <data name="ODPIHasTwoWays" xml:space="preserve">
-    <value>ODPI possède 2 méthodes pour configurer et installer vos composants sur la plateforme Windows Azure</value>
+    <value>ODPI possède 2 méthodes pour configurer et installer vos composants sur la plateforme Windows Azure.</value>
   </data>
   <data name="OnceYouHaveDownloadedAndUploaded" xml:space="preserve">
     <value>Une fois le certificat téléchargé et ajouté entrez votre ID d'abonnement disponible depuis la console d'administration. Cliquez &lt;a href="#" data-toggle="modal" data-target="#subscriptionIdHelp"&gt;ici&lt;/a&gt; pour plus de détails sur le moyen d'obtenir votre ID d'abonnement.</value>

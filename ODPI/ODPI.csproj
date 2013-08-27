@@ -131,6 +131,30 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Content Include="Content\img\help\fr\image001.jpg" />
+    <Content Include="Content\img\help\fr\image002.jpg" />
+    <Content Include="Content\img\help\fr\image003.jpg" />
+    <Content Include="Content\img\help\fr\image004.jpg" />
+    <Content Include="Content\img\help\fr\image005.jpg" />
+    <Content Include="Content\img\help\fr\image006.jpg" />
+    <Content Include="Content\img\help\fr\image007.jpg" />
+    <Content Include="Content\img\help\fr\image008.jpg" />
+    <Content Include="Content\img\help\fr\image009.jpg" />
+    <Content Include="Content\img\help\fr\image010.jpg" />
+    <Content Include="Content\img\help\fr\image011.jpg" />
+    <Content Include="Content\img\help\fr\image012.jpg" />
+    <Content Include="Content\img\help\fr\image013.jpg" />
+    <Content Include="Content\img\help\image003.jpg" />
+    <Content Include="Content\img\help\image004.jpg" />
+    <Content Include="Content\img\help\image005.jpg" />
+    <Content Include="Content\img\help\image006.jpg" />
+    <Content Include="Content\img\help\image007.jpg" />
+    <Content Include="Content\img\help\image008.jpg" />
+    <Content Include="Content\img\help\image009.jpg" />
+    <Content Include="Content\img\help\image010.jpg" />
+    <Content Include="Content\img\help\image011.jpg" />
+    <Content Include="Content\img\help\image012.jpg" />
+    <Content Include="Content\img\help\image013.jpg" />
     <Content Include="Content\img\loader.gif" />
     <Content Include="js\libs\bootstrap-tooltip.js" />
     <Compile Include="Models\CheckMessage.cs" />
@@ -365,13 +389,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Resources\Views\Help\CreateHostedServiceResource.Designer.cs">
-      <DependentUpon>CreateHostedServiceResource.resx</DependentUpon>
+    <Compile Include="Resources\Views\Help\CreateCloudServiceResource.Designer.cs">
+      <DependentUpon>CreateCloudServiceResource.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Resources\Views\Help\CreateHostedServiceResource.fr.Designer.cs">
-      <DependentUpon>CreateHostedServiceResource.fr.resx</DependentUpon>
+    <Compile Include="Resources\Views\Help\CreateCloudServiceResource.fr.Designer.cs">
+      <DependentUpon>CreateCloudServiceResource.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -487,32 +511,8 @@
     <Content Include="Content\css\style.css" />
     <Content Include="Content\img\glyphicons-halflings-white.png" />
     <Content Include="Content\img\glyphicons-halflings.png" />
-    <Content Include="Content\img\help\add-certificate-1.png" />
-    <Content Include="Content\img\help\add-certificate-2.png" />
-    <Content Include="Content\img\help\add-certificate-3.png" />
     <Content Include="Content\img\help\image001.jpg" />
     <Content Include="Content\img\help\image002.jpg" />
-    <Content Include="Content\img\help\image003.png" />
-    <Content Include="Content\img\help\image004.png" />
-    <Content Include="Content\img\help\image005.png" />
-    <Content Include="Content\img\help\image006.png" />
-    <Content Include="Content\img\help\image007.jpg" />
-    <Content Include="Content\img\help\image008.jpg" />
-    <Content Include="Content\img\help\image009.png" />
-    <Content Include="Content\img\help\image010.png" />
-    <Content Include="Content\img\help\image011.png" />
-    <Content Include="Content\img\help\image012.png" />
-    <Content Include="Content\img\help\image013.png" />
-    <Content Include="Content\img\help\image014.jpg" />
-    <Content Include="Content\img\help\image015.png" />
-    <Content Include="Content\img\help\image016.jpg" />
-    <Content Include="Content\img\help\image017.png" />
-    <Content Include="Content\img\help\image018.png" />
-    <Content Include="Content\img\help\image019.jpg" />
-    <Content Include="Content\img\help\image020.jpg" />
-    <Content Include="Content\img\help\image021.png" />
-    <Content Include="Content\img\help\image022.png" />
-    <Content Include="Content\img\help\image023.png" />
     <Content Include="Global.asax" />
     <Content Include="js\libs\backbone-min.js" />
     <Content Include="js\libs\bootstrap-collapse.js" />
@@ -618,7 +618,7 @@
     <Content Include="Views\Help\GetDbUsername.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Help\CreateHostedService.cshtml" />
+    <Content Include="Views\Help\CreateCloudService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\ConfTpl\CitizenPortalOpenData.cshtml" />
@@ -804,13 +804,14 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CreateSqlAzureDbResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Views\Help\CreateHostedServiceResource.fr.resx">
+    <EmbeddedResource Include="Resources\Views\Help\CreateCloudServiceResource.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>CreateHostedServiceResource.fr.Designer.cs</LastGenOutput>
+      <LastGenOutput>CreateCloudServiceResource.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Views\Help\CreateHostedServiceResource.resx">
+    <EmbeddedResource Include="Resources\Views\Help\CreateCloudServiceResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>CreateHostedServiceResource.Designer.cs</LastGenOutput>
+      <LastGenOutput>CreateCloudServiceResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Shared\ErrorResource.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

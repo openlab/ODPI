@@ -121,9 +121,7 @@
     <value>Before You Start</value>
   </data>
   <data name="BeforeYouStartTheProcess" xml:space="preserve">
-    <value>Before you start the process of installing any of the products included with Open
-        Data Platform Installer there are a few pre-requisites required before using the
-        tool. &lt;a id="showMore" href=""&gt;Show More&lt;/a&gt;</value>
+    <value>Before you start the process of installing any of the products included with Open Data Platform Installer there are a few pre-requisites required before using the tool. &lt;a id="showMore" href=""&gt;Show more&lt;/a&gt;</value>
   </data>
   <data name="ConfigureComponents" xml:space="preserve">
     <value>Configure Components</value>
@@ -141,12 +139,10 @@
     <value>Go Back</value>
   </data>
   <data name="HostedService" xml:space="preserve">
-    <value>Hosted Service</value>
+    <value>Cloud Service</value>
   </data>
   <data name="IfYouDontAlreadyHaveAWindowsAzure" xml:space="preserve">
-    <value>If you don’t already have a Windows Azure account you can create one at &lt;a href="http://www.windowsazure.com"
-                            target="_blank"&gt;www.windowsazure.com&lt;/a&gt;. Here you will find all appropriate
-                        information and steps required to create an account.</value>
+    <value>If you don’t already have a Windows Azure account you can create one at &lt;a href="http://www.windowsazure.com" target="_blank"&gt;www.windowsazure.com&lt;/a&gt;. Here you will find all appropriate information and steps required to create an account.</value>
   </data>
   <data name="Install" xml:space="preserve">
     <value>Install</value>
@@ -155,9 +151,7 @@
     <value>Management Certificates</value>
   </data>
   <data name="OnceYourAccountIsCreated" xml:space="preserve">
-    <value>Once your account is created you will need to create a Hosted Service under your
-                    Windows Azure subscription to deploy the products to. This Hosted Service must be
-                    empty or we cannot deploy to it using the Open Data Platform Installer.</value>
+    <value>Once your account is created you will need to create a Cloud Service under your Windows Azure subscription to deploy the products to. This Cloud Service must be empty or we cannot deploy to it using the Open Data Platform Installer.</value>
   </data>
   <data name="OpenDataPlatformInstalled" xml:space="preserve">
     <value>Open Data Platform Installer for Windows Azure</value>
@@ -172,30 +166,18 @@
     <value>Storage Account</value>
   </data>
   <data name="TheOpenDataPlatformInstallerODPI" xml:space="preserve">
-    <value>The Open Data Platform Installer (ODPI) will allow even non-technical folks to get
-        a customized collection of Open Data applications up and running on Windows Azure
-        by filling out a few details.</value>
+    <value>The Open Data Platform Installer (ODPI) will allow even non-technical folks to get a customized collection of Open Data applications up and running on Windows Azure by filling out a few details.</value>
   </data>
   <data name="TheOpenDataPlatformInstallerRequires" xml:space="preserve">
-    <value>The Open Data Platform Installer requires the use of a Storage Account to temporarily
-                        store packages while deploying. These packages will be deleted, but the storage
-                        account will remain in place. We'll let you know when you need these details but
-                        if you want to create one now click &lt;a href="#" data-toggle="modal" data-target="#createTableStorage"&gt;
-                            here&lt;/a&gt;
-                    for details on how to create one.</value>
+    <value>The Open Data Platform Installer requires the use of a Storage Account to temporarily store packages while deploying. These packages will be deleted, but the Storage Account will remain in place. We'll let you know when you need these details but if you want to create one now click &lt;a href="#" data-toggle="modal" data-target="#createTableStorage"&gt;here&lt;/a&gt; for details on how to create one.</value>
   </data>
   <data name="ToAllowOpenDataPlatformInstaller" xml:space="preserve">
-    <value>To allow the Open Data Platform Installer access to your Windows Azure account,
-                        you will be required to add temporary certificates to your Windows Azure account.
-                        Don’t worry, we automatically create the certificates, we’ll show you how to add
-                        the certificates to your Azure account when the time is right.</value>
+    <value>To allow the Open Data Platform Installer access to your Windows Azure account, you will be required to add temporary certificates to your Windows Azure account. Don’t worry, we automatically create the certificates, we’ll show you how to add the certificates to your Azure account when the time is right.</value>
   </data>
   <data name="WindowsAzureAccount" xml:space="preserve">
     <value>Windows Azure Account</value>
   </data>
   <data name="YouMustAlsoCreate" xml:space="preserve">
-    <value>You must also create a separate hosted service for every product you install. Please
-                    see, &lt;a href="#" data-toggle="modal" data-target="#CreateHostedService" rel="tooltip"
-                        data-original-title="Click to see how"&gt;How to Create a Hosted Service for more details.&lt;/a&gt;</value>
+    <value>You must also create a separate Cloud Service for every product you install. Please see, &lt;a href="#" data-toggle="modal" data-target="#CreateCloudService" rel="tooltip" data-original-title="Click to see how"&gt;how to create a Cloud Service&lt;/a&gt;.</value>
   </data>
 </root>

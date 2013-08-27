@@ -118,24 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOk" xml:space="preserve">
-    <value>Cliquez sur OK</value>
+    <value>Cliquez sur &lt;b&gt;OK&lt;/b&gt;.</value>
   </data>
   <data name="ClickOnAddCertificate" xml:space="preserve">
-    <value>Cliquez sur Ajouter un Certificat</value>
+    <value>Cliquez sur &lt;b&gt;TELECHARGER UN CERTIFICAT DE GESTION&lt;/b&gt;.</value>
   </data>
   <data name="ClickOnManagementCertificates" xml:space="preserve">
-    <value>Cliquez sur &lt;strong&gt;Certificats de gestion&lt;/strong&gt;</value>
+    <value>Cliquez sur &lt;b&gt;PARAMETRES&lt;/b&gt;.</value>
   </data>
   <data name="ClickTheBrowserButtonAndSelect" xml:space="preserve">
-    <value>Cliquez sur le bouton Parcourir et sélectionnez le certificat téléchargé précédemment sur votre ordinateur local.</value>
+    <value>Sélectionnez le certificat téléchargé précédemment sur votre ordinateur.</value>
   </data>
   <data name="GoToManagementSite" xml:space="preserve">
-    <value>Allez sur &lt;a href="http://windows.azure.com" target="_blank"&gt;le site d'Administration&lt;/a&gt; et identifiez-vous</value>
+    <value>Allez sur &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; et identifiez-vous.</value>
   </data>
   <data name="HowToAddACertificate" xml:space="preserve">
-    <value>Comment ajouter un certificat</value>
+    <value>Comment ajouter un certificat de gestion</value>
   </data>
-  <data name="InTheAddNewManagementCertificate" xml:space="preserve">
-    <value>Dans la fenêtre Ajouter un certificat, choisissez l'abonnement sur lequel ajouter le certificat généré.</value>
+  <data name="Image10" xml:space="preserve">
+    <value>fr/image010.jpg</value>
+  </data>
+  <data name="Image8" xml:space="preserve">
+    <value>fr/image008.jpg</value>
+  </data>
+  <data name="Image9" xml:space="preserve">
+    <value>fr/image009.jpg</value>
   </data>
 </root>

@@ -180,8 +180,7 @@
     <value>ODPI can automatically deploy your package(s) for you but you first must follow these steps.</value>
   </data>
   <data name="ODPIHasTwoWays" xml:space="preserve">
-    <value>ODPI has two ways to configure and install your components onto the Windows Azure
-                platform.</value>
+    <value>ODPI has two ways to configure and install your components onto the Windows Azure platform.</value>
   </data>
   <data name="OnceYouHaveDownloadedAndUploaded" xml:space="preserve">
     <value>Once you have downloaded and uploaded the certificate, enter your Subscription ID

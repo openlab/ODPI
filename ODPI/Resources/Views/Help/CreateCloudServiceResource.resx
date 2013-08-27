@@ -118,33 +118,42 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOkAndAfter" xml:space="preserve">
-    <value>Cliquez sur OK et après une dizaine de secondes votre &lt;strong&gt;Service Hébergé&lt;/strong&gt; est créé.</value>
+    <value>Click on &lt;b&gt;CREATE CLOUD SERVICE&lt;/b&gt;. After a few seconds, your &lt;b&gt;Cloud Service&lt;/b&gt; is operational.</value>
   </data>
-  <data name="ClickOnHostedServices" xml:space="preserve">
-    <value>Cliquez sur Services Hébergés</value>
+  <data name="ClickOnCloudServices" xml:space="preserve">
+    <value>Click on &lt;b&gt;CLOUD SERVICES&lt;/b&gt;.</value>
   </data>
-  <data name="ClickOnNewHostedService" xml:space="preserve">
-    <value>Cliquez sur &lt;strong&gt;nouveau Service Hébergé&lt;/strong&gt;</value>
-  </data>
-  <data name="ClickOnYourSubscription" xml:space="preserve">
-    <value>Cliquez sur votre abonnement affiché au centre de la fenêtre</value>
+  <data name="ClickOnNewCloudService" xml:space="preserve">
+    <value>Click on &lt;b&gt;NEW&lt;/b&gt;.</value>
   </data>
   <data name="ForOpenDataPlatformInstallerToFunction" xml:space="preserve">
-    <value>Pour qu'Open Data Platform Installer fonctionne correctement un &lt;strong&gt;Service Hébergé vide&lt;/strong&gt; est requis dans votre abonnement Windows Azure afin d'installer les produits sélectionnés.</value>
+    <value>For the Open Data Platform Installer to function properly, an &lt;b&gt;empty Cloud Service&lt;/b&gt; is required under your Windows Azure subscription to install selected products.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
-    <value>Allez sur &lt;a href="http://windows.azure.com" target="_blank"&gt;http://windows.azure.com&lt;/a&gt; et connectez-vous.</value>
+    <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
-  <data name="HowToCreateAWindowsAzureHostedService" xml:space="preserve">
-    <value>Comment créer un Service Hébergé Windows Azure</value>
+  <data name="HowToCreateAWindowsAzureCloudService" xml:space="preserve">
+    <value>How To Create A Windows Azure Cloud Service</value>
   </data>
-  <data name="InTheCreateANewHostedService" xml:space="preserve">
-    <value>Dans la fenêtre &lt;strong&gt;Créer un nouveau service hébergé&lt;/strong&gt; qui s'affiche choisissez votre &lt;strong&gt;abonnement&lt;/strong&gt;, un nom de service, un préfixe pour le service (le préfixe peut être identique au nom) et choisissez une région. Pour les options de déploiement cochez &lt;strong&gt;Ne pas déployer.&lt;/strong&gt;</value>
+  <data name="Image1" xml:space="preserve">
+    <value>image001.jpg</value>
+  </data>
+  <data name="Image2" xml:space="preserve">
+    <value>image002.jpg</value>
+  </data>
+  <data name="Image3" xml:space="preserve">
+    <value>image003.jpg</value>
+  </data>
+  <data name="Image4" xml:space="preserve">
+    <value>image004.jpg</value>
+  </data>
+  <data name="InTheCreateANewCloudService" xml:space="preserve">
+    <value>In the panel that appears, choose &lt;b&gt;QUICK CREATE&lt;/b&gt;. Then enter your URL and select a region.</value>
   </data>
   <data name="TheFollowingStepsAllowYou" xml:space="preserve">
-    <value>Les étapes suivantes vous permettent de créer un &lt;strong&gt;Service Hébergé&lt;/strong&gt; dans votre abonnement Azure. Poursuivez pour créer une service hébergé pour chaque produit que vous désirez installer.</value>
+    <value>The following steps allow you to create a &lt;b&gt;Cloud Service&lt;/b&gt; under your Windows Azure subscription. Go ahead and create a hosted service for every product you wish to install.</value>
   </data>
-  <data name="YouMustCreateOneHostedService" xml:space="preserve">
-    <value>Vous devez créer un &lt;strong&gt;Service Hébergé&lt;/strong&gt; pour chaque produit que vous désirez installer et ne pouvez pas installer plusieurs produits sur un seul Service Hébergé. Dans les étapes de déploiement de l'installeur vous aurez la possibilité de choisir sur quel &lt;strong&gt;Service Hébergé&lt;/strong&gt; le produit doit être installé.</value>
+  <data name="YouMustCreateOneCloudService" xml:space="preserve">
+    <value>You must create one &lt;b&gt;Cloud Service&lt;/b&gt; for every product you install and cannot deploy multiple products to one Cloud Service. In the deployment step of the installer, you will have to select which &lt;b&gt;Cloud Service&lt;/b&gt; the product should be assigned to.</value>
   </data>
 </root>
