@@ -123,18 +123,16 @@
   <data name="HowToGetAzureTableAccountName" xml:space="preserve">
     <value>How to get the Azure Storage Account name</value>
   </data>
-  <data name="PasteThisValueBack" xml:space="preserve">
-    <value>Paste this value back in the &lt;b&gt;Azure Config &lt;/b&gt;page &lt;b&gt;Storage Account Name &lt;/b&gt;
-                field</value>
-  </data>
   <data name="ClickOnStorageAccounts" xml:space="preserve">
     <value>Click on &lt;b&gt;STORAGE&lt;/b&gt;.</value>
   </data>
-  <data name="ClickOnTheNewlyCreatedStorage" xml:space="preserve">
-    <value>Click on the newly created storage account (or existing account if a new one is not created).</value>
+  <data name="ClickOnTheStorageAccount" xml:space="preserve">
+    <value>Click on the desired Storage Account.</value>
   </data>
-  <data name="InThePropertiesWindowsFind" xml:space="preserve">
-    <value>In the &lt;b&gt;Properties &lt;/b&gt;window find the &lt;b&gt;Name&lt;/b&gt; field, highlight the value,
-                right click and on the popup menu click &lt;b&gt;Copy</value>
+  <data name="ClickOnManageAccessKeys" xml:space="preserve">
+    <value>Click on &lt;b&gt;MANAGE ACCESS KEYS&lt;/b&gt; at the bottom.</value>
+  </data>
+  <data name="CopyThisValue" xml:space="preserve">
+    <value>Click on the icon to copy the name of you Storage Account in the clipboard.</value>
   </data>
 </root>

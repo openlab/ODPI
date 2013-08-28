@@ -61,6 +61,15 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;MANAGE ACCESS KEYS&lt;/b&gt; at the bottom..
+        /// </summary>
+        public static string ClickOnManageAccessKeys {
+            get {
+                return ResourceManager.GetString("ClickOnManageAccessKeys", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;STORAGE&lt;/b&gt;..
         /// </summary>
         public static string ClickOnStorageAccounts {
@@ -70,11 +79,20 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on the newly created storage account (or existing account if a new one is not created)..
+        ///   Recherche une chaîne localisée semblable à Click on the desired Storage Account..
         /// </summary>
-        public static string ClickOnTheNewlyCreatedStorage {
+        public static string ClickOnTheStorageAccount {
             get {
-                return ResourceManager.GetString("ClickOnTheNewlyCreatedStorage", resourceCulture);
+                return ResourceManager.GetString("ClickOnTheStorageAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Click on the icon to copy the name of you Storage Account in the clipboard..
+        /// </summary>
+        public static string CopyThisValue {
+            get {
+                return ResourceManager.GetString("CopyThisValue", resourceCulture);
             }
         }
         
@@ -93,26 +111,6 @@ namespace ODPI.Resources.Views.Help {
         public static string HowToGetAzureTableAccountName {
             get {
                 return ResourceManager.GetString("HowToGetAzureTableAccountName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à In the &lt;b&gt;Properties &lt;/b&gt;window find the &lt;b&gt;Name&lt;/b&gt; field, highlight the value,
-        ///                right click and on the popup menu click &lt;b&gt;Copy.
-        /// </summary>
-        public static string InThePropertiesWindowsFind {
-            get {
-                return ResourceManager.GetString("InThePropertiesWindowsFind", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Paste this value back in the &lt;b&gt;Azure Config &lt;/b&gt;page &lt;b&gt;Storage Account Name &lt;/b&gt;
-        ///                field.
-        /// </summary>
-        public static string PasteThisValueBack {
-            get {
-                return ResourceManager.GetString("PasteThisValueBack", resourceCulture);
             }
         }
     }

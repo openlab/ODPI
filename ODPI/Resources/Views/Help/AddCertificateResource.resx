@@ -135,13 +135,4 @@
   <data name="HowToAddACertificate" xml:space="preserve">
     <value>How to add a Management Certificate</value>
   </data>
-  <data name="Image10" xml:space="preserve">
-    <value>image010.jpg</value>
-  </data>
-  <data name="Image8" xml:space="preserve">
-    <value>image008.jpg</value>
-  </data>
-  <data name="Image9" xml:space="preserve">
-    <value>image009.jpg</value>
-  </data>
 </root>

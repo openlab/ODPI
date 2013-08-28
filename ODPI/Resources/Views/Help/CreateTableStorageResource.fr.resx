@@ -132,18 +132,6 @@
   <data name="HowToGetCreateAzureStorage" xml:space="preserve">
     <value>Comment créer un Compte de Stockage Azure</value>
   </data>
-  <data name="Image2" xml:space="preserve">
-    <value>fr/image002.jpg</value>
-  </data>
-  <data name="Image5" xml:space="preserve">
-    <value>fr/image005.jpg</value>
-  </data>
-  <data name="Image6" xml:space="preserve">
-    <value>fr/image006.jpg</value>
-  </data>
-  <data name="Image7" xml:space="preserve">
-    <value>fr/image007.jpg</value>
-  </data>
   <data name="InTheCreateANewStorageAccount" xml:space="preserve">
     <value>Dans le panneau qui s'affiche, choisissez &lt;b&gt;CREATION RAPIDE&lt;/b&gt;. Ensuite, renseignez votre URL et choisissez une région.</value>
   </data>

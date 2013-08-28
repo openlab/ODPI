@@ -106,42 +106,6 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à image002.jpg.
-        /// </summary>
-        public static string Image2 {
-            get {
-                return ResourceManager.GetString("Image2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image005.jpg.
-        /// </summary>
-        public static string Image5 {
-            get {
-                return ResourceManager.GetString("Image5", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image006.jpg.
-        /// </summary>
-        public static string Image6 {
-            get {
-                return ResourceManager.GetString("Image6", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image007.jpg.
-        /// </summary>
-        public static string Image7 {
-            get {
-                return ResourceManager.GetString("Image7", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à In the panel that appears, choose &lt;b&gt;QUICK CREATE&lt;/b&gt;. Then enter your URL and select a region..
         /// </summary>
         public static string InTheCreateANewStorageAccount {

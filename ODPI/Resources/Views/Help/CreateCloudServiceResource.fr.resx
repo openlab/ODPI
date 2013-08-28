@@ -135,18 +135,6 @@
   <data name="HowToCreateAWindowsAzureCloudService" xml:space="preserve">
     <value>Comment créer un Service de Cloud Windows Azure</value>
   </data>
-  <data name="Image1" xml:space="preserve">
-    <value>fr/image001.jpg</value>
-  </data>
-  <data name="Image2" xml:space="preserve">
-    <value>fr/image002.jpg</value>
-  </data>
-  <data name="Image3" xml:space="preserve">
-    <value>fr/image003.jpg</value>
-  </data>
-  <data name="Image4" xml:space="preserve">
-    <value>fr/image004.jpg</value>
-  </data>
   <data name="InTheCreateANewCloudService" xml:space="preserve">
     <value>Dans le panneau qui s'affiche, choisissez &lt;b&gt;CREATION RAPIDE&lt;/b&gt;. Ensuite, renseignez votre URL et choisissez une région.</value>
   </data>

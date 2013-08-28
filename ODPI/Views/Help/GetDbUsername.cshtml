@@ -1,51 +1,46 @@
 ﻿<div class="modal-header">
-    <button class="close" data-dismiss="modal">
-        ×</button>
-    <h3>
-        @ODPI.Resources.Views.Help.GetDbUsernameResource.HowToGetSqlAzureDatabaseUsername</h3>
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>@ODPI.Resources.Views.Help.GetDbUsernameResource.HowToGetSqlAzureDatabaseUsername</h3>
 </div>
 <div class="modal-body">
     <ol>
         <li>
             <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.GoToWindowsAzure)</p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.ClickOnDatabase)<br>
-                <img src="/Content/img/help/image018.png"></p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.ClickOnTheSubscriptionsFoler)</p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.ClickOnTheSubscriptionYourDatabase)
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.GoToWindowsAzure)
             </p>
         </li>
         <li>
             <p>
-                @ODPI.Resources.Views.Help.GetDbUsernameResource.SelectYourServer<p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.ClickOnDatabase)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image17">
+            </p>
         </li>
         <li>
             <p>
-                @ODPI.Resources.Views.Help.GetDbUsernameResource.ExpandTheServerAndSelectYouDatabase<p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.ClickOnTheServersTab)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image25" class="greyBorder">
+            </p>
         </li>
         <li>
             <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.InThePropertiesWindow)
-                <p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.ClickOnYourServer)
+            </p>
         </li>
         <li>
             <p>
-                @ODPI.Resources.Views.Help.GetDbUsernameResource.HighlightThisValue
-                <p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.ClickOnTheDashboardTab)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image26" class="greyBorder">
+            </p>
         </li>
         <li>
             <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.PasteThisValueBackIntoTheUsername)
-                <p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbUsernameResource.CopyUsername)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image27" class="greyBorder">
+            </p>
         </li>
     </ol>
 </div>

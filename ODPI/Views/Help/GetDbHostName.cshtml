@@ -1,48 +1,41 @@
 ﻿<div class="modal-header">
-    <button class="close" data-dismiss="modal">
-        ×</button>
-    <h3>
-         @ODPI.Resources.Views.Help.GetDbHostNameResource.HowToGetSqlAzureDatabaseHostName</h3>
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>@ODPI.Resources.Views.Help.GetDbHostNameResource.HowToGetSqlAzureDatabaseHostName</h3>
 </div>
 <div class="modal-body">
     <ol>
         <li>
             <p>
-                @Html.Raw(@ODPI.Resources.Views.Help.GetDbHostNameResource.GoToWindowsAzure)</p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(@ODPI.Resources.Views.Help.GetDbHostNameResource.ClickOnDatabase)
-                <br>
-                <img src="/Content/img/help/image018.png"></p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(@ODPI.Resources.Views.Help.GetDbHostNameResource.ClickOnTheSubscriptionsFoler)</p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(@ODPI.Resources.Views.Help.GetDbHostNameResource.ClickOnTheSubscriptionYourDatabase)
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbHostNameResource.GoToWindowsAzure)
             </p>
         </li>
         <li>
             <p>
-                @ODPI.Resources.Views.Help.GetDbHostNameResource.SelectYourServer<p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbHostNameResource.ClickOnDatabase)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image17">
+            </p>
         </li>
         <li>
             <p>
-                @Html.Raw(@ODPI.Resources.Views.Help.GetDbHostNameResource.InThePropertiesWindow)
-                <p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbHostNameResource.ClickOnYourDatabase)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image21" class="greyBorder">
+            </p>
         </li>
         <li>
             <p>
-                @ODPI.Resources.Views.Help.GetDbHostNameResource.HighlightThisValue
-                <p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbHostNameResource.ClickOnTheDashboardTab)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image22" class="greyBorder">
+            </p>
         </li>
         <li>
             <p>
-                @Html.Raw(@ODPI.Resources.Views.Help.GetDbHostNameResource.PasteThisValueBackIntoTheDatabase)
-                <p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetDbHostNameResource.CopyDatabaseHostName)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image23" class="greyBorder">
+            </p>
         </li>
     </ol>
 </div>

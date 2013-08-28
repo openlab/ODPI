@@ -61,7 +61,7 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;Database&lt;/b&gt;.
+        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;SQL DATABASES&lt;/b&gt;..
         /// </summary>
         public static string ClickOnDatabase {
             get {
@@ -70,30 +70,20 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on the &lt;b&gt;Subscriptions &lt;/b&gt;folder.
+        ///   Recherche une chaîne localisée semblable à Click on the &lt;b&gt;SQL Database&lt;/b&gt; of your choice..
         /// </summary>
-        public static string ClickOnTheSubscriptionsFoler {
+        public static string ClickOnYourDatabase {
             get {
-                return ResourceManager.GetString("ClickOnTheSubscriptionsFoler", resourceCulture);
+                return ResourceManager.GetString("ClickOnYourDatabase", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on the &lt;strong&gt;Subscription&lt;/strong&gt; your database resides in and expand the
-        ///                selection&lt;/b&gt;.
+        ///   Recherche une chaîne localisée semblable à On the top, you&apos;ll find the name of your &lt;b&gt;SQL Database&lt;/b&gt;..
         /// </summary>
-        public static string ClickOnTheSubscriptionYourDatabase {
+        public static string CopyDatabaseName {
             get {
-                return ResourceManager.GetString("ClickOnTheSubscriptionYourDatabase", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Expand the server and select your database.
-        /// </summary>
-        public static string ExpandTheServerAndSelectYouDatabase {
-            get {
-                return ResourceManager.GetString("ExpandTheServerAndSelectYouDatabase", resourceCulture);
+                return ResourceManager.GetString("CopyDatabaseName", resourceCulture);
             }
         }
         
@@ -107,47 +97,11 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Highlight this value, right click and then click copy..
-        /// </summary>
-        public static string HighlightThisValue {
-            get {
-                return ResourceManager.GetString("HighlightThisValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à How To Get SQL Azure Database Name.
+        ///   Recherche une chaîne localisée semblable à How to get the name of your SQL Azure Database.
         /// </summary>
         public static string HowToGetSqlAzureDatabaseName {
             get {
                 return ResourceManager.GetString("HowToGetSqlAzureDatabaseName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à In the properties Window look for the &lt;strong&gt;Name&lt;/strong&gt;.
-        /// </summary>
-        public static string InThePropertiesWindow {
-            get {
-                return ResourceManager.GetString("InThePropertiesWindow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Paste this value back into the &lt;strong&gt;Database Name&lt;/strong&gt; field.
-        /// </summary>
-        public static string PasteThisValueBackIntoTheDatabase {
-            get {
-                return ResourceManager.GetString("PasteThisValueBackIntoTheDatabase", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Select your server.
-        /// </summary>
-        public static string SelectYourServer {
-            get {
-                return ResourceManager.GetString("SelectYourServer", resourceCulture);
             }
         }
     }

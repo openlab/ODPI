@@ -61,16 +61,16 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click &lt;strong&gt;Close&lt;/strong&gt;..
+        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;MANAGE ACCESS KEYS&lt;/b&gt; at the bottom..
         /// </summary>
-        public static string ClickClose {
+        public static string ClickOnManageAccessKeys {
             get {
-                return ResourceManager.GetString("ClickClose", resourceCulture);
+                return ResourceManager.GetString("ClickOnManageAccessKeys", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;Storage Accounts&lt;/b&gt;.
+        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;STORAGE&lt;/b&gt;..
         /// </summary>
         public static string ClickOnStorageAccounts {
             get {
@@ -79,12 +79,20 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on the newly created Table Storage account (or existing account if a new one
-        ///                is not created).
+        ///   Recherche une chaîne localisée semblable à Click on the desired &lt;b&gt;Storage Account&lt;/b&gt;..
         /// </summary>
-        public static string ClickOnTheNewlyCreatedStorage {
+        public static string ClickOnTheStorageAccount {
             get {
-                return ResourceManager.GetString("ClickOnTheNewlyCreatedStorage", resourceCulture);
+                return ResourceManager.GetString("ClickOnTheStorageAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Click on the icon to copy the key of your &lt;b&gt;Storage Account&lt;/b&gt; in the clipboard..
+        /// </summary>
+        public static string CopyThisValue {
+            get {
+                return ResourceManager.GetString("CopyThisValue", resourceCulture);
             }
         }
         
@@ -103,36 +111,6 @@ namespace ODPI.Resources.Views.Help {
         public static string HowToGetAzureTableStorageAccessKey {
             get {
                 return ResourceManager.GetString("HowToGetAzureTableStorageAccessKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à In the Properties window find the &lt;b&gt;Primary Access Key &lt;/b&gt;header near the top
-        ///                and click the &lt;b&gt;View &lt;/b&gt;button.
-        /// </summary>
-        public static string InThePropertiesWindowsFind {
-            get {
-                return ResourceManager.GetString("InThePropertiesWindowsFind", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à In the &lt;b&gt;View Storage Access Keys&lt;/b&gt; popup window, click the copy icon. (Note
-        ///                you may get a popup asking permission to copy to clipboard, click yes).
-        /// </summary>
-        public static string InTheViewStorageAccessKeys {
-            get {
-                return ResourceManager.GetString("InTheViewStorageAccessKeys", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Paste this value back in the &lt;b&gt;Azure Config &lt;/b&gt;page &lt;b&gt;Primary Access Key &lt;/b&gt;
-        ///                field.
-        /// </summary>
-        public static string PasteThisValueBack {
-            get {
-                return ResourceManager.GetString("PasteThisValueBack", resourceCulture);
             }
         }
     }

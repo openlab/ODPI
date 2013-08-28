@@ -135,16 +135,4 @@
   <data name="ClickOnSettings" xml:space="preserve">
     <value>Click on &lt;b&gt;SETTINGS&lt;/b&gt;.</value>
   </data>
-  <data name="Image11" xml:space="preserve">
-    <value>image011.jpg</value>
-  </data>
-  <data name="Image8" xml:space="preserve">
-    <value>image008.jpg</value>
-  </data>
-  <data name="Image12" xml:space="preserve">
-    <value>image012.jpg</value>
-  </data>
-  <data name="Image13" xml:space="preserve">
-    <value>image013.jpg</value>
-  </data>
 </root>

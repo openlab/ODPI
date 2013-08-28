@@ -144,6 +144,20 @@
     <Content Include="Content\img\help\fr\image011.jpg" />
     <Content Include="Content\img\help\fr\image012.jpg" />
     <Content Include="Content\img\help\fr\image013.jpg" />
+    <Content Include="Content\img\help\fr\image014.jpg" />
+    <Content Include="Content\img\help\fr\image015.jpg" />
+    <Content Include="Content\img\help\fr\image016.jpg" />
+    <Content Include="Content\img\help\fr\image017.jpg" />
+    <Content Include="Content\img\help\fr\image018.jpg" />
+    <Content Include="Content\img\help\fr\image019.jpg" />
+    <Content Include="Content\img\help\fr\image020.jpg" />
+    <Content Include="Content\img\help\fr\image021.jpg" />
+    <Content Include="Content\img\help\fr\image022.jpg" />
+    <Content Include="Content\img\help\fr\image023.jpg" />
+    <Content Include="Content\img\help\fr\image024.jpg" />
+    <Content Include="Content\img\help\fr\image025.jpg" />
+    <Content Include="Content\img\help\fr\image026.jpg" />
+    <Content Include="Content\img\help\fr\image027.jpg" />
     <Content Include="Content\img\help\image003.jpg" />
     <Content Include="Content\img\help\image004.jpg" />
     <Content Include="Content\img\help\image005.jpg" />
@@ -155,6 +169,20 @@
     <Content Include="Content\img\help\image011.jpg" />
     <Content Include="Content\img\help\image012.jpg" />
     <Content Include="Content\img\help\image013.jpg" />
+    <Content Include="Content\img\help\image014.jpg" />
+    <Content Include="Content\img\help\image015.jpg" />
+    <Content Include="Content\img\help\image016.jpg" />
+    <Content Include="Content\img\help\image017.jpg" />
+    <Content Include="Content\img\help\image018.jpg" />
+    <Content Include="Content\img\help\image019.jpg" />
+    <Content Include="Content\img\help\image020.jpg" />
+    <Content Include="Content\img\help\image021.jpg" />
+    <Content Include="Content\img\help\image022.jpg" />
+    <Content Include="Content\img\help\image023.jpg" />
+    <Content Include="Content\img\help\image024.jpg" />
+    <Content Include="Content\img\help\image025.jpg" />
+    <Content Include="Content\img\help\image026.jpg" />
+    <Content Include="Content\img\help\image027.jpg" />
     <Content Include="Content\img\loader.gif" />
     <Content Include="js\libs\bootstrap-tooltip.js" />
     <Compile Include="Models\CheckMessage.cs" />
@@ -309,6 +337,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\Views\Help\Screenshots.fr.Designer.cs">
+      <DependentUpon>Screenshots.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Resources\Views\Help\GetTableStorageNameResource.Designer.cs">
       <DependentUpon>GetTableStorageNameResource.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -398,6 +431,11 @@
       <DependentUpon>CreateCloudServiceResource.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Views\Help\Screenshots.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Screenshots.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\Views\Shared\ErrorResource.fr.Designer.cs">
       <DependentUpon>ErrorResource.fr.resx</DependentUpon>
@@ -739,6 +777,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AddCertificateResource.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\Screenshots.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Screenshots.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Help\GetTableStorageNameResource.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>GetTableStorageNameResource.fr.Designer.cs</LastGenOutput>
@@ -812,6 +854,10 @@
     <EmbeddedResource Include="Resources\Views\Help\CreateCloudServiceResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CreateCloudServiceResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Views\Help\Screenshots.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Screenshots.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Views\Shared\ErrorResource.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

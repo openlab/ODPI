@@ -1,44 +1,39 @@
 ﻿<div class="modal-header">
-    <button class="close" data-dismiss="modal">
-        ×</button>
-    <h3>
-        @ODPI.Resources.Views.Help.GetTableStorageKeyResource.HowToGetAzureTableStorageAccessKey</h3>
+    <button class="close" data-dismiss="modal">×</button>
+    <h3>@ODPI.Resources.Views.Help.GetTableStorageKeyResource.HowToGetAzureTableStorageAccessKey</h3>
 </div>
 <div class="modal-body">
     <ol>
         <li>
             <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.GoToWindowsAzure)</p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.GoToWindowsAzure)
+            </p>
         </li>
         <li>
             <p>
                  @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.ClickOnStorageAccounts)
-                </br>
-                <img src="/Content/img/help/image011.png"></p>
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image5">
+            </p>
         </li>
         <li>
             <p>
-                @ODPI.Resources.Views.Help.GetTableStorageKeyResource.ClickOnTheNewlyCreatedStorage</p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.ClickOnTheStorageAccount)
+            </p>
         </li>
         <li>
             <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.InThePropertiesWindowsFind)
-                <br>
-                <img  src="/Content/img/help/image015.png"></p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.ClickOnManageAccessKeys)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image14">
+            </p>
         </li>
         <li>
             <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.InTheViewStorageAccessKeys)</br>
-                <img src="/Content/img/help/image016.jpg"></p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.ClickClose)</p>
-        </li>
-        <li>
-            <p>
-                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.PasteThisValueBack)</br>
-                <img src="/Content/img/help/image013.png"></p>
+                @Html.Raw(ODPI.Resources.Views.Help.GetTableStorageKeyResource.CopyThisValue)
+                <br/>
+                <img src="/Content/img/help/@ODPI.Resources.Views.Help.Screenshots.Image16" class="greyBorder">
+            </p>
         </li>
     </ol>
 </div>

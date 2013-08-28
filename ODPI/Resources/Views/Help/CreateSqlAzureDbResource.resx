@@ -117,44 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CheckAllowOtherWindowsAzure" xml:space="preserve">
-    <value>Check &lt;b&gt;Allow other Windows Azure services to access this server &lt;/b&gt;and specify
-                any other IP ranges to allow to access the SQL Server</value>
-  </data>
   <data name="ClickFinish" xml:space="preserve">
-    <value>Click &lt;b&gt;Finish&lt;/b&gt;. At this point the database and server will be created in a
-                few minutes.</value>
+    <value>Click &lt;b&gt;OK&lt;/b&gt;. At this point the database and server will be created in a few minutes.</value>
   </data>
   <data name="ClickOnDatabase" xml:space="preserve">
-    <value>Click on &lt;b&gt;Database&lt;/b&gt;</value>
-  </data>
-  <data name="ClickOnTheSubscriptionFolder" xml:space="preserve">
-    <value>Click on the &lt;b&gt;Subscriptions &lt;/b&gt;folder</value>
+    <value>Click on &lt;b&gt;SQL DATABASES&lt;/b&gt;.</value>
   </data>
   <data name="ClickTheCreateANewDatabase" xml:space="preserve">
-    <value>Click the &lt;b&gt;Create a New Database &lt;/b&gt;button</value>
+    <value>Click on &lt;b&gt;CREATE A SQL DATABASE&lt;/b&gt;.</value>
   </data>
   <data name="CreateAnAdministratorLogin" xml:space="preserve">
-    <value>Create an administrator login and password and click &lt;b&gt;Next&lt;/b&gt;. &lt;b&gt;NOTE: &lt;/b&gt;write
-                these down somewhere as you will need them for later.</value>
-  </data>
-  <data name="EnterADatabaseName" xml:space="preserve">
-    <value>Enter a &lt;b&gt;database name &lt;/b&gt;for your&lt;b&gt; &lt;/b&gt;database and select the edition and
-                maximum size. &lt;b&gt;NOTE: &lt;/b&gt;make a note of the database name as you will need it
-                for later</value>
+    <value>Create an administrator login and password. Select a region and do not forget to check the box &lt;b&gt;ALLOW WINDOWS AZURE SERVICES TO ACCESS THE SERVER&lt;/b&gt;.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
     <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToGetCreateSqlAzureDatabase" xml:space="preserve">
-    <value>How To Get Create SQL Azure Database</value>
+    <value>How to create a SQL Azure Database</value>
   </data>
   <data name="InTheCreateDatabaseDialog" xml:space="preserve">
-    <value>In the &lt;b&gt;Create Database &lt;/b&gt;dialog, select the subscription the create the database
-                on, and then select the database server and click &lt;b&gt;Next&lt;/b&gt;. Note, you can select
-                an existing database server or create a new one</value>
-  </data>
-  <data name="SelectTheRegionToCreate" xml:space="preserve">
-    <value>Select the &lt;b&gt;Region&lt;/b&gt; to create the database in and click &lt;b&gt;Next&lt;/b&gt;</value>
+    <value>In the &lt;b&gt;NEW SQL DATABASE&lt;/b&gt; dialog, choose a name for your database. You can then select an existing database server or create a new one.</value>
   </data>
 </root>

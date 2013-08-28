@@ -118,30 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOnDatabase" xml:space="preserve">
-    <value>Cliquez sur &lt;b&gt;Base de données&lt;/b&gt;</value>
+    <value>Cliquez sur &lt;b&gt;BASES DE DONNEES SQL&lt;/b&gt;.</value>
   </data>
-  <data name="ClickOnTheSubscriptionsFoler" xml:space="preserve">
-    <value>Cliquez sur le dossier &lt;b&gt;Abonnements &lt;/b&gt;</value>
-  </data>
-  <data name="ClickOnTheSubscriptionYourDatabase" xml:space="preserve">
-    <value>Cliquez sur &lt;b&gt;l'Abonnement&lt;/b&gt; dans lequel réside votre base de données et étendez la sélection.</value>
+  <data name="ClickOnYourDatabase" xml:space="preserve">
+    <value>Cliquez sur la &lt;b&gt;Base de Données SQL&lt;/b&gt; que vous désirez.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
     <value>Allez sur &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; et connectez-vous.</value>
   </data>
-  <data name="HighlightThisValue" xml:space="preserve">
-    <value>Sélectionnez cette valeur, faîtes un clic droit puis copier.</value>
-  </data>
   <data name="HowToGetSqlAzureDatabaseHostName" xml:space="preserve">
-    <value>Comment obtenir le nom d'hôte de la base de données SQL Azure</value>
+    <value>Comment obtenir le nom d'hôte de votre Serveur SQL Azure</value>
   </data>
-  <data name="InThePropertiesWindow" xml:space="preserve">
-    <value>Dans la fenêtre des propriétés recherchez le &lt;strong&gt;Nom DNS complet&lt;/strong&gt;</value>
+  <data name="ClickOnTheDashboardTab" xml:space="preserve">
+    <value>Cliquez sur l'onglet &lt;b&gt;TABLEAU DE BORD&lt;/b&gt;.</value>
   </data>
-  <data name="PasteThisValueBackIntoTheDatabase" xml:space="preserve">
-    <value>Collez cette valeur dans le champs &lt;strong&gt;Nom d'hôte de la base de données&lt;/strong&gt;</value>
-  </data>
-  <data name="SelectYourServer" xml:space="preserve">
-    <value>Sélectionnez votre serveur</value>
+  <data name="CopyDatabaseHostName" xml:space="preserve">
+    <value>Sur le côté droit, vous trouverez le nom de votre serveur de &lt;b&gt;Base de Données SQL&lt;/b&gt;.</value>
   </data>
 </root>

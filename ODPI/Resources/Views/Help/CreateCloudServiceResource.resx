@@ -133,19 +133,7 @@
     <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
   <data name="HowToCreateAWindowsAzureCloudService" xml:space="preserve">
-    <value>How To Create A Windows Azure Cloud Service</value>
-  </data>
-  <data name="Image1" xml:space="preserve">
-    <value>image001.jpg</value>
-  </data>
-  <data name="Image2" xml:space="preserve">
-    <value>image002.jpg</value>
-  </data>
-  <data name="Image3" xml:space="preserve">
-    <value>image003.jpg</value>
-  </data>
-  <data name="Image4" xml:space="preserve">
-    <value>image004.jpg</value>
+    <value>How to create a Windows Azure Cloud Service</value>
   </data>
   <data name="InTheCreateANewCloudService" xml:space="preserve">
     <value>In the panel that appears, choose &lt;b&gt;QUICK CREATE&lt;/b&gt;. Then enter your URL and select a region.</value>

@@ -113,32 +113,5 @@ namespace ODPI.Resources.Views.Help {
                 return ResourceManager.GetString("HowToAddACertificate", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image010.jpg.
-        /// </summary>
-        public static string Image10 {
-            get {
-                return ResourceManager.GetString("Image10", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image008.jpg.
-        /// </summary>
-        public static string Image8 {
-            get {
-                return ResourceManager.GetString("Image8", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image009.jpg.
-        /// </summary>
-        public static string Image9 {
-            get {
-                return ResourceManager.GetString("Image9", resourceCulture);
-            }
-        }
     }
 }

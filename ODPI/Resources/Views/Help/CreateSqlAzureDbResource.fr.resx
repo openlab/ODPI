@@ -117,26 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CheckAllowOtherWindowsAzure" xml:space="preserve">
-    <value>Cochez &lt;b&gt;Autoriser les Services Windows Azure à se connecter au serveur&lt;/b&gt; et spécifiez toute autre plage d'adresses IP autorisée à accéder au serveur SQL.</value>
-  </data>
   <data name="ClickFinish" xml:space="preserve">
-    <value>Cliquez sur &lt;b&gt;Terminer&lt;/b&gt;. A ce stade la base de données et le serveur seront créés d'ici quelques minutes.</value>
+    <value>Cliquez sur &lt;b&gt;OK&lt;/b&gt;. A ce stade, la base de données et le serveur seront créés d'ici quelques minutes.</value>
   </data>
   <data name="ClickOnDatabase" xml:space="preserve">
-    <value>Cliquez sur &lt;b&gt;Base de données&lt;/b&gt;</value>
-  </data>
-  <data name="ClickOnTheSubscriptionFolder" xml:space="preserve">
-    <value>Cliquez sur le dossier &lt;b&gt;Abonnements &lt;/b&gt;</value>
+    <value>Cliquez sur &lt;b&gt;BASES DE DONNEES SQL&lt;/b&gt;.</value>
   </data>
   <data name="ClickTheCreateANewDatabase" xml:space="preserve">
-    <value>Cliquez sur le bouton &lt;b&gt;Créer une base de données SQL &lt;/b&gt;</value>
+    <value>Cliquez sur &lt;b&gt;CREER UNE BASE DE DONNES SQL&lt;/b&gt;.</value>
   </data>
   <data name="CreateAnAdministratorLogin" xml:space="preserve">
-    <value>Créez un couple identifiant/mot de passe pour le compte administrateur et cliquez sur &lt;b&gt;Suivant&lt;/b&gt;. &lt;b&gt;NOTE :&lt;/b&gt; Souvenez-vous des identifiants car vous en aurez besoin dans l'étape suivante.</value>
-  </data>
-  <data name="EnterADatabaseName" xml:space="preserve">
-    <value>Entrez un &lt;b&gt;nom de base de données&lt;/b&gt; pour votre base et sélectionnez l'édition ainsi que la taille maximale. &lt;b&gt;NOTE :&lt;/b&gt; Souvenez-vous du nom de la base de données car vous en aurez besoin dans l'étape suivante.</value>
+    <value>Créez un identifiant et un mot de passe pour le compte administrateur. Sélectionnez ensuite une région et pensez à cocher la case &lt;b&gt;AUTORISER LES SERVICES WINDOWSA AZURE A ACCEDER AU SERVEUR&lt;/b&gt;.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
     <value>Allez sur &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; et connectez-vous.</value>
@@ -145,9 +136,6 @@
     <value>Comment créer un Base de Données SQL Azure</value>
   </data>
   <data name="InTheCreateDatabaseDialog" xml:space="preserve">
-    <value>Dans la fenêtre &lt;b&gt;Créer une base de données&lt;/b&gt; sélectionnez l'abonnement sur lequel créer la base de données, sélectionnez le serveur de base de données et cliquez sur &lt;b&gt;Suivant&lt;/b&gt;. Note : vous pouvez sélectionner un serveur de base de données existant ou en créer un nouveau.</value>
-  </data>
-  <data name="SelectTheRegionToCreate" xml:space="preserve">
-    <value>Sélectionnez une &lt;b&gt;Région&lt;/b&gt; à laquelle sera rattaché votre base de données et cliquez sur &lt;b&gt;Suivant&lt;/b&gt;</value>
+    <value>Dans la fenêtre &lt;b&gt;NOUVELLE BASE DE DONNEES SQL&lt;/b&gt;, choississez un nom pour votre base de données. Vous pouvez ensuite sélectionner un serveur de base de données existant ou en créer un nouveau.</value>
   </data>
 </root>

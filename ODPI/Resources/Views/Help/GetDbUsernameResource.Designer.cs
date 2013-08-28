@@ -61,7 +61,7 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;Database&lt;/b&gt;.
+        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;SQL DATABASES&lt;/b&gt;..
         /// </summary>
         public static string ClickOnDatabase {
             get {
@@ -70,30 +70,38 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on the &lt;b&gt;Subscriptions &lt;/b&gt;folder.
+        ///   Recherche une chaîne localisée semblable à Click on the &lt;b&gt;DASHBOARD&lt;/b&gt; tab..
         /// </summary>
-        public static string ClickOnTheSubscriptionsFoler {
+        public static string ClickOnTheDashboardTab {
             get {
-                return ResourceManager.GetString("ClickOnTheSubscriptionsFoler", resourceCulture);
+                return ResourceManager.GetString("ClickOnTheDashboardTab", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on the &lt;strong&gt;Subscription&lt;/strong&gt; your database resides in and expand the
-        ///                selection&lt;/b&gt;.
+        ///   Recherche une chaîne localisée semblable à Click on the &lt;b&gt;SERVERS&lt;/b&gt; tab..
         /// </summary>
-        public static string ClickOnTheSubscriptionYourDatabase {
+        public static string ClickOnTheServersTab {
             get {
-                return ResourceManager.GetString("ClickOnTheSubscriptionYourDatabase", resourceCulture);
+                return ResourceManager.GetString("ClickOnTheServersTab", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Expand the server and select your database.
+        ///   Recherche une chaîne localisée semblable à Click on the &lt;b&gt;SQL Database&lt;/b&gt; server of your choice..
         /// </summary>
-        public static string ExpandTheServerAndSelectYouDatabase {
+        public static string ClickOnYourServer {
             get {
-                return ResourceManager.GetString("ExpandTheServerAndSelectYouDatabase", resourceCulture);
+                return ResourceManager.GetString("ClickOnYourServer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à On the right side, you&apos;ll find the name of your &lt;b&gt;SQL Database&lt;/b&gt; server and the username of the administrator. You must fill the &lt;b&gt;Username&lt;/b&gt; field like this: &lt;i&gt;username@servername&lt;/i&gt;.
+        /// </summary>
+        public static string CopyUsername {
+            get {
+                return ResourceManager.GetString("CopyUsername", resourceCulture);
             }
         }
         
@@ -107,47 +115,11 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Highlight this value, right click and then click copy..
-        /// </summary>
-        public static string HighlightThisValue {
-            get {
-                return ResourceManager.GetString("HighlightThisValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à How To Get SQL Azure Database Username.
+        ///   Recherche une chaîne localisée semblable à How to get the username of your SQL Azure Database.
         /// </summary>
         public static string HowToGetSqlAzureDatabaseUsername {
             get {
                 return ResourceManager.GetString("HowToGetSqlAzureDatabaseUsername", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à In the properties Window look for the &lt;strong&gt;Administrator Login&lt;/strong&gt;.
-        /// </summary>
-        public static string InThePropertiesWindow {
-            get {
-                return ResourceManager.GetString("InThePropertiesWindow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Paste this value back into the &lt;strong&gt;Username&lt;/strong&gt; field. &lt;strong&gt;NOTE:&lt;/strong&gt; the username must be in the format of &lt;strong&gt;username@servername&lt;/strong&gt;.
-        /// </summary>
-        public static string PasteThisValueBackIntoTheUsername {
-            get {
-                return ResourceManager.GetString("PasteThisValueBackIntoTheUsername", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Select your server.
-        /// </summary>
-        public static string SelectYourServer {
-            get {
-                return ResourceManager.GetString("SelectYourServer", resourceCulture);
             }
         }
     }

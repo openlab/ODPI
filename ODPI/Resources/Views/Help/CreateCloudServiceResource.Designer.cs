@@ -106,47 +106,11 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à How To Create A Windows Azure Cloud Service.
+        ///   Recherche une chaîne localisée semblable à How to create a Windows Azure Cloud Service.
         /// </summary>
         public static string HowToCreateAWindowsAzureCloudService {
             get {
                 return ResourceManager.GetString("HowToCreateAWindowsAzureCloudService", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image001.jpg.
-        /// </summary>
-        public static string Image1 {
-            get {
-                return ResourceManager.GetString("Image1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image002.jpg.
-        /// </summary>
-        public static string Image2 {
-            get {
-                return ResourceManager.GetString("Image2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image003.jpg.
-        /// </summary>
-        public static string Image3 {
-            get {
-                return ResourceManager.GetString("Image3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image004.jpg.
-        /// </summary>
-        public static string Image4 {
-            get {
-                return ResourceManager.GetString("Image4", resourceCulture);
             }
         }
         

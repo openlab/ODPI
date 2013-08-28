@@ -118,31 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOnDatabase" xml:space="preserve">
-    <value>Click on &lt;b&gt;Database&lt;/b&gt;</value>
+    <value>Click on &lt;b&gt;SQL DATABASES&lt;/b&gt;.</value>
   </data>
-  <data name="ClickOnTheSubscriptionsFoler" xml:space="preserve">
-    <value>Click on the &lt;b&gt;Subscriptions &lt;/b&gt;folder</value>
-  </data>
-  <data name="ClickOnTheSubscriptionYourDatabase" xml:space="preserve">
-    <value>Click on the &lt;strong&gt;Subscription&lt;/strong&gt; your database resides in and expand the
-                selection&lt;/b&gt;</value>
+  <data name="ClickOnYourDatabase" xml:space="preserve">
+    <value>Click on the &lt;b&gt;SQL Database&lt;/b&gt; that you want.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
     <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
-  <data name="HighlightThisValue" xml:space="preserve">
-    <value>Highlight this value, right click and then click copy.</value>
-  </data>
   <data name="HowToGetSqlAzureDatabaseHostName" xml:space="preserve">
-    <value>How To Get SQL Azure Database Host Name</value>
+    <value>How to get the host name of your SQL Azure Server</value>
   </data>
-  <data name="InThePropertiesWindow" xml:space="preserve">
-    <value>In the properties Window look for the &lt;strong&gt;Fully Qualified DNS Name&lt;/strong&gt;</value>
+  <data name="ClickOnTheDashboardTab" xml:space="preserve">
+    <value>Click on the &lt;b&gt;DASHBOARD&lt;/b&gt;.</value>
   </data>
-  <data name="PasteThisValueBackIntoTheDatabase" xml:space="preserve">
-    <value>Paste this value back into the &lt;strong&gt;Database Hostname&lt;/strong&gt; field</value>
-  </data>
-  <data name="SelectYourServer" xml:space="preserve">
-    <value>Select your server</value>
+  <data name="CopyDatabaseHostName" xml:space="preserve">
+    <value>On the right side, you'll find your the name of your &lt;b&gt;SQL Database&lt;/b&gt; server.</value>
   </data>
 </root>

@@ -106,42 +106,6 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à image011.jpg.
-        /// </summary>
-        public static string Image11 {
-            get {
-                return ResourceManager.GetString("Image11", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image012.jpg.
-        /// </summary>
-        public static string Image12 {
-            get {
-                return ResourceManager.GetString("Image12", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image013.jpg.
-        /// </summary>
-        public static string Image13 {
-            get {
-                return ResourceManager.GetString("Image13", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à image008.jpg.
-        /// </summary>
-        public static string Image8 {
-            get {
-                return ResourceManager.GetString("Image8", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Recherche une chaîne localisée semblable à Paste this value back in the &lt;b&gt;Azure Config&lt;/b&gt; page in the &lt;b&gt;Subscription Id&lt;/b&gt; field..
         /// </summary>
         public static string PasteThisValueBack {

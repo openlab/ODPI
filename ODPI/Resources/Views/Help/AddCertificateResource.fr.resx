@@ -135,13 +135,4 @@
   <data name="HowToAddACertificate" xml:space="preserve">
     <value>Comment ajouter un certificat de gestion</value>
   </data>
-  <data name="Image10" xml:space="preserve">
-    <value>fr/image010.jpg</value>
-  </data>
-  <data name="Image8" xml:space="preserve">
-    <value>fr/image008.jpg</value>
-  </data>
-  <data name="Image9" xml:space="preserve">
-    <value>fr/image009.jpg</value>
-  </data>
 </root>

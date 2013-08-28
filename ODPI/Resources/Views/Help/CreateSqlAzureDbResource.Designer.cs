@@ -61,18 +61,7 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Check &lt;b&gt;Allow other Windows Azure services to access this server &lt;/b&gt;and specify
-        ///                any other IP ranges to allow to access the SQL Server.
-        /// </summary>
-        public static string CheckAllowOtherWindowsAzure {
-            get {
-                return ResourceManager.GetString("CheckAllowOtherWindowsAzure", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click &lt;b&gt;Finish&lt;/b&gt;. At this point the database and server will be created in a
-        ///                few minutes..
+        ///   Recherche une chaîne localisée semblable à Click &lt;b&gt;OK&lt;/b&gt;. At this point the database and server will be created in a few minutes..
         /// </summary>
         public static string ClickFinish {
             get {
@@ -81,7 +70,7 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;Database&lt;/b&gt;.
+        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;SQL DATABASES&lt;/b&gt;..
         /// </summary>
         public static string ClickOnDatabase {
             get {
@@ -90,16 +79,7 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click on the &lt;b&gt;Subscriptions &lt;/b&gt;folder.
-        /// </summary>
-        public static string ClickOnTheSubscriptionFolder {
-            get {
-                return ResourceManager.GetString("ClickOnTheSubscriptionFolder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Click the &lt;b&gt;Create a New Database &lt;/b&gt;button.
+        ///   Recherche une chaîne localisée semblable à Click on &lt;b&gt;CREATE A SQL DATABASE&lt;/b&gt;..
         /// </summary>
         public static string ClickTheCreateANewDatabase {
             get {
@@ -108,23 +88,11 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Create an administrator login and password and click &lt;b&gt;Next&lt;/b&gt;. &lt;b&gt;NOTE: &lt;/b&gt;write
-        ///                these down somewhere as you will need them for later..
+        ///   Recherche une chaîne localisée semblable à Create an administrator login and password. Select a region and do not forget to check the box &lt;b&gt;ALLOW WINDOWS AZURE SERVICES TO ACCESS THE SERVER&lt;/b&gt;..
         /// </summary>
         public static string CreateAnAdministratorLogin {
             get {
                 return ResourceManager.GetString("CreateAnAdministratorLogin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Enter a &lt;b&gt;database name &lt;/b&gt;for your&lt;b&gt; &lt;/b&gt;database and select the edition and
-        ///                maximum size. &lt;b&gt;NOTE: &lt;/b&gt;make a note of the database name as you will need it
-        ///                for later.
-        /// </summary>
-        public static string EnterADatabaseName {
-            get {
-                return ResourceManager.GetString("EnterADatabaseName", resourceCulture);
             }
         }
         
@@ -138,7 +106,7 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à How To Get Create SQL Azure Database.
+        ///   Recherche une chaîne localisée semblable à How to create a SQL Azure Database.
         /// </summary>
         public static string HowToGetCreateSqlAzureDatabase {
             get {
@@ -147,22 +115,11 @@ namespace ODPI.Resources.Views.Help {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à In the &lt;b&gt;Create Database &lt;/b&gt;dialog, select the subscription the create the database
-        ///                on, and then select the database server and click &lt;b&gt;Next&lt;/b&gt;. Note, you can select
-        ///                an existing database server or create a new one.
+        ///   Recherche une chaîne localisée semblable à In the &lt;b&gt;NEW SQL DATABASE&lt;/b&gt; dialog, choose a name for your database. You can then select an existing database server or create a new one..
         /// </summary>
         public static string InTheCreateDatabaseDialog {
             get {
                 return ResourceManager.GetString("InTheCreateDatabaseDialog", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à Select the &lt;b&gt;Region&lt;/b&gt; to create the database in and click &lt;b&gt;Next&lt;/b&gt;.
-        /// </summary>
-        public static string SelectTheRegionToCreate {
-            get {
-                return ResourceManager.GetString("SelectTheRegionToCreate", resourceCulture);
             }
         }
     }

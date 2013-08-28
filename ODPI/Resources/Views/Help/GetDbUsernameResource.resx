@@ -118,34 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ClickOnDatabase" xml:space="preserve">
-    <value>Click on &lt;b&gt;Database&lt;/b&gt;</value>
-  </data>
-  <data name="ClickOnTheSubscriptionsFoler" xml:space="preserve">
-    <value>Click on the &lt;b&gt;Subscriptions &lt;/b&gt;folder</value>
-  </data>
-  <data name="ClickOnTheSubscriptionYourDatabase" xml:space="preserve">
-    <value>Click on the &lt;strong&gt;Subscription&lt;/strong&gt; your database resides in and expand the
-                selection&lt;/b&gt;</value>
+    <value>Click on &lt;b&gt;SQL DATABASES&lt;/b&gt;.</value>
   </data>
   <data name="GoToWindowsAzure" xml:space="preserve">
     <value>Go to &lt;a href="https://manage.windowsazure.com" target="_blank"&gt;https://manage.windowsazure.com&lt;/a&gt; and sign in.</value>
   </data>
-  <data name="HighlightThisValue" xml:space="preserve">
-    <value>Highlight this value, right click and then click copy.</value>
-  </data>
   <data name="HowToGetSqlAzureDatabaseUsername" xml:space="preserve">
-    <value>How To Get SQL Azure Database Username</value>
+    <value>How to get the username of your SQL Azure Database</value>
   </data>
-  <data name="InThePropertiesWindow" xml:space="preserve">
-    <value>In the properties Window look for the &lt;strong&gt;Administrator Login&lt;/strong&gt;</value>
+  <data name="ClickOnTheDashboardTab" xml:space="preserve">
+    <value>Click on the &lt;b&gt;DASHBOARD&lt;/b&gt; tab.</value>
   </data>
-  <data name="PasteThisValueBackIntoTheUsername" xml:space="preserve">
-    <value>Paste this value back into the &lt;strong&gt;Username&lt;/strong&gt; field. &lt;strong&gt;NOTE:&lt;/strong&gt; the username must be in the format of &lt;strong&gt;username@servername&lt;/strong&gt;</value>
+  <data name="ClickOnTheServersTab" xml:space="preserve">
+    <value>Click on the &lt;b&gt;SERVERS&lt;/b&gt; tab.</value>
   </data>
-  <data name="SelectYourServer" xml:space="preserve">
-    <value>Select your server</value>
+  <data name="ClickOnYourServer" xml:space="preserve">
+    <value>Click on the &lt;b&gt;SQL Database&lt;/b&gt; server of your choice.</value>
   </data>
-  <data name="ExpandTheServerAndSelectYouDatabase" xml:space="preserve">
-    <value>Expand the server and select your database</value>
+  <data name="CopyUsername" xml:space="preserve">
+    <value>On the right side, you'll find the name of your &lt;b&gt;SQL Database&lt;/b&gt; server and the username of the administrator. You must fill the &lt;b&gt;Username&lt;/b&gt; field like this: &lt;i&gt;username@servername&lt;/i&gt;</value>
   </data>
 </root>
