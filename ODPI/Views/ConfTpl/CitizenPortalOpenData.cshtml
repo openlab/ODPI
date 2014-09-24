@@ -1,6 +1,42 @@
 ﻿@{
     Layout = null;
 }
+<div class="page-header">
+    <h4>
+        @ODPI.Resources.Views.ConfTpl.DataLabResource.BlobStorageInfo
+    </h4>
+    <p>@Html.Raw(ODPI.Resources.Views.ConfTpl.DataLabResource.TheUseOfBlobStorageIsRequired)</p>
+    <p>@ODPI.Resources.Views.ConfTpl.DataLabResource.OnceComplete</p>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageName" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.DataLabResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.DataLabResource.StorageAccountName
+        </a>
+    </label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagename" name="storagename" />
+    </div>
+</div>
+<div class="control-group">
+    <label class="control-label">
+        <a href="#" data-toggle="modal" data-target="#tableStorageKey" rel="tooltip" data-original-title="@ODPI.Resources.Views.ConfTpl.DataLabResource.ClickToSeeHow">
+            @ODPI.Resources.Views.ConfTpl.DataLabResource.PrimaryAccessKey
+        </a>
+    </label>
+    <div class="controls">
+        <input class="input-xlarge" type="text" id="storagekey" name="storagekey" />
+    </div>
+</div>
+<div class="modal hide fade" id="createTableStorage">
+    @Html.Partial("../Help/CreateTableStorage")
+</div>
+<div class="modal hide fade" id="tableStorageName">
+    @Html.Partial("../Help/GetTableStorageName")
+</div>
+<div class="modal hide fade" id="tableStorageKey">
+    @Html.Partial("../Help/GetTableStorageKey")
+</div>
 
 <div class="page-header">
     <h4>@ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.ApplicationSettings</h4>
@@ -10,43 +46,30 @@
 </div>
 <div class="control-group">
     <label class="control-label">
-        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.BaseDataServiceUrl</label>
+        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.CloudServiceName</label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="basedataserviceurl" name="basedataserviceurl" placeholder="http://xxxx.cloudapp.net:8080/v1/" />
+        <input class="input-xlarge" type="text" id="cloudservicename" name="cloudservicename" required placeholder="http://xxxx.cloudapp.net" />
     </div>
 </div>
 <div class="control-group">
     <label class="control-label">
-        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.InstitutionName</label>
+        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.WAADDomainName</label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="institutionname" name="institutionname" />
+        <input class="input-xlarge" type="text" id="waaddomainname" name="waaddomainname" required placeholder="xxxx.onmicrosoft.com" />
     </div>
+</div>
+
+<div class="page-header">
+    <h4>@ODPI.Resources.Views.ConfTpl.BingMapRessource.MapSettings</h4>
+    <p>
+        @ODPI.Resources.Views.ConfTpl.BingMapRessource.MapInfo <a href="https://www.bingmapsportal.com/"> Map Account Center</a>
+</p>
 </div>
 <div class="control-group">
     <label class="control-label">
-        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.LogoUri</label>
+        @ODPI.Resources.Views.ConfTpl.BingMapRessource.BingCred
+    </label>
     <div class="controls">
-        <input class="input-xlarge" type="text" id="logouri" name="logouri" />
-    </div>
-</div>
-<div class="control-group">
-    <label class="control-label">
-        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.WelcomeText</label>
-    <div class="controls">
-        <input class="input-xlarge" type="text" id="welcometext" name="welcometext" />
-    </div>
-</div>
-<div class="control-group">
-    <label class="control-label">
-        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.InstitutionDecription</label>
-    <div class="controls">
-        <input class="input-xlarge" type="text" id="institutiondescription" name="institutiondescription" />
-    </div>
-</div>
-<div class="control-group">
-    <label class="control-label">
-        @ODPI.Resources.Views.ConfTpl.CitizenPortalOpenDataResource.InstitutionImage</label>
-    <div class="controls">
-        <input class="input-xlarge" type="text" id="institutionimage" name="institutionimage" />
+        <input class="input-xlarge" type="text" id="bingCredential" name="bingCredential" required placeholder="Credential Key" />
     </div>
 </div>

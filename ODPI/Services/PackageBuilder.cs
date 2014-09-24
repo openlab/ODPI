@@ -27,8 +27,6 @@ namespace ODPI.Service
             {
                 var url = string.Format("http://{0}.blob.core.windows.net/components/", RoleEnvironment.GetConfigurationSettingValue("StorageName"));
 
-                CloudBackedStore.Grab( ComponetDir, "\\test.jpg", "components", url + "test.jpg");
-
                 foreach (var app in OdpiAppRepo.Apps)
                 {
                     if( !string.IsNullOrEmpty(app.PackageName) )
@@ -87,7 +85,12 @@ namespace ODPI.Service
 
 
             if (app.CustomConfigWriter == null)
+            {
+                string tmp = xml.Replace("{0}", "@_(0)_@");
+                tmp = tmp.Replace("}", "}}").Replace("{", "{{");
+                xml = tmp.Replace("@_(0)_@", "{0}");
                 tw.WriteLine(string.Format(xml, sb.ToString()));
+            }
             else
                 tw.WriteLine(app.CustomConfigWriter.Format(xml, data, app));
             

@@ -127,6 +127,9 @@
   <data name="BaseDataServiceUrl" xml:space="preserve">
     <value>Dataservice uri</value>
   </data>
+  <data name="CloudServiceName" xml:space="preserve">
+    <value>Cloud service name</value>
+  </data>
   <data name="InstitutionDecription" xml:space="preserve">
     <value>Description text of the portal</value>
   </data>
@@ -141,6 +144,9 @@
   </data>
   <data name="LogoUri" xml:space="preserve">
     <value>logo site uri</value>
+  </data>
+  <data name="WAADDomainName" xml:space="preserve">
+    <value>Azure Active Directory domain</value>
   </data>
   <data name="WelcomeText" xml:space="preserve">
     <value>Welcome text</value>

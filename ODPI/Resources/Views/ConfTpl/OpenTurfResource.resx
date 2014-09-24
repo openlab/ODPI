@@ -124,7 +124,7 @@
     <value>an API key to use for URL Shortening</value>
   </data>
   <data name="ApplicationName" xml:space="preserve">
-    <value>Application Name</value>
+    <value>Service Name</value>
   </data>
   <data name="ApplicationSettings" xml:space="preserve">
     <value>Application Settings</value>
@@ -172,7 +172,7 @@
             here&lt;/a&gt; for instructions to create a SQL Azure database.&lt;/p&gt;</value>
   </data>
   <data name="NameOfTheApplication" xml:space="preserve">
-    <value>name of the application in the title screen</value>
+    <value>Name of the Cloud Service in Microsoft Azure</value>
   </data>
   <data name="OnceDatabaseIsCreated" xml:space="preserve">
     <value>Once the database is created, enter the values below.</value>
@@ -206,5 +206,8 @@
   </data>
   <data name="UsernameThatWillBeUsed" xml:space="preserve">
     <value>username that will be used for administration</value>
+  </data>
+  <data name="ADInfo" xml:space="preserve">
+    <value>Azure Active Directory Information</value>
   </data>
 </root>

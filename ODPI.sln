@@ -1,16 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODPI", "ODPI\ODPI.csproj", "{F51D05B5-545C-4D26-ACCA-A8D72B0DD356}"
-EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "ODPI.Cloud", "ODPI.Cloud\ODPI.Cloud.ccproj", "{703A945B-4E12-4932-8853-139015E2E8A4}"
-EndProject
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C6770800-C17C-4CE8-ABF0-65703E7F52AD}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODPI", "ODPI\ODPI.csproj", "{F51D05B5-545C-4D26-ACCA-A8D72B0DD356}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "ODPI.Cloud", "ODPI.Cloud\ODPI.Cloud.ccproj", "{703A945B-4E12-4932-8853-139015E2E8A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

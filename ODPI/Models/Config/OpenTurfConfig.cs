@@ -12,25 +12,25 @@ namespace ODPI.Model.Config
         public string DbUserName { get; set; }
         public string DbUserPassword { get; set; }
         public string AppName { get; set; }
-        public string BitlyLogin { get; set; }
-        public string BitlyKey { get; set; }
         public string TwitterConsumerKey { get; set; }
         public string TwitterConsumerSecret { get; set; }
-        public string TwitterCallbackUrl { get; set; }
-        public string TwitterAppUrl { get; set; }
-        public string AdminTwitterUser { get; set; }
+        public string Waaddomainname { get; set; }
+        public string BingCredential { get; set; }
+        public string StorageName { get; set; }
+        public string StorageKey { get; set; }
 
         public string BuildSettingsString()
         {
             string template = @"
-        <Setting name=""ODAF"" value=""Server=tcp:{0};Database={1};User ID={2};Password={3};Trusted_Connection=False;Encrypt=True;"" />
-        <Setting name=""AppName"" value=""{4}"" />
-        <Setting name=""BitlyLogin"" value=""{5}"" />
-        <Setting name=""BitlyAPIKey"" value=""{6}"" />
-        <Setting name=""AdminTwitterUser"" value=""{7}"" />
-            ";
+              <Setting name=""Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString"" value=""DefaultEndpointsProtocol=https;AccountName={9};AccountKey={10}"" />
+              <Setting name=""DBConnectionString"" value=""Server=tcp:{0},1433;Database={1};User ID={2};Password={3};Trusted_Connection=False;Encrypt=True;Connection Timeout=30;"" />
+              <Setting name=""TwitterConsumerKey"" value=""{4}"" />
+              <Setting name=""TwitterConsumerSecret"" value=""{5}"" />
+              <Setting name=""FederationMetadataAddress"" value=""https://login.windows.net/{6}.onmicrosoft.com/federationmetadata/2007-06/federationmetadata.xml"" />
+              <Setting name=""FederationWtrealm"" value=""http://{7}.cloudapp.net/"" />
+              <Setting name=""BingCredential"" value=""{8}"" /> ";
 
-            return string.Format(template, DbHost, DbName, DbUserName, DbUserPassword, AppName, BitlyLogin, BitlyKey, AdminTwitterUser);
+            return string.Format(template, DbHost, DbName, DbUserName, DbUserPassword, TwitterConsumerKey, TwitterConsumerSecret, Waaddomainname, AppName, BingCredential, StorageName, StorageKey);
         }
 
         public void BuildFromData(dynamic data)
@@ -40,13 +40,12 @@ namespace ODPI.Model.Config
             DbUserName = data.dbusername;
             DbUserPassword = data.dbpassword;
             AppName = data.appname;
-            BitlyLogin = data.bitlylogin;
-            BitlyKey = data.bitlykey;
             TwitterConsumerKey = data.twitterconsumerkey;
             TwitterConsumerSecret = data.twitterconsumersecret;
-            TwitterCallbackUrl = data.twittercallbackurl;
-            TwitterAppUrl = data.twitterappurl;
-            AdminTwitterUser = data.admintwitteruser;
+            Waaddomainname = data.waaddomainname;
+            BingCredential = data.bingCredential;
+            StorageName = data.storagename;
+            StorageKey = data.storagekey;
         }
 
         public string Template { get { return "OpenTurf"; } }

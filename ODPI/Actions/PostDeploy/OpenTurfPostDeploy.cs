@@ -53,7 +53,7 @@ namespace ODPI.Actions.PostDeploy
                     var appSql = "Insert into OAuthClientApp (Guid, Name, Comment, ConsumerKey, ConsumerSecret, CallbackUrl, AppUrl, CreatedOn, oauth_service_name) " +
                                     "values ( 'c1ec2c57-742b-415b-84a6-4d8ae5b53e9', 'Main Web Site', 'This is the main Silverlight application hosted on Azure', '{0}','{1}', '{2}', '{3}', getdate(), 'Twitter' );";
 
-                    command.CommandText = string.Format(appSql, data.twitterconsumerkey, data.twitterconsumersecret, data.twittercallbackurl, data.twitterappurl);
+                    command.CommandText = string.Format(appSql, data.twitterconsumerkey, data.twitterconsumersecret, data.twitterappurl, data.twitterappurl);
                     command.ExecuteNonQuery();
                     conn.Close();
                 }

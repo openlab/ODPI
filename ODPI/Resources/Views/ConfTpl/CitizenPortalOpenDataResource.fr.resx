@@ -127,6 +127,9 @@ Vous devrez fournir les éléments suivants :</value>
   <data name="BaseDataServiceUrl" xml:space="preserve">
     <value>Url du service de données</value>
   </data>
+  <data name="CloudServiceName" xml:space="preserve">
+    <value>Nom du service cloud</value>
+  </data>
   <data name="InstitutionDecription" xml:space="preserve">
     <value>Texte descriptif du portail</value>
   </data>
@@ -141,6 +144,9 @@ Vous devrez fournir les éléments suivants :</value>
   </data>
   <data name="LogoUri" xml:space="preserve">
     <value>Url du logo du site</value>
+  </data>
+  <data name="WAADDomainName" xml:space="preserve">
+    <value>Domaine Azure Active Directory</value>
   </data>
   <data name="WelcomeText" xml:space="preserve">
     <value>Texte de bienvenue</value>

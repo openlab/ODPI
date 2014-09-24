@@ -124,7 +124,7 @@
     <value>La clé d'API à utiliser pour raccourcir les URL</value>
   </data>
   <data name="ApplicationName" xml:space="preserve">
-    <value>Nom de l'application</value>
+    <value>Nom du service cloud</value>
   </data>
   <data name="ApplicationSettings" xml:space="preserve">
     <value>Paramètres de l'application</value>
@@ -171,7 +171,7 @@
             ici&lt;/a&gt; pour voir les instructions sur la création d'une base de données SQL Azure.</value>
   </data>
   <data name="NameOfTheApplication" xml:space="preserve">
-    <value>Nom de l'application sur l'écran d'accueil</value>
+    <value>Nom du service cloud dans Microsoft Azure</value>
   </data>
   <data name="OnceDatabaseIsCreated" xml:space="preserve">
     <value>Une fois la base de données créée veuillez remplir les valeurs ci-dessous :</value>
@@ -203,5 +203,8 @@
   </data>
   <data name="UsernameThatWillBeUsed" xml:space="preserve">
     <value>Identifiant qui sera utilisé pour l'administration</value>
+  </data>
+  <data name="ADInfo" xml:space="preserve">
+    <value>Informations Azure Active Directory</value>
   </data>
 </root>

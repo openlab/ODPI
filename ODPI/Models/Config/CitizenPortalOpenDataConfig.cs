@@ -8,35 +8,33 @@ namespace ODPI.Model.Config
 {
     public class CitizenPortalOpenDataConfig : IOdpiAppConfig
     {
-        public string BaseDataServiceUrl { get; set; }
-        public string InstitutionName { get; set; }
-        public string LogoUri { get; set; }
-        public string WelcomeText { get; set; }
-        public string InstitutionDecription { get; set; }
-        public string InstitutionImage { get; set; }
+        public string BlobAccountName { get; set; }
+        public string BlobAccountKey { get; set; }
+        public string CloudServiceName { get; set; }
+        public string WAADDomainName { get; set; }
+        public string BingCredential { get; set; }
 
         public string BuildSettingsString()
         {
-            string template = @"<Setting name=""BaseDataServiceUrl"" value=""{0}"" />
-                              <Setting name=""InstitutionName"" value=""{1}"" />
-                              <Setting name=""LogoUri"" value=""{2}"" />
-                              <Setting name=""WelcomeText"" value=""{3}"" />
-                              <Setting name=""InstitutionDescription"" value=""{4}"" />
-                              <Setting name=""InstitutionImage"" value=""{5}"" />
-      
-                                ";
+            string template = @"<Setting name=""Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString"" value=""DefaultEndpointsProtocol=https;AccountName={2};AccountKey={3}"" />
+                                <Setting name=""FederationMetadataLocation"" value=""https://login.windows.net/{1}.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"" />
+                                <Setting name=""audienceUri"" value=""http://{0}.cloudapp.net/"" />
+                                <Setting name=""trustedIssuerName"" value=""https://sts.windows.net/{1}.onmicrosoft.com.onmicrosoft.com/"" />
+                                <Setting name=""issuer"" value=""https://login.windows.net/{1}.onmicrosoft.com/wsfed"" />
+                                <Setting name=""realm"" value=""http://{0}.cloudapp.net/"" />
+                                <Setting name=""connectionString"" value=""DefaultEndpointsProtocol=https;AccountName={2};AccountKey={3}"" />
+                                <Setting name=""bingCredential"" value=""{4}"" />";
 
-            return string.Format(template, BaseDataServiceUrl, InstitutionName, LogoUri, WelcomeText, InstitutionDecription, InstitutionImage);
+            return string.Format(template, CloudServiceName, WAADDomainName, BlobAccountName, BlobAccountKey, BingCredential);
         }
 
         public void BuildFromData(dynamic data)
         {
-            BaseDataServiceUrl = data.basedataserviceurl;
-            InstitutionName = data.institutionname;
-            LogoUri = data.logouri;
-            WelcomeText = data.welcometext;
-            InstitutionDecription = data.institutiondescription;
-            InstitutionImage = data.institutionimage;
+            CloudServiceName = data.cloudservicename;
+            WAADDomainName = data.waaddomainname;
+            BlobAccountName = data.storagename;
+            BlobAccountKey = data.storagekey;
+            BingCredential = data.bingCredential;
         }
 
         public string Template
